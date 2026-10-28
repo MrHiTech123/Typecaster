@@ -5,7 +5,7 @@ using Unity.Mathematics;
 using UnityEngine.UI;
 public class Script : MonoBehaviour
 {
-	private static readonly float CHARACTERS_PER_SECOND = 5;
+	private static readonly float CHARACTERS_PER_SECOND = 20;
 	[SerializeField] private TMP_Text TextBox;
 	[SerializeField] private DialogueLine[] dialogue;
 	private String __message;
