@@ -15,7 +15,7 @@ public class TypingTestBox : MonoBehaviour
 	
 	[SerializeField] private String whatToType;
 	private String typedSoFar = "";
-	private String mistakeChar;
+	private String mistakeText;
 	
 	public void Initialize(String whatToType)
 	{
@@ -65,14 +65,14 @@ public class TypingTestBox : MonoBehaviour
 		if (isCorrect)
 		{
 			typedSoFar += toType;
-			mistakeChar = "";
+			mistakeText = "";
 		}
 		else
 		{
-			mistakeChar += toType;
+			mistakeText += toType;
 		}
 		
-		BoxForWhatPlayerTyped.text = typedSoFar + "<color=\"red\">" + mistakeChar + "</color>";
+		BoxForWhatPlayerTyped.text = typedSoFar + "<color=\"red\">" + mistakeText + "</color>";
 		
 		
 	}
