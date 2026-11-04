@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
@@ -64,8 +65,10 @@ public class PlayerActions : MonoBehaviour
     {
         Debug.Log("[Player Actions] Player casts a fire ball!!!");
         spellMenu.SetActive(false);
-
-        stats.EnemyTakeDamage(50);
-        EnemyAction();
+        TypingTestResult res = new TypingTestResult();
+        TypingTestBox.Create("fire ball", TimeSpan.FromSeconds(10), (TypingTestResult result) => {res = result;Debug.Log("[Player Actions] Fire ball damage = " + Mathf.RoundToInt(50 * res.TimeScore));
+        stats.EnemyTakeDamage(Mathf.RoundToInt(50 * res.TimeScore));
+        EnemyAction();});
+        
     }
 }
