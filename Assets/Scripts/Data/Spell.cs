@@ -1,0 +1,8 @@
+public enum Spell
+{
+	MANA_BLAST,
+	FIRE_BALL,
+	FIRE_STORM,
+	CONSUME,
+	METEOR_STRIKE
+}
