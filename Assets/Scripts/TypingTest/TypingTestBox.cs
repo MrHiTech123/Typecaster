@@ -17,7 +17,7 @@ public class TypingTestBox : MonoBehaviour
 	// @param whatToType = the correct string that should be typed into the text box
 	// @param timeAlloted = the amount of time that the player can spend typing the text and get a score > 0.0
 	// @param onCompleted = a delegate function of the form (TypingTestResult result) => {doThing(result);}.
-	// 		This function will be called when the player finishes typing the text, 
+	// 		This function will be called when the player finishes typing the text, and the result will be passed as an argument.
 	public static void Create(String whatToType, TimeSpan timeAlloted, Action<TypingTestResult> onCompleted)
 	{
 		TypingTestBox textBox = Instantiate(GameManager.INSTANCE.TYPING_TEXT_BOX_PREFAB).GetComponent<TypingTestBox>();
