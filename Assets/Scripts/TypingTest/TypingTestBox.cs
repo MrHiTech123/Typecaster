@@ -8,6 +8,34 @@ using UnityEngine.InputSystem.Utilities;
 public class TypingTestBox : MonoBehaviour
 {
 	
+	/*
+		**********************
+		START STATIC METHODS
+		**********************
+	*/
+	
+	// @param whatToType = the correct string that should be typed into the text box
+	// @param timeAlloted = the amount of time that the player can spend typing the text and get a score > 0.0
+	// @param onCompleted = a delegate function of the form (TypingTestResult result) => {doThing(result);}.
+	// 		This function will be called when the player finishes typing the text, 
+	public static void Create(String whatToType, TimeSpan timeAlloted, Action<TypingTestResult> onCompleted)
+	{
+		TypingTestBox textBox = Instantiate(GameManager.INSTANCE.TYPING_TEXT_BOX_PREFAB).GetComponent<TypingTestBox>();
+		textBox.Initialize(whatToType, timeAlloted, onCompleted);
+	}
+	
+	
+	/*
+		**********************
+		END STATIC METHODS
+		**********************
+	*/
+	
+	
+	
+	
+	
+	
 	HashSet<String> typedThisFrame = new HashSet<String>();
 	
 	public TMP_Text BoxForWhatToType;
@@ -20,6 +48,7 @@ public class TypingTestBox : MonoBehaviour
 	private Action<TypingTestResult> onCompleted;
 	
 	[SerializeField] private bool WasManuallyPutInLevel;
+	
 	
 	public void Initialize(String whatToType, TimeSpan timeAlloted, Action<TypingTestResult> onCompleted)
 	{
@@ -35,7 +64,7 @@ public class TypingTestBox : MonoBehaviour
 	void Start()
 	{
 		if (WasManuallyPutInLevel) {
-			Initialize(whatToType, TimeSpan.FromSeconds(100), (TypingTestResult result) => Debug.Log("Accuracy Score: " + result.AccuracyScore + ", Time Score: " + result.TimeScore));
+			Initialize(whatToType, TimeSpan.FromSeconds(100), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.Mistakes));
 		}
 	}
 	
@@ -56,7 +85,7 @@ public class TypingTestBox : MonoBehaviour
 	
 	void Finish()
 	{
-		TypingTestResult result = new TypingTestResult(1.0f, 0.0f);
+		TypingTestResult result = new TypingTestResult(1.0f, 0);
 		onCompleted.Invoke(result);
 		
 		Destroy(gameObject);
