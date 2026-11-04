@@ -64,6 +64,7 @@ public class TypingTestBox : MonoBehaviour
 		
 		
 		BoxForWhatToType.text = this.whatToType;
+		BoxForWhatPlayerTyped.text = "";
 	}
 
 	
