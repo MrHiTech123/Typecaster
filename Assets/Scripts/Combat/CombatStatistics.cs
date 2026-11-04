@@ -19,19 +19,19 @@ public class CombatStatistics : MonoBehaviour
         
     }
 	
-	public void TakeDamage(int dmg, ref int hpAmount, RectTransform healthBar) {
+	public void TakeDamage(int dmg, ref int hpAmount, RectTransform healthBar, int maxBarLen, int maxHP) {
 		hpAmount -= dmg;
-		hpAmount = Mathf.Clamp(dmg, 0, 100);
-		healthBar.sizeDelta = new Vector2(hpAmount / 100.0f * 265, 30);
+		hpAmount = Mathf.Clamp(hpAmount, 0, maxHP);
+		healthBar.sizeDelta = new Vector2(hpAmount / 100.0f * maxBarLen, 30);
 	}
 
     public void EnemyTakeDamage(int dmg)
     {
-        TakeDamage(dmg, ref enemyHP, enemyHealthBar);
+        TakeDamage(dmg, ref enemyHP, enemyHealthBar, 265, 100);
     }
 
     public void PlayerTakeDamage(int dmg)
     {
-        TakeDamage(dmg, ref playerHP, playerHealthBar);
+        TakeDamage(dmg, ref playerHP, playerHealthBar, 650, 100);
     }
 }
