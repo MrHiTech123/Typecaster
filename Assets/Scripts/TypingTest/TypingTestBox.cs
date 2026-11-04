@@ -16,29 +16,61 @@ public class TypingTestBox : MonoBehaviour
 	[SerializeField] private String whatToType;
 	private String typedSoFar = "";
 	private String mistakeText;
+	private TimeSpan timeAlloted;
+	private Action<TypingTestResult> onCompleted;
 	
-	public void Initialize(String whatToType)
+	[SerializeField] private bool WasManuallyPutInLevel;
+	
+	public void Initialize(String whatToType, TimeSpan timeAlloted, Action<TypingTestResult> onCompleted)
 	{
 		this.whatToType = whatToType;
-		BoxForWhatToType.text = whatToType;
+		this.timeAlloted = timeAlloted;
+		this.onCompleted = onCompleted;
+		
+		
+		BoxForWhatToType.text = this.whatToType;
 	}
 
+	
 	void Start()
 	{
-		Initialize(whatToType);
+		if (WasManuallyPutInLevel) {
+			Initialize(whatToType, TimeSpan.FromSeconds(100), (TypingTestResult result) => Debug.Log("Accuracy Score: " + result.AccuracyScore + ", Time Score: " + result.TimeScore));
+		}
 	}
-
+	
+	void Backspace()
+	{
+		if (mistakeText.Length >= 1) {
+			mistakeText = StringLib.CutOffLastCharacter(mistakeText);
+		}
+		else if (typedSoFar.Length >= 1) {
+			typedSoFar = StringLib.CutOffLastCharacter(typedSoFar);
+		}
+	}
+	
+	bool Done()
+	{
+		return typedSoFar == whatToType;
+	}
+	
+	void Finish()
+	{
+		TypingTestResult result = new TypingTestResult(1.0f, 0.0f);
+		onCompleted.Invoke(result);
+		
+		Destroy(gameObject);
+	}
+	
 	void TypeKey(String key)
 	{
-		Debug.Log("Typing key " + key + " typed this frame: " + typedThisFrame.Count);
+		// Debug.Log("Typing key " + key + " typed this frame: " + typedThisFrame.Count);
 		
 		String toType = "";
 		
 		if (key == "backspace")
 		{
-			if (typedSoFar.Length >= 1) {
-				typedSoFar = typedSoFar.Substring(0, typedSoFar.Length - 1);
-			}
+			Backspace();
 		}
 		
 		else if (key == "space")
@@ -74,6 +106,10 @@ public class TypingTestBox : MonoBehaviour
 		
 		BoxForWhatPlayerTyped.text = typedSoFar + "<color=\"red\">" + mistakeText + "</color>";
 		
+		if (Done())
+		{
+			Finish();
+		}
 		
 	}
 	
