@@ -49,6 +49,8 @@ public class Data
 			}
 		};
 		
+		
+		
 		public static String GetPoem(Spell spell)
 		{
 			return DataStructureLib.Choice(POEMS[spell]);
