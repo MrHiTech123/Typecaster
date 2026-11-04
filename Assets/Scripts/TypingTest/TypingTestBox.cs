@@ -49,6 +49,12 @@ public class TypingTestBox : MonoBehaviour
 	
 	[SerializeField] private bool WasManuallyPutInLevel;
 	
+	private bool startedTyping = false;
+	private DateTime startOfTyping = DateTime.MinValue;
+	
+	private int MistakesMadeSoFar;
+	
+	
 	
 	public void Initialize(String whatToType, TimeSpan timeAlloted, Action<TypingTestResult> onCompleted)
 	{
@@ -64,7 +70,7 @@ public class TypingTestBox : MonoBehaviour
 	void Start()
 	{
 		if (WasManuallyPutInLevel) {
-			Initialize(whatToType, TimeSpan.FromSeconds(100), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.Mistakes));
+			Initialize(whatToType, TimeSpan.FromSeconds(10), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.Mistakes));
 		}
 	}
 	
@@ -83,9 +89,24 @@ public class TypingTestBox : MonoBehaviour
 		return typedSoFar == whatToType;
 	}
 	
+	double speedScore(TimeSpan timeTakenToType)
+	{
+		Debug.Log(timeTakenToType + "  " + startOfTyping);
+		if (timeTakenToType > timeAlloted)
+		{
+			return 0;
+		}
+		Debug.Log(timeTakenToType.Divide(timeAlloted));
+		
+		return 1.0 - timeTakenToType.Divide(timeAlloted);
+	}
 	void Finish()
 	{
-		TypingTestResult result = new TypingTestResult(1.0f, 0);
+		DateTime endOfTyping = DateTime.Now;
+		TimeSpan timeTakenToType = endOfTyping.Subtract(startOfTyping);		
+		
+		
+		TypingTestResult result = new TypingTestResult((float)speedScore(timeTakenToType), MistakesMadeSoFar);
 		onCompleted.Invoke(result);
 		
 		Destroy(gameObject);
@@ -121,15 +142,33 @@ public class TypingTestBox : MonoBehaviour
 			toType = key;
 		}
 		
+		
+		if (typedSoFar.Length >= whatToType.Length)
+		{
+			return;
+		}
+		
+		if (toType.Length == 0)
+		{
+			return;
+		}
+		
 		bool isCorrect = toType == new String(whatToType[typedSoFar.Length], 1);
+		
+		if (!startedTyping)
+		{
+			startedTyping = true;
+			startOfTyping = DateTime.Now;
+		}
 		
 		if (isCorrect)
 		{
 			typedSoFar += toType;
 			mistakeText = "";
 		}
-		else
+		else if (toType.Length >= 1)
 		{
+			++MistakesMadeSoFar;
 			mistakeText += toType;
 		}
 		
