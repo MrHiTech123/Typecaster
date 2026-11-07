@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8052674000097236590}
   - component: {fileID: 4288741646480272370}
   - component: {fileID: 7676950372244899881}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7304086526084827763}
   - component: {fileID: 7212398241733650925}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ' '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
