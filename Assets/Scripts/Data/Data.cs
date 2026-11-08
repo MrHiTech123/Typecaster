@@ -20,8 +20,8 @@ public class Data
 			{
 				Spell.FIRE_BALL, new List<string>
 				{
-					"This spell gives you more mana.",
-					"Drop enemies to 0 HP to kill them.",
+					// "This spell gives you more mana.",
+					// "Drop enemies to 0 HP to kill them.",
 					"The faster you type, the more damage you deal."
 				}
 			},

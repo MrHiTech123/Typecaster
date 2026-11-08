@@ -18,10 +18,10 @@ public class TypingTestBox : MonoBehaviour
 	// @param timeAlloted = the amount of time that the player can spend typing the text and get a score > 0.0
 	// @param onCompleted = a delegate function of the form (TypingTestResult result) => {doThing(result);}.
 	// 		This function will be called when the player finishes typing the text, and the result will be passed as an argument.
-	public static void Create(String whatToType, TimeSpan timeAlloted, Action<TypingTestResult> onCompleted)
+	public static void Create(String whatToType, TimeSpan timeAlloted,  Action onTimeRanOut, Action<TypingTestResult> onSpellCompleted)
 	{
 		TypingTestBox textBox = Instantiate(GameManager.INSTANCE.TYPING_TEXT_BOX_PREFAB).GetComponent<TypingTestBox>();
-		textBox.Initialize(whatToType, timeAlloted, onCompleted);
+		textBox.Initialize(whatToType, timeAlloted, onTimeRanOut, onSpellCompleted);
 	}
 	
 	
@@ -41,11 +41,14 @@ public class TypingTestBox : MonoBehaviour
 	public TMP_Text BoxForWhatToType;
 	public TMP_Text BoxForWhatPlayerTyped;
 	
-	[SerializeField] private String whatToType;
-	private String typedSoFar = "";
+	private static String whatToType;
+	private static String typedSoFar = "";
 	private String mistakeText;
 	private TimeSpan timeAlloted;
+	private Action onSessionEnded;
 	private Action<TypingTestResult> onCompleted;
+	
+	private bool initialized = false;
 	
 	[SerializeField] private bool WasManuallyPutInLevel;
 	
@@ -55,23 +58,35 @@ public class TypingTestBox : MonoBehaviour
 	private int MistakesMadeSoFar;
 	
 	
-	
-	public void Initialize(String whatToType, TimeSpan timeAlloted, Action<TypingTestResult> onCompleted)
+	void ResetForNewSpell()
 	{
-		this.whatToType = whatToType;
+		typedSoFar = "";
+	}
+	public void Initialize(String whatToType, TimeSpan timeAlloted,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
+	{
+		initialized = true;
+		
+		if (TypingTestBox.whatToType != whatToType)
+		{
+			TypingTestBox.whatToType = whatToType;
+			ResetForNewSpell();
+		}
+		
 		this.timeAlloted = timeAlloted;
+		this.onSessionEnded = onSessionEnded;
 		this.onCompleted = onCompleted;
 		
 		
-		BoxForWhatToType.text = this.whatToType;
-		BoxForWhatPlayerTyped.text = "";
+		BoxForWhatToType.text = TypingTestBox.whatToType;
+		BoxForWhatPlayerTyped.text = TypingTestBox.typedSoFar;
+		
 	}
 
 	
 	void Start()
 	{
 		if (WasManuallyPutInLevel) {
-			Initialize(whatToType, TimeSpan.FromSeconds(10), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.Mistakes));
+			Initialize(whatToType, TimeSpan.FromSeconds(10),  () => Debug.Log("Out of time!"), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.Mistakes));
 		}
 	}
 	
@@ -101,16 +116,21 @@ public class TypingTestBox : MonoBehaviour
 		
 		return 1.0 - timeTakenToType.Divide(timeAlloted);
 	}
+	
+	TimeSpan TimeSinceStartedTyping()
+	{
+		return DateTime.Now.Subtract(startOfTyping);
+	}
 	void Finish()
 	{
-		DateTime endOfTyping = DateTime.Now;
-		TimeSpan timeTakenToType = endOfTyping.Subtract(startOfTyping);		
+		TimeSpan timeTakenToType = TimeSinceStartedTyping();
+		float speed = (float)speedScore(timeTakenToType);
 		
-		
-		TypingTestResult result = new TypingTestResult((float)speedScore(timeTakenToType), MistakesMadeSoFar);
+		TypingTestResult result = new TypingTestResult(1.0f, MistakesMadeSoFar);
 		onCompleted.Invoke(result);
 		
-		Destroy(gameObject);
+		ResetForNewSpell();
+		EndTypingSession();
 	}
 	
 	void TypeKey(String key)
@@ -119,29 +139,25 @@ public class TypingTestBox : MonoBehaviour
 		
 		String toType = "";
 		
-		if (key == "backspace")
+		
+		switch (key)
 		{
-			Backspace();
+			case "backspace": Backspace(); break;
+			case "space": toType = " "; break;
+			case "period": toType = "."; break;
+			case "comma": toType = ","; break;
+			default:
+				if (key.Length == 1)
+				{
+					if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+					{
+						key = key.ToUpper();
+					}
+					toType = key;
+				}
+				break;
 		}
 		
-		else if (key == "space")
-		{
-			toType = " ";
-		}
-		else if (key == "period")
-		{
-			toType = ".";
-		}
-		
-		
-		else if (key.Length == 1)
-		{
-			if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-			{
-				key = key.ToUpper();
-			}
-			toType = key;
-		}
 		
 		
 		if (typedSoFar.Length >= whatToType.Length)
@@ -198,9 +214,27 @@ public class TypingTestBox : MonoBehaviour
 		});
 		typedThisFrame.Clear();
 	}
+	
+	void EndTypingSession()
+	{
+		onSessionEnded();
+		Destroy(gameObject);
+	}
+	void UpdateTimer()
+	{
+		Debug.Log(TimeSinceStartedTyping() + " " + timeAlloted);
+		if (startedTyping && UnityLib.GreaterThan(TimeSinceStartedTyping(), timeAlloted))
+		{
+			EndTypingSession();
+		}
+	}
+	
 	void Update()
 	{
-		UpdateTyping();
+		if (initialized) {
+			UpdateTimer();
+			UpdateTyping();
+		}
 	}
 
 }

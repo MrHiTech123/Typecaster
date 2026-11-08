@@ -65,10 +65,7 @@ public class PlayerActions : MonoBehaviour
     {
         Debug.Log("[Player Actions] Player casts a fire ball!!!");
         spellMenu.SetActive(false);
-        TypingTestResult res = new TypingTestResult();
-        TypingTestBox.Create("fire ball", TimeSpan.FromSeconds(10), (TypingTestResult result) => {res = result;Debug.Log("[Player Actions] Fire ball damage = " + Mathf.RoundToInt(50 * res.TimeScore));
-        stats.EnemyTakeDamage(Mathf.RoundToInt(50 * res.TimeScore));
-        EnemyAction();});
-        
+		Spell.FIRE_BALL.Cast(stats, this);
+		
     }
 }
