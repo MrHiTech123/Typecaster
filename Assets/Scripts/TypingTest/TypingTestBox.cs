@@ -92,6 +92,7 @@ public class TypingTestBox : MonoBehaviour
 	
 	void Backspace()
 	{
+		Debug.Log("Mistake Text: "+ mistakeText + ";;;; Typed so far: " + typedSoFar);
 		if (mistakeText.Length >= 1) {
 			mistakeText = StringLib.CutOffLastCharacter(mistakeText);
 		}
@@ -133,6 +134,11 @@ public class TypingTestBox : MonoBehaviour
 		EndTypingSession();
 	}
 	
+	void UpdateText()
+	{
+		BoxForWhatPlayerTyped.text = typedSoFar + "<color=\"red\">" + mistakeText + "</color>";
+	}
+	
 	void TypeKey(String key)
 	{
 		// Debug.Log("Typing key " + key + " typed this frame: " + typedThisFrame.Count);
@@ -167,6 +173,7 @@ public class TypingTestBox : MonoBehaviour
 		
 		if (toType.Length == 0)
 		{
+			UpdateText();
 			return;
 		}
 		
@@ -189,7 +196,7 @@ public class TypingTestBox : MonoBehaviour
 			mistakeText += toType;
 		}
 		
-		BoxForWhatPlayerTyped.text = typedSoFar + "<color=\"red\">" + mistakeText + "</color>";
+		UpdateText();
 		
 		if (Done())
 		{
@@ -222,7 +229,6 @@ public class TypingTestBox : MonoBehaviour
 	}
 	void UpdateTimer()
 	{
-		Debug.Log(TimeSinceStartedTyping() + " " + timeAlloted);
 		if (startedTyping && UnityLib.GreaterThan(TimeSinceStartedTyping(), timeAlloted))
 		{
 			EndTypingSession();
