@@ -22,7 +22,7 @@ public class Data
 				{
 					// "This spell gives you more mana.",
 					// "Drop enemies to 0 HP to kill them.",
-					"The faster you type, the more damage you deal."
+					"You have earned my ire, and thus I shall blast you with fire."
 				}
 			},
 			{

@@ -6,7 +6,7 @@ public class Spell
 	public List<Spell> ALL_OF_THEM = new List<Spell>(){MANA_BLAST, FIRE_BALL, FIRE_STORM, CONSUME, METEOR_STRIKE};
 	
 	public static readonly Spell MANA_BLAST = new Spell(10, TimeSpan.FromSeconds(10), (statistics, testResult) => {});
-	public static readonly Spell FIRE_BALL = new Spell(10, TimeSpan.FromSeconds(10), (statistics, testResult) => {statistics.EnemyTakeDamage((int)(10 * testResult.TimeScore));});
+	public static readonly Spell FIRE_BALL = new Spell(10, TimeSpan.FromSeconds(3.5), (statistics, testResult) => {statistics.EnemyTakeDamage((int)(10 * (10 - testResult.Mistakes)));});
 	public static readonly Spell FIRE_STORM = new Spell(10, TimeSpan.FromSeconds(10), (statistics, testResult) => {});
 	public static readonly Spell CONSUME = new Spell(10, TimeSpan.FromSeconds(10), (statistics, testResult) => {});
 	public static readonly Spell METEOR_STRIKE = new Spell(10, TimeSpan.FromSeconds(10), (statistics, testResult) => {});	

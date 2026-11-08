@@ -55,12 +55,13 @@ public class TypingTestBox : MonoBehaviour
 	private bool startedTyping = false;
 	private DateTime startOfTyping = DateTime.MinValue;
 	
-	private int MistakesMadeSoFar;
+	private static int MistakesMadeSoFar = 0;
 	
 	
-	void ResetForNewSpell()
+	public static void ResetForNewSpell()
 	{
 		typedSoFar = "";
+		MistakesMadeSoFar = 0;
 	}
 	public void Initialize(String whatToType, TimeSpan timeAlloted,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
 	{
@@ -177,7 +178,9 @@ public class TypingTestBox : MonoBehaviour
 			return;
 		}
 		
-		bool isCorrect = toType == new String(whatToType[typedSoFar.Length], 1);
+		char shouldveBeenTyped = whatToType[typedSoFar.Length];
+		
+		bool isCorrect = toType == new String(shouldveBeenTyped, 1);
 		
 		if (!startedTyping)
 		{
@@ -192,6 +195,7 @@ public class TypingTestBox : MonoBehaviour
 		}
 		else if (toType.Length >= 1)
 		{
+			Debug.Log("MISTAKE: " + toType + " should've been " + shouldveBeenTyped + " mistakes: " + MistakesMadeSoFar);
 			++MistakesMadeSoFar;
 			mistakeText += toType;
 		}

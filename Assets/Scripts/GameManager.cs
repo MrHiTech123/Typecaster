@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 	void Awake()
 	{
 		INSTANCE = this;
+		TypingTestBox.ResetForNewSpell();
 	}
 
 	
