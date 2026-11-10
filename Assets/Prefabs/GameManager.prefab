@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e74c94636f4a3c448af88411e035e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  TYPING_TEXT_BOX_PREFAB: {fileID: 7521207272597140169, guid: e99e4f12bb1a3e5468fe71a88aa26bf8, type: 3}
+  TYPING_TEXT_BOX_PREFAB: {fileID: 3990944548610515536, guid: cf2efeb077fa82348b1480bb264d4e0c, type: 3}
