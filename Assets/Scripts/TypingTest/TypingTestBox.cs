@@ -48,6 +48,7 @@ public class TypingTestBox : MonoBehaviour
 	private Action onSessionEnded;
 	private Action<TypingTestResult> onCompleted;
 	
+	private static bool Exists;
 	private bool initialized = false;
 	
 	[SerializeField] private bool WasManuallyPutInLevel;
@@ -66,6 +67,7 @@ public class TypingTestBox : MonoBehaviour
 	public void Initialize(String whatToType, TimeSpan timeAlloted,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
 	{
 		initialized = true;
+		Exists = true;
 		
 		if (TypingTestBox.whatToType != whatToType)
 		{
@@ -195,7 +197,7 @@ public class TypingTestBox : MonoBehaviour
 		}
 		else if (toType.Length >= 1)
 		{
-			Debug.Log("MISTAKE: " + toType + " should've been " + shouldveBeenTyped + " mistakes: " + MistakesMadeSoFar);
+			Debug.Log("MISTAKE: " + toType + " should've been " + shouldveBeenTyped + " mistakes: " + MistakesMadeSoFar + " typed so far: " + typedSoFar);
 			++MistakesMadeSoFar;
 			mistakeText += toType;
 		}
@@ -214,6 +216,10 @@ public class TypingTestBox : MonoBehaviour
 	void UpdateTyping()
 	{
 		InputSystem.onAnyButtonPress.Call(key => {
+			if (!Exists)
+			{
+				return;
+			}
 			if (typedThisFrame.Contains(key.name))
 			{
 				return;
@@ -229,6 +235,7 @@ public class TypingTestBox : MonoBehaviour
 	void EndTypingSession()
 	{
 		onSessionEnded();
+		Exists = false;
 		Destroy(gameObject);
 	}
 	void UpdateTimer()
