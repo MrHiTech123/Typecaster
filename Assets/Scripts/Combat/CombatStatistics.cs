@@ -34,4 +34,5 @@ public class CombatStatistics : MonoBehaviour
     {
         TakeDamage(dmg, ref playerHP, playerHealthBar, 650, 100);
     }
+	
 }

@@ -36,7 +36,7 @@ public class TypingTestBox : MonoBehaviour
 	
 	
 	
-	HashSet<String> typedThisFrame = new HashSet<String>();
+	static HashSet<String> typedThisFrame = new HashSet<String>();
 	
 	public TMP_Text BoxForWhatToType;
 	public TMP_Text BoxForWhatPlayerTyped;
