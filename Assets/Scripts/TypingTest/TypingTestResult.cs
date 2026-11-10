@@ -9,12 +9,9 @@ public struct TypingTestResult
 	
 	public float MistakeScore {get; private set;}
 	
-	public String ToString
+	public String ToString()
 	{
-		get
-		{
-			return "Time score: " + TimeScore + "; Mistakes: " + MistakeScore;
-		}
+		return "Time score: " + TimeScore + "; Mistakes: " + MistakeScore;
 	}
 	
 	public TypingTestResult(float TimeScore, float MistakeScore)

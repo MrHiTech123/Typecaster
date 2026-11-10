@@ -1,8 +1,10 @@
-using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerActions : MonoBehaviour
 {
+	[SerializeField] private Scene GameOverScene;
+	[SerializeField] private Scene NextScene;
     private CombatStatistics stats;
     [SerializeField] private GameObject playerMainMenu;
     [SerializeField] private GameObject spellMenu;
@@ -48,9 +50,18 @@ public class PlayerActions : MonoBehaviour
 
     public void EnemyAction()
     {
+		if (stats.enemyHP <= 0)
+		{
+			SceneManager.LoadScene(NextScene.name, LoadSceneMode.Single);
+		}
+		
         Debug.Log("[Enemy Actions] Enemy deals 20 damage to player!!!");
         stats.PlayerTakeDamage(20);
         playerMainMenu.SetActive(true);
+		if (stats.playerHP <= 0)
+		{
+			SceneManager.LoadScene(GameOverScene.name, LoadSceneMode.Single);
+		}
     }
 
     public void UsePotion()
