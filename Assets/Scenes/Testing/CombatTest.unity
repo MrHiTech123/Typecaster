@@ -2455,6 +2455,9 @@ MonoBehaviour:
   playerMainMenu: {fileID: 111630827}
   spellMenu: {fileID: 872044979}
   itemMenu: {fileID: 256181828}
+  hi: {fileID: 0}
+  GameOverScene: {fileID: 102900000, guid: ab68eb1f239e80a4b8744c77d9c6882c, type: 3}
+  NextScene: {fileID: 102900000, guid: fe2b2a6aad8e0694593855a6a5e661aa, type: 3}
 --- !u!114 &1532075597
 MonoBehaviour:
   m_ObjectHideFlags: 0

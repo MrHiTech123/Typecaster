@@ -1,14 +1,16 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerActions : MonoBehaviour
 {
-	[SerializeField] private Scene GameOverScene;
-	[SerializeField] private Scene NextScene;
+	
     private CombatStatistics stats;
     [SerializeField] private GameObject playerMainMenu;
     [SerializeField] private GameObject spellMenu;
     [SerializeField] private GameObject itemMenu;
+	[SerializeField] private SceneAsset GameOverScene;
+	[SerializeField] private SceneAsset NextScene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
