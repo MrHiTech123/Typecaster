@@ -18,10 +18,10 @@ public class TypingTestBox : MonoBehaviour
 	// @param timeAlloted = the amount of time that the player can spend typing the text and get a score > 0.0
 	// @param onCompleted = a delegate function of the form (TypingTestResult result) => {doThing(result);}.
 	// 		This function will be called when the player finishes typing the text, and the result will be passed as an argument.
-	public static void Create(String whatToType, TimeSpan timeAlloted,  Action onTimeRanOut, Action<TypingTestResult> onSpellCompleted)
+	public static void Create(String whatToType, TimeSpan timeAlloted, int AllowedMistakes, Action onTimeRanOut, Action<TypingTestResult> onSpellCompleted)
 	{
 		TypingTestBox textBox = Instantiate(GameManager.INSTANCE.TYPING_TEXT_BOX_PREFAB).GetComponent<TypingTestBox>();
-		textBox.Initialize(whatToType, timeAlloted, onTimeRanOut, onSpellCompleted);
+		textBox.Initialize(whatToType, timeAlloted, AllowedMistakes, onTimeRanOut, onSpellCompleted);
 	}
 	
 	
@@ -57,6 +57,7 @@ public class TypingTestBox : MonoBehaviour
 	private DateTime startOfTyping = DateTime.MinValue;
 	
 	private static int MistakesMadeSoFar = 0;
+	private int AllowedMistakes;
 	
 	
 	public static void ResetForNewSpell()
@@ -64,7 +65,7 @@ public class TypingTestBox : MonoBehaviour
 		typedSoFar = "";
 		MistakesMadeSoFar = 0;
 	}
-	public void Initialize(String whatToType, TimeSpan timeAlloted,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
+	public void Initialize(String whatToType, TimeSpan timeAlloted, int AllowedMistakes,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
 	{
 		initialized = true;
 		Exists = true;
@@ -78,6 +79,7 @@ public class TypingTestBox : MonoBehaviour
 		this.timeAlloted = timeAlloted;
 		this.onSessionEnded = onSessionEnded;
 		this.onCompleted = onCompleted;
+		this.AllowedMistakes = AllowedMistakes;
 		
 		
 		BoxForWhatToType.text = TypingTestBox.whatToType;
@@ -89,7 +91,7 @@ public class TypingTestBox : MonoBehaviour
 	void Start()
 	{
 		if (WasManuallyPutInLevel) {
-			Initialize(whatToType, TimeSpan.FromSeconds(10),  () => Debug.Log("Out of time!"), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.Mistakes));
+			Initialize(whatToType, TimeSpan.FromSeconds(10), 10,  () => Debug.Log("Out of time!"), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.MistakeScore));
 		}
 	}
 	
@@ -129,8 +131,9 @@ public class TypingTestBox : MonoBehaviour
 	{
 		TimeSpan timeTakenToType = TimeSinceStartedTyping();
 		float speed = (float)speedScore(timeTakenToType);
+		float mistakeScore = 1.0f - ((float)MistakesMadeSoFar / AllowedMistakes);
 		
-		TypingTestResult result = new TypingTestResult(1.0f, MistakesMadeSoFar);
+		TypingTestResult result = new TypingTestResult(1.0f, mistakeScore);
 		onCompleted.Invoke(result);
 		
 		ResetForNewSpell();
