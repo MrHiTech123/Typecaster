@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 70f0bef0e7e95b2ba05d5449f644e0d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 438386706641663344
+    second: rival_copy_appear_strip_00
+  - first:
+      213: 502721383265097039
+    second: rival_copy_appear_strip_01
+  - first:
+      213: 132309509921019333
+    second: rival_copy_appear_strip_02
+  - first:
+      213: 875285481277977999
+    second: rival_copy_appear_strip_03
+  - first:
+      213: 297491292102288875
+    second: rival_copy_appear_strip_04
+  - first:
+      213: 788983498147054926
+    second: rival_copy_appear_strip_05
+  - first:
+      213: 1092299966596486460
+    second: rival_copy_appear_strip_06
+  - first:
+      213: 604899819343193463
+    second: rival_copy_appear_strip_07
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 0
+    sRGBTexture: 1
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  spriteMode: 2
+  spritePixelsToUnits: 100
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  alphaIsTransparency: 1
+  alphaUsage: 1
+  textureType: 8
+  textureShape: 1
+  maxTextureSize: 2048
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_00
+      rect: {x: 0, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 615766313a13570db178bc44911370d3
+      internalID: 438386706641663344
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_01
+      rect: {x: 32, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 6fa066f3e82554f18066aa4cb1016054
+      internalID: 502721383265097039
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_02
+      rect: {x: 64, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 1d60ecc5b3f95c5793b61a9c3d143e82
+      internalID: 132309509921019333
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_03
+      rect: {x: 96, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: c25a381fca1758f48d8d0319bfb83072
+      internalID: 875285481277977999
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_04
+      rect: {x: 128, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 420e6c1058765ebd9f113f7db4694a69
+      internalID: 297491292102288875
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_05
+      rect: {x: 160, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: af3084fb4b3454ec9630a911cebdeac6
+      internalID: 788983498147054926
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_06
+      rect: {x: 192, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: f28a1084927953cb96dbf99c5689ce82
+      internalID: 1092299966596486460
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_appear_strip_07
+      rect: {x: 224, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 865092e48a62577aaf27a9c4a07c3cb4
+      internalID: 604899819343193463
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rival_copy_appear_strip_00: 438386706641663344
+      rival_copy_appear_strip_01: 502721383265097039
+      rival_copy_appear_strip_02: 132309509921019333
+      rival_copy_appear_strip_03: 875285481277977999
+      rival_copy_appear_strip_04: 297491292102288875
+      rival_copy_appear_strip_05: 788983498147054926
+      rival_copy_appear_strip_06: 1092299966596486460
+      rival_copy_appear_strip_07: 604899819343193463
+  userData: Typecaster GDD visual proposal; no game integration
+  assetBundleName:
+  assetBundleVariant:

@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: fa3925f60cad530485d9d1f83e9288be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 736173772448560413
+    second: mana_blast_strip_00
+  - first:
+      213: 907286718151374208
+    second: mana_blast_strip_01
+  - first:
+      213: 190031931157656970
+    second: mana_blast_strip_02
+  - first:
+      213: 506531185605121527
+    second: mana_blast_strip_03
+  - first:
+      213: 431604811539015088
+    second: mana_blast_strip_04
+  - first:
+      213: 943373206901900782
+    second: mana_blast_strip_05
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 0
+    sRGBTexture: 1
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  spriteMode: 2
+  spritePixelsToUnits: 100
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  alphaIsTransparency: 1
+  alphaUsage: 1
+  textureType: 8
+  textureShape: 1
+  maxTextureSize: 2048
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mana_blast_strip_00
+      rect: {x: 0, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: a376a2547c1751dca8904f81f043b50a
+      internalID: 736173772448560413
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_blast_strip_01
+      rect: {x: 48, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: c97547690d7b580a9e988de26c56786e
+      internalID: 907286718151374208
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_blast_strip_02
+      rect: {x: 96, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 2a32108d8a2358aab3f14e9df6c30842
+      internalID: 190031931157656970
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_blast_strip_03
+      rect: {x: 144, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 7078f6df9a695f7b89abd3895aa9a315
+      internalID: 506531185605121527
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_blast_strip_04
+      rect: {x: 192, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 5fd5e4a1321e5b098e529f16676e8bc8
+      internalID: 431604811539015088
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mana_blast_strip_05
+      rect: {x: 240, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: d1788eef80245ee383c3d39ffe6690e4
+      internalID: 943373206901900782
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mana_blast_strip_00: 736173772448560413
+      mana_blast_strip_01: 907286718151374208
+      mana_blast_strip_02: 190031931157656970
+      mana_blast_strip_03: 506531185605121527
+      mana_blast_strip_04: 431604811539015088
+      mana_blast_strip_05: 943373206901900782
+  userData: Typecaster GDD visual proposal; no game integration
+  assetBundleName:
+  assetBundleVariant:

@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: 21f8a09d3e005424969b21c370c012a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 894428257284515133
+    second: rival_copy_idle_strip_00
+  - first:
+      213: 1115378583062181338
+    second: rival_copy_idle_strip_01
+  - first:
+      213: 490371742172120371
+    second: rival_copy_idle_strip_02
+  - first:
+      213: 148997220925695462
+    second: rival_copy_idle_strip_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 0
+    sRGBTexture: 1
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  spriteMode: 2
+  spritePixelsToUnits: 100
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  alphaIsTransparency: 1
+  alphaUsage: 1
+  textureType: 8
+  textureShape: 1
+  maxTextureSize: 2048
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rival_copy_idle_strip_00
+      rect: {x: 0, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: c69a5c2d883e53d1a3f80c89dfc3de85
+      internalID: 894428257284515133
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_idle_strip_01
+      rect: {x: 32, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: f7a9ee9697ff5da0b91edd413f3ae1d4
+      internalID: 1115378583062181338
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_idle_strip_02
+      rect: {x: 64, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 6ce26805c0f0533da5e4fffc4af4f29b
+      internalID: 490371742172120371
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_idle_strip_03
+      rect: {x: 96, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 211582ed9cbe5e62a54768598587b7d8
+      internalID: 148997220925695462
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rival_copy_idle_strip_00: 894428257284515133
+      rival_copy_idle_strip_01: 1115378583062181338
+      rival_copy_idle_strip_02: 490371742172120371
+      rival_copy_idle_strip_03: 148997220925695462
+  userData: Typecaster GDD visual proposal; no game integration
+  assetBundleName:
+  assetBundleVariant:

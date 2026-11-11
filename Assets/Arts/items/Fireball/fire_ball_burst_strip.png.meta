@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 1733035909b25cb7b9345db28311af8a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 643735348591940994
+    second: fire_ball_burst_strip_00
+  - first:
+      213: 316450081353790748
+    second: fire_ball_burst_strip_01
+  - first:
+      213: 580147507513361770
+    second: fire_ball_burst_strip_02
+  - first:
+      213: 910318031119570276
+    second: fire_ball_burst_strip_03
+  - first:
+      213: 1120590320787223832
+    second: fire_ball_burst_strip_04
+  - first:
+      213: 388056277518042461
+    second: fire_ball_burst_strip_05
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 0
+    sRGBTexture: 1
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  spriteMode: 2
+  spritePixelsToUnits: 100
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  alphaIsTransparency: 1
+  alphaUsage: 1
+  textureType: 8
+  textureShape: 1
+  maxTextureSize: 2048
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire_ball_burst_strip_00
+      rect: {x: 0, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 8ef01e38e2f5582fbf964f74755c53d1
+      internalID: 643735348591940994
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_ball_burst_strip_01
+      rect: {x: 48, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 46441ac203c751c58c0c4281cfc38d8b
+      internalID: 316450081353790748
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_ball_burst_strip_02
+      rect: {x: 96, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 80d191596a9856ab831dd1ea009f7275
+      internalID: 580147507513361770
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_ball_burst_strip_03
+      rect: {x: 144, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: ca2196d1d83d56459fada92a3b258328
+      internalID: 910318031119570276
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_ball_burst_strip_04
+      rect: {x: 192, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: f8d22f5a9437518e99abd21be1def4f3
+      internalID: 1120590320787223832
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_ball_burst_strip_05
+      rect: {x: 240, y: 0, width: 48, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 562a720de52c55d296af348d73c7c1f3
+      internalID: 388056277518042461
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fire_ball_burst_strip_00: 643735348591940994
+      fire_ball_burst_strip_01: 316450081353790748
+      fire_ball_burst_strip_02: 580147507513361770
+      fire_ball_burst_strip_03: 910318031119570276
+      fire_ball_burst_strip_04: 1120590320787223832
+      fire_ball_burst_strip_05: 388056277518042461
+  userData: Typecaster GDD visual proposal; no game integration
+  assetBundleName:
+  assetBundleVariant:

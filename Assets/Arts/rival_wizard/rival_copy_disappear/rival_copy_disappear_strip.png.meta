@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 5e49c62fd3c45cffa208fe28a0967b03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 165523565761062282
+    second: rival_copy_disappear_strip_00
+  - first:
+      213: 357987868174669248
+    second: rival_copy_disappear_strip_01
+  - first:
+      213: 160282725166355946
+    second: rival_copy_disappear_strip_02
+  - first:
+      213: 45104390398547432
+    second: rival_copy_disappear_strip_03
+  - first:
+      213: 711492136575399422
+    second: rival_copy_disappear_strip_04
+  - first:
+      213: 78639360870364511
+    second: rival_copy_disappear_strip_05
+  - first:
+      213: 920221916588217712
+    second: rival_copy_disappear_strip_06
+  - first:
+      213: 92404797538018651
+    second: rival_copy_disappear_strip_07
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    enableMipMap: 0
+    sRGBTexture: 1
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  spriteMode: 2
+  spritePixelsToUnits: 100
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  alphaIsTransparency: 1
+  alphaUsage: 1
+  textureType: 8
+  textureShape: 1
+  maxTextureSize: 2048
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_00
+      rect: {x: 0, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 24c0ece5b24e58ad9623ec57fa032f56
+      internalID: 165523565761062282
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_01
+      rect: {x: 32, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 4f7d411c47355c0fafb5b8a6baaf486b
+      internalID: 357987868174669248
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_02
+      rect: {x: 64, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 239704a112c15ea0b06657239ef9de46
+      internalID: 160282725166355946
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_03
+      rect: {x: 96, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 0a03e343f8415e8d9a78e1f328ab4e9b
+      internalID: 45104390398547432
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_04
+      rect: {x: 128, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 9dfba541d0f75feba9ce3c01d73586b0
+      internalID: 711492136575399422
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_05
+      rect: {x: 160, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 1176215020ab55f18290524e7e4a810d
+      internalID: 78639360870364511
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_06
+      rect: {x: 192, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: cc548f524c515707b38620c8e212c648
+      internalID: 920221916588217712
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rival_copy_disappear_strip_07
+      rect: {x: 224, y: 0, width: 32, height: 48}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      spriteID: 14849ac7ccba55b8bf38cafcc9fad8d3
+      internalID: 92404797538018651
+      outline: []
+      physicsShape: []
+      bones: []
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rival_copy_disappear_strip_00: 165523565761062282
+      rival_copy_disappear_strip_01: 357987868174669248
+      rival_copy_disappear_strip_02: 160282725166355946
+      rival_copy_disappear_strip_03: 45104390398547432
+      rival_copy_disappear_strip_04: 711492136575399422
+      rival_copy_disappear_strip_05: 78639360870364511
+      rival_copy_disappear_strip_06: 920221916588217712
+      rival_copy_disappear_strip_07: 92404797538018651
+  userData: Typecaster GDD visual proposal; no game integration
+  assetBundleName:
+  assetBundleVariant:
