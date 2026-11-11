@@ -42,7 +42,7 @@ public class TypingTestBox : MonoBehaviour
 	public TMP_Text BoxForWhatPlayerTyped;
 	
 	private static String whatToType;
-	private static String typedSoFar = "";
+	private static StringWithMistakes typedSoFar = new StringWithMistakes();
 	private String mistakeText;
 	private TimeSpan timeAlloted;
 	private Action onSessionEnded;
@@ -56,13 +56,14 @@ public class TypingTestBox : MonoBehaviour
 	private bool startedTyping = false;
 	private DateTime startOfTyping = DateTime.MinValue;
 	
+	
 	private static int MistakesMadeSoFar = 0;
 	private int AllowedMistakes;
 	
 	
 	public static void ResetForNewSpell()
 	{
-		typedSoFar = "";
+		typedSoFar = new StringWithMistakes();
 		MistakesMadeSoFar = 0;
 	}
 	public void Initialize(String whatToType, TimeSpan timeAlloted, int AllowedMistakes,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
@@ -83,7 +84,7 @@ public class TypingTestBox : MonoBehaviour
 		
 		
 		BoxForWhatToType.text = TypingTestBox.whatToType;
-		BoxForWhatPlayerTyped.text = TypingTestBox.typedSoFar;
+		BoxForWhatPlayerTyped.text = TypingTestBox.typedSoFar.AsFormattedString;
 		
 	}
 
@@ -102,13 +103,13 @@ public class TypingTestBox : MonoBehaviour
 			mistakeText = StringLib.CutOffLastCharacter(mistakeText);
 		}
 		else if (typedSoFar.Length >= 1) {
-			typedSoFar = StringLib.CutOffLastCharacter(typedSoFar);
+			typedSoFar.Backspace();
 		}
 	}
 	
 	bool Done()
 	{
-		return typedSoFar == whatToType;
+		return typedSoFar.Length == whatToType.Length;
 	}
 	
 	double speedScore(TimeSpan timeTakenToType)
@@ -142,7 +143,7 @@ public class TypingTestBox : MonoBehaviour
 	
 	void UpdateText()
 	{
-		BoxForWhatPlayerTyped.text = typedSoFar + "<color=\"red\">" + mistakeText + "</color>";
+		BoxForWhatPlayerTyped.text = typedSoFar.AsFormattedString + "<color=\"red\">" + mistakeText + "</color>";
 	}
 	
 	void TypeKey(String key)
@@ -195,7 +196,7 @@ public class TypingTestBox : MonoBehaviour
 		
 		if (isCorrect)
 		{
-			typedSoFar += toType;
+			typedSoFar += new StringWithMistakes(toType);
 			mistakeText = "";
 		}
 		else if (toType.Length >= 1)
@@ -211,6 +212,8 @@ public class TypingTestBox : MonoBehaviour
 		{
 			Finish();
 		}
+		
+		
 		
 	}
 	
