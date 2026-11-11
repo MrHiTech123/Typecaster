@@ -1,0 +1,2 @@
+PASS
+Original CastSpell: prefix via original method; wrong X and Backspace via virtual InputSystem keyboard -> error appears and clears; next correct character via original method -> hidden; close -> cleanup. Not OS physical-keyboard/full-spell completion.

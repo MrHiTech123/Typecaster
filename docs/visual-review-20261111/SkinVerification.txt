@@ -1,0 +1,1 @@
+PASS: 6 button callback signatures unchanged; 2 semantic icons added using existing local Arts. Optional copy scene only. No original scripts/assets edited.

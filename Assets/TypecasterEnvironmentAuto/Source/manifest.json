@@ -1,0 +1,1470 @@
+{
+  "source": "MrHiTech123/Typecaster",
+  "commit": "d65775b80cad2c0fbb58a714d8825318064f3d03",
+  "grid": 16,
+  "canvas_proposal": [
+    384,
+    288
+  ],
+  "source_scene": "CombatTest uses 800x600 ScreenSpaceOverlay UI, not world-space background. Art canvas is provisional.",
+  "palette": {
+    "ink": "#252338",
+    "dark": "#39304f",
+    "violet": "#645182",
+    "lavender": "#9279a5",
+    "plum": "#553646",
+    "brick": "#90514c",
+    "clay": "#bd816f",
+    "rust": "#ba7960",
+    "peach": "#e8ad8b",
+    "light": "#ffcfaa",
+    "wood": "#9b6a43",
+    "gold": "#d7aa68",
+    "yellow": "#f0d79a",
+    "cream": "#f2e2bf",
+    "pine": "#31535d",
+    "teal": "#518b90"
+  },
+  "asset_count": 143,
+  "assets": [
+    {
+      "name": "fill_sky",
+      "path": "tiles/fill_sky.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable flat color field",
+      "sha256": "b18eb65a81ba97a8f4fada9c30abfc1b49278a626495b1e1cfdadcd95c23175e"
+    },
+    {
+      "name": "fill_deep",
+      "path": "tiles/fill_deep.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable flat color field",
+      "sha256": "b68b080bbdd1379a9e01531eefae1a3669f8e1da6e82e5677d4e11ff785085bc"
+    },
+    {
+      "name": "fill_shadow",
+      "path": "tiles/fill_shadow.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable flat color field",
+      "sha256": "9c20ba55bb496ef033f0920ddbcfce01ef85c8c22731fa5a391f42dd3f0baf7b"
+    },
+    {
+      "name": "fill_forest",
+      "path": "tiles/fill_forest.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable flat color field",
+      "sha256": "fa3bc259d974c3955de77b283990bbd59e8a806a9a6993fd582bdb4e702c5bd1"
+    },
+    {
+      "name": "fill_sand",
+      "path": "tiles/fill_sand.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable flat color field",
+      "sha256": "56877d6a1473642f8350d9cf910f95190fb6bcf15a3100f36e2329284545753d"
+    },
+    {
+      "name": "fill_plaster",
+      "path": "tiles/fill_plaster.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable flat color field",
+      "sha256": "74e0d1bf24a149a90e6b64154380ad98b2611829890f16680c6699d68a68c71e"
+    },
+    {
+      "name": "wall_warm_a",
+      "path": "tiles/wall_warm_a.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable staggered stone wall, pair A/B optional",
+      "sha256": "95f1c9041ceb49c424d8b194a44c9e610fbe126f35b1b3ba3ec132bdd3e41b3f"
+    },
+    {
+      "name": "wall_warm_b",
+      "path": "tiles/wall_warm_b.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable staggered stone wall, pair A/B optional",
+      "sha256": "7eb2bec908ef5dfcf87142a767bde9855a3fe45e936f04edea983eddf8dfce81"
+    },
+    {
+      "name": "wall_cool_a",
+      "path": "tiles/wall_cool_a.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable staggered stone wall, pair A/B optional",
+      "sha256": "1691f2579109a39c2ad2cd2339db593d5855fad713255a00ea50c7d8eeb6afd7"
+    },
+    {
+      "name": "wall_cool_b",
+      "path": "tiles/wall_cool_b.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable staggered stone wall, pair A/B optional",
+      "sha256": "c249bdabeff0e4875d8dfd1418e1d4ec257f95443777b293dbfaea953ef860cd"
+    },
+    {
+      "name": "wall_dark_a",
+      "path": "tiles/wall_dark_a.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable staggered stone wall, pair A/B optional",
+      "sha256": "db9b51fbecd9b8eacaadcf4c80d46420c6d620283950907598ba7a05b2f9311f"
+    },
+    {
+      "name": "wall_dark_b",
+      "path": "tiles/wall_dark_b.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable staggered stone wall, pair A/B optional",
+      "sha256": "a13e0ce336e95c4fff9181f3ac790370783cdd7bfa4eda9c1bc413178b0032cc"
+    },
+    {
+      "name": "floor_planks_a",
+      "path": "tiles/floor_planks_a.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Seamless horizontal floorboards",
+      "sha256": "631350394d23c1afa64e1904f013469f65c115e04736e0037941ee861432494a"
+    },
+    {
+      "name": "floor_planks_b",
+      "path": "tiles/floor_planks_b.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Seamless horizontal floorboards",
+      "sha256": "fa36582fc15140eb47a2111e187639b519af7a86ad022700da8c03f2c9cb01ca"
+    },
+    {
+      "name": "floor_cobbles_a",
+      "path": "tiles/floor_cobbles_a.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable cobblestone ground",
+      "sha256": "13bfa3f7d0ff73a19a69232cfa21efa32e7d28665ad2c8f6f4363b66997112ea"
+    },
+    {
+      "name": "floor_cobbles_b",
+      "path": "tiles/floor_cobbles_b.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable cobblestone ground",
+      "sha256": "86d07c41c0f96e55a730c78e93512650465131517b589348ff669c1d36982833"
+    },
+    {
+      "name": "floor_slate",
+      "path": "tiles/floor_slate.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Grid stone floor, visible top/left mortar",
+      "sha256": "2370b4af7315aa8fe8a97e2fc2ef91dc8816b61f6d485ae54fb1d15f11f91e1a"
+    },
+    {
+      "name": "path_dirt",
+      "path": "tiles/path_dirt.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Sparse dirt surface, repeatable",
+      "sha256": "66d276795baeda9d813fd44a467622bc4be51ed368f51f2cfc91ba01b8f5a292"
+    },
+    {
+      "name": "grass_ground",
+      "path": "tiles/grass_ground.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Grass ground, repeated tufts",
+      "sha256": "af38595e70e57cd37ef2976bd403052e18c5c6ecb0f94907a6f0d6c1cb82b69d"
+    },
+    {
+      "name": "path_edge_north",
+      "path": "tiles/path_edge_north.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Grass-to-dirt transition; named side is grass",
+      "sha256": "f814d01a9516094651f693b0781858481ee18b50fefc474cb2e4f66bbcac3529"
+    },
+    {
+      "name": "path_edge_south",
+      "path": "tiles/path_edge_south.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Grass-to-dirt transition; named side is grass",
+      "sha256": "f2660e0c69f0738d9bc2285be98c713d1779f4b03c6570f7983be6dd4f7211c2"
+    },
+    {
+      "name": "path_edge_west",
+      "path": "tiles/path_edge_west.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Grass-to-dirt transition; named side is grass",
+      "sha256": "e69df5b7b7550e1559a21b51aafb86d609fc8ad9c9a4ca385c617a1ec940bc63"
+    },
+    {
+      "name": "path_edge_east",
+      "path": "tiles/path_edge_east.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Grass-to-dirt transition; named side is grass",
+      "sha256": "a4df635ffbb81421a90947cc1dccc3ad0e5709912f0112beface2be084258109"
+    },
+    {
+      "name": "roof_red_fill",
+      "path": "tiles/roof_red_fill.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "590ed4d5bee238979550991140d5772358e3898e878e0c4bfe434305532bc221"
+    },
+    {
+      "name": "roof_red_slope_left",
+      "path": "tiles/roof_red_slope_left.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "20c904adec41fadabfeecde9bba66cefc2aa897b912f265750600c234501d2dd"
+    },
+    {
+      "name": "roof_red_slope_right",
+      "path": "tiles/roof_red_slope_right.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "e24ceceac9ffd565e8a619930a37eb662c5b00eaa78ee3988fab7836a7ce6419"
+    },
+    {
+      "name": "roof_red_ridge",
+      "path": "tiles/roof_red_ridge.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "38601980942fd2951dd793aa70e11a98930e30c1f4b94ab7bd8a5ff4760020a5"
+    },
+    {
+      "name": "roof_red_eave",
+      "path": "tiles/roof_red_eave.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "42919fedaa2019a523dcb8135796743c98e145470d57ef62b99a14d4a6776509"
+    },
+    {
+      "name": "roof_purple_fill",
+      "path": "tiles/roof_purple_fill.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "3f8f34554f317c8e78fae112be5cac717a1f2f18c0f660498de4be7659791ff9"
+    },
+    {
+      "name": "roof_purple_slope_left",
+      "path": "tiles/roof_purple_slope_left.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "dd0f965c71e4a51b2d98ffc4eb533055d80ca2eaeef38271cc5877ad68383a2d"
+    },
+    {
+      "name": "roof_purple_slope_right",
+      "path": "tiles/roof_purple_slope_right.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "5ac5048ae7d9ad6a2e0b89b26ea140813a4cc6613f28b63012324f39c03d726e"
+    },
+    {
+      "name": "roof_purple_ridge",
+      "path": "tiles/roof_purple_ridge.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "25b50076fa88a893f452bc961894784baec675a13b8373c48030a741e58aba69"
+    },
+    {
+      "name": "roof_purple_eave",
+      "path": "tiles/roof_purple_eave.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Roof assembly cell; retain transparent triangle corners",
+      "sha256": "d6dc89e28e8c957c4e62a2f83d8fb4436d97d121a348cbcd4ec943ca7311916d"
+    },
+    {
+      "name": "beam_horizontal",
+      "path": "tiles/beam_horizontal.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable timber strip with transparent margin",
+      "sha256": "7fe13c39661e5cacf0adb03bf92ad38f3df921b7fe0c88cb96e3eb838322e73e"
+    },
+    {
+      "name": "beam_vertical",
+      "path": "tiles/beam_vertical.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable timber strip with transparent margin",
+      "sha256": "36330a38ddf233a4f66ba52a0adb8df123370a591ce77baf3e48cf0024fd69db"
+    },
+    {
+      "name": "trim_gold",
+      "path": "tiles/trim_gold.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable narrow horizontal ledge",
+      "sha256": "209b960bca040ef8e1a2b8ae73b59417579489010cf22b709fc6662f533027a2"
+    },
+    {
+      "name": "trim_stone",
+      "path": "tiles/trim_stone.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable narrow horizontal ledge",
+      "sha256": "398baad13718a344180deced4f0c4705da790c1af5214d23e0fcfc5555520823"
+    },
+    {
+      "name": "carpet_0_0",
+      "path": "tiles/carpet_0_0.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "c6f45d8dccb8b186b47c9e4a8b3b897848406e9aa7a6d97d27b7086feffaa1e4"
+    },
+    {
+      "name": "carpet_0_1",
+      "path": "tiles/carpet_0_1.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "0c627671e9e498be1c8a6f6a635a0d6b15682ca54783bc133c8c8cbf0d0f7937"
+    },
+    {
+      "name": "carpet_0_2",
+      "path": "tiles/carpet_0_2.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "0c1e28fb0b345068aa69c55f134ab95110b246c82eb4c10c2cde599acf3c6e12"
+    },
+    {
+      "name": "carpet_1_0",
+      "path": "tiles/carpet_1_0.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "185fa5c6b4ec00991ed5a928ad75e13e8d44fd2586bef75414c5518c9e97bf93"
+    },
+    {
+      "name": "carpet_1_1",
+      "path": "tiles/carpet_1_1.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "7d0e6bfdc0a2b528618bc6bfc88fe05e85854d992170e9df24473417ee997b59"
+    },
+    {
+      "name": "carpet_1_2",
+      "path": "tiles/carpet_1_2.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "76e1a994966e9ebbf7235aeb070c1a81998921362e6a6bbef10dfb0f5e441845"
+    },
+    {
+      "name": "carpet_2_0",
+      "path": "tiles/carpet_2_0.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "c28a667fcddbefd74a3e4455d4b679f7f74dd50eb86b56b34926a9d188c13553"
+    },
+    {
+      "name": "carpet_2_1",
+      "path": "tiles/carpet_2_1.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "0b8610f20caf8e714a13100018e0e8bbba96ce22a151cc5159a93ec7da6ca9aa"
+    },
+    {
+      "name": "carpet_2_2",
+      "path": "tiles/carpet_2_2.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Nine-slice carpet corner/edge/center, row-column indexed",
+      "sha256": "10cdfad12597d28232ae87a2b7a72eb469fde969a1db737ab5ebf08d75edd25f"
+    },
+    {
+      "name": "awning_teal",
+      "path": "tiles/awning_teal.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Independent fabric stripe, repeat horizontally",
+      "sha256": "b874a056b574699acf678f7e0f89c43aeeda44102364c65e02d161b6e7190500"
+    },
+    {
+      "name": "awning_cream",
+      "path": "tiles/awning_cream.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Independent fabric stripe, repeat horizontally",
+      "sha256": "289f84a2d7771b3feb01ad9062e1903c00ec0895f6c08e60df6010c102c0e14e"
+    },
+    {
+      "name": "door_jamb_left",
+      "path": "tiles/door_jamb_left.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeat vertically to extend doorway height",
+      "sha256": "65c39ab4b149113573670a6d48045ca3d2b17c938905a695d6a6cdbb0d141d6c"
+    },
+    {
+      "name": "door_jamb_right",
+      "path": "tiles/door_jamb_right.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeat vertically to extend doorway height",
+      "sha256": "313176e122231634e53ae52c5460a9160def8ed7cfbfcd61392f5084b3e6b97c"
+    },
+    {
+      "name": "forest_flat_pine",
+      "path": "tiles/forest_flat_pine.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Flat parallax fill",
+      "sha256": "fa3bc259d974c3955de77b283990bbd59e8a806a9a6993fd582bdb4e702c5bd1"
+    },
+    {
+      "name": "forest_flat_teal",
+      "path": "tiles/forest_flat_teal.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Flat parallax fill",
+      "sha256": "b18eb65a81ba97a8f4fada9c30abfc1b49278a626495b1e1cfdadcd95c23175e"
+    },
+    {
+      "name": "forest_flat_dark",
+      "path": "tiles/forest_flat_dark.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Flat parallax fill",
+      "sha256": "9c20ba55bb496ef033f0920ddbcfce01ef85c8c22731fa5a391f42dd3f0baf7b"
+    },
+    {
+      "name": "cloud",
+      "path": "nature/cloud.png",
+      "size": [
+        64,
+        16
+      ],
+      "role": "Distant flat cloud silhouette",
+      "sha256": "7016307bdcaf9dd2536e035ff6a932a7a229e9e92cee93533641b121a68fc875"
+    },
+    {
+      "name": "noble_banner",
+      "path": "props/noble_banner.png",
+      "size": [
+        32,
+        64
+      ],
+      "role": "Independent decorative crest banner",
+      "sha256": "d8d2bacf607aed789e1f3ca3fa781ad49216c6ddf97f621c10ba221a0d2b679f"
+    },
+    {
+      "name": "curtain",
+      "path": "architecture/curtain.png",
+      "size": [
+        16,
+        64
+      ],
+      "role": "Independent curtain; mirror on other side",
+      "sha256": "ad7ca253192f7a9d368bf0d196b69d8f9a27fa0e20ec2766e4e70744ec871ed6"
+    },
+    {
+      "name": "wall_crack",
+      "path": "architecture/wall_crack.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Transparent masonry wear overlay",
+      "sha256": "59b5f3e61e7a71fdebd4b9f14add5c08ad36b2681b862057127dac3c7a7337e4"
+    },
+    {
+      "name": "window_glass",
+      "path": "architecture/window_glass.png",
+      "size": [
+        32,
+        48
+      ],
+      "role": "Only glass; combine with frame and mullions",
+      "sha256": "d4e1a608734315ea6cc51efb6c50d0371ddd33bf39ca262ef93751ad42c49511"
+    },
+    {
+      "name": "window_frame",
+      "path": "architecture/window_frame.png",
+      "size": [
+        32,
+        48
+      ],
+      "role": "Hollow 32x48 arched window frame; transparent opening",
+      "sha256": "210cee0e3d89aa10cfda14716445f9cabfef52ac79fdaaf035cd59126425252d"
+    },
+    {
+      "name": "window_mullions",
+      "path": "architecture/window_mullions.png",
+      "size": [
+        32,
+        48
+      ],
+      "role": "Separate window vertical and horizontal bars",
+      "sha256": "db05f089b33ee65967a89a3be4ba24138b123f3235a3314910889dbd35e87769"
+    },
+    {
+      "name": "window_shutter",
+      "path": "architecture/window_shutter.png",
+      "size": [
+        16,
+        48
+      ],
+      "role": "Independent shutter; mirror for opposite side",
+      "sha256": "17f9a8c9b6b75e4a2ca3efa110ac248c47443a3b921275fef0b2e7947e1225c2"
+    },
+    {
+      "name": "door_panel",
+      "path": "architecture/door_panel.png",
+      "size": [
+        32,
+        48
+      ],
+      "role": "Door leaf only, can be hidden or animated independently",
+      "sha256": "191c561fc8ca68fe41b4529b80756e65ffdc707235fc08d035a727f5bf73ed01"
+    },
+    {
+      "name": "door_stone_frame",
+      "path": "architecture/door_stone_frame.png",
+      "size": [
+        48,
+        64
+      ],
+      "role": "Hollow stone portal frame; door_panel sits at local (8,12)",
+      "sha256": "b1d663fb4a81568b6eab58e2b09227416a39ec70b2f6b85e411683e796eb106a"
+    },
+    {
+      "name": "timber_post",
+      "path": "architecture/timber_post.png",
+      "size": [
+        16,
+        64
+      ],
+      "role": "Vertical building skeleton, tile-compatible",
+      "sha256": "ddc61522916aec61edd20bd89c59f34f8b024fdfcc68030e16ffe07aecb16308"
+    },
+    {
+      "name": "timber_diagonal",
+      "path": "architecture/timber_diagonal.png",
+      "size": [
+        48,
+        48
+      ],
+      "role": "Diagonal brace; mirror for symmetrical framing",
+      "sha256": "8ca7694d12b66afea1a5da65d98ae6836e50af9689dde977b678e2fe1c2d79ec"
+    },
+    {
+      "name": "shop_hanging_sign",
+      "path": "shop/shop_hanging_sign.png",
+      "size": [
+        48,
+        32
+      ],
+      "role": "Shop sign, no invented text",
+      "sha256": "dad5634371c3e8975f2b9ef05ee842f878d0cc80eb568d4332ce7cdb658a3cad"
+    },
+    {
+      "name": "shop_counter",
+      "path": "shop/shop_counter.png",
+      "size": [
+        64,
+        32
+      ],
+      "role": "Counter only; goods are independent sprites",
+      "sha256": "1ab3a25c24f988c4c50516dee65369e655a766ca2849619afc75e26f3a3a6e55"
+    },
+    {
+      "name": "shop_fruit",
+      "path": "shop/shop_fruit.png",
+      "size": [
+        32,
+        16
+      ],
+      "role": "Separate display goods",
+      "sha256": "2245b61d8e7cad5bfaddee77e10e84eed3395284541f7633ecd711f8f9330b48"
+    },
+    {
+      "name": "shop_books",
+      "path": "shop/shop_books.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Separate shop book display",
+      "sha256": "6197789d49b6c30b7ee5c2081b744eab7a76b3b99bd2b298fa635f707ed18a76"
+    },
+    {
+      "name": "lantern",
+      "path": "props/lantern.png",
+      "size": [
+        16,
+        32
+      ],
+      "role": "Lantern and short hook, separate from wall",
+      "sha256": "1dee21803126036b7c20ee1808bb1ae43fc5544bab62bf3ae4fa2e9a6bc68362"
+    },
+    {
+      "name": "torch",
+      "path": "props/torch.png",
+      "size": [
+        16,
+        48
+      ],
+      "role": "Torch with static flame; no animated lighting claimed",
+      "sha256": "ac2af4b12af9efcfa1dd5784b500c2490f435c606b69915926301b9b6becd7b7"
+    },
+    {
+      "name": "crate",
+      "path": "props/crate.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Wooden crate",
+      "sha256": "63745147bfbf5a897f0e36475de85b4342cf3bedf96c2fc61ad02dbe8fb329b3"
+    },
+    {
+      "name": "barrel",
+      "path": "props/barrel.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Wooden barrel",
+      "sha256": "98d5bb3941fec7037b9a437f33119861cc023952830324d8ef1d06e01f0e27b7"
+    },
+    {
+      "name": "bookcase",
+      "path": "props/bookcase.png",
+      "size": [
+        48,
+        80
+      ],
+      "role": "Shelf furniture; independent from walls",
+      "sha256": "339d86e496a786e695c74eae529fe85f2bbd2cc1070b3d281285b6bb327d4d09"
+    },
+    {
+      "name": "rock",
+      "path": "nature/rock.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Low foreground rock",
+      "sha256": "e01b5fca1132a16c60d7519c1dc95fdd713d2269262c37bc670afed00eea9474"
+    },
+    {
+      "name": "grass_tuft",
+      "path": "nature/grass_tuft.png",
+      "size": [
+        32,
+        16
+      ],
+      "role": "Transparent ground dressing",
+      "sha256": "7ae6f437eb7a9b5d9834cb0db23f8f6fbce59fcff04c3f0818d71d84c905c346"
+    },
+    {
+      "name": "mushroom",
+      "path": "nature/mushroom.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Independent mushroom",
+      "sha256": "dbe4d42bd14e6778a50b20d40e75a176122ca06791a57c1c4cd5b7f15526b884"
+    },
+    {
+      "name": "planter",
+      "path": "props/planter.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Potted plant",
+      "sha256": "e2df17fe74cdbbeabbf42301662b13681406023d84bc2ffba03f1b2d62e7dfcc"
+    },
+    {
+      "name": "tree_trunk",
+      "path": "nature/tree_trunk.png",
+      "size": [
+        48,
+        128
+      ],
+      "role": "Trunk only; overlay tree_canopy separately",
+      "sha256": "8e27d7276465013f5ab3b84dc66344a2b46a6aadf562745679445c739f089765"
+    },
+    {
+      "name": "tree_canopy",
+      "path": "nature/tree_canopy.png",
+      "size": [
+        96,
+        64
+      ],
+      "role": "Canopy only; transparent bounding grid",
+      "sha256": "2c88f252679150d5e72bc26246d5e95e4070820b029086ab4294c398f4083fa1"
+    },
+    {
+      "name": "pine_tree",
+      "path": "nature/pine_tree.png",
+      "size": [
+        64,
+        112
+      ],
+      "role": "Distant pine tree",
+      "sha256": "27f20d6393e9d319e93f595f935c55884f161157bb629a82ec2bf9f1a5812d7b"
+    },
+    {
+      "name": "bush",
+      "path": "nature/bush.png",
+      "size": [
+        48,
+        32
+      ],
+      "role": "Independent bush",
+      "sha256": "a628c0fe25b8059b1ad507545abee6b78969ccd6b6ba4541b5f69acd8ac0b391"
+    },
+    {
+      "name": "path_sign",
+      "path": "nature/path_sign.png",
+      "size": [
+        32,
+        48
+      ],
+      "role": "Blank wayfinding arrow",
+      "sha256": "8c07ae41509764c143c8979ab9157624ad0bc3ad67e635aeec203c51b1b70aec"
+    },
+    {
+      "name": "fountain_basin",
+      "path": "props/fountain_basin.png",
+      "size": [
+        64,
+        32
+      ],
+      "role": "Fountain basin only",
+      "sha256": "1f020e6215a6ebe81dec20b6a26d689fa06b08394f42ae8973a7b63fa9f7a567"
+    },
+    {
+      "name": "fountain_pedestal",
+      "path": "props/fountain_pedestal.png",
+      "size": [
+        32,
+        48
+      ],
+      "role": "Fountain pedestal and static water; layer above basin",
+      "sha256": "e1b548c467983f56abf1259f44971311d2c0c3cb30ae1831a2bb8666345e2b33"
+    },
+    {
+      "name": "pillar_base",
+      "path": "temple/pillar_base.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Stackable temple column segment",
+      "sha256": "f48a84677e7f0b8a7206bff60f218b4e8a98b6ffda97bb5d421d98db2e961e0d"
+    },
+    {
+      "name": "pillar_shaft",
+      "path": "temple/pillar_shaft.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Stackable temple column segment",
+      "sha256": "3c80ede27ff23c8a7b1f056aa09c27e20e0e73609ef1aa36b5a9d1fc35d963b0"
+    },
+    {
+      "name": "pillar_capital",
+      "path": "temple/pillar_capital.png",
+      "size": [
+        32,
+        32
+      ],
+      "role": "Stackable temple column segment",
+      "sha256": "c7aec05e76f804d931bf4b85d1e985187e44b5c24a1d3f32c8fbebf2a90fbb50"
+    },
+    {
+      "name": "scroll_altar",
+      "path": "temple/scroll_altar.png",
+      "size": [
+        64,
+        96
+      ],
+      "role": "Paper-scroll decoration, not the teammate boss",
+      "sha256": "2307a83ca3cbf13c53a51b4e2e46850b65f9cee676f85bb6e5e3f3cbbef361be"
+    },
+    {
+      "name": "keycap",
+      "path": "temple/keycap.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Separate key-shaped architectural ornament, no letter",
+      "sha256": "5848b1e54a2b8d0d7cba4a3b3b012df96475f91c554ba82e13fc669b01a93621"
+    },
+    {
+      "name": "paper_sheet",
+      "path": "temple/paper_sheet.png",
+      "size": [
+        32,
+        16
+      ],
+      "role": "Independent scattered page",
+      "sha256": "4fb873c21fab298d3093a033174e5ba349a69a987fb9f03c11d469f5c73d994b"
+    },
+    {
+      "name": "stair_step",
+      "path": "tiles/stair_step.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "Repeatable horizontal stair segment",
+      "sha256": "3bf4229c48a7c91be53ca9acb6c9631682243d9411625b975fef8d3a977c13de"
+    },
+    {
+      "name": "portal_quadrant_0_0",
+      "path": "temple/portal_quadrant_0_0.png",
+      "size": [
+        48,
+        64
+      ],
+      "role": "Quarter of portal frame; 2 columns \u00d7 2 rows, transparent opening",
+      "sha256": "ae2a3aaccaa7b33433ae0d1a6e31959f4edd4c7289721a72f0a162fadcd51231"
+    },
+    {
+      "name": "portal_quadrant_0_1",
+      "path": "temple/portal_quadrant_0_1.png",
+      "size": [
+        48,
+        64
+      ],
+      "role": "Quarter of portal frame; 2 columns \u00d7 2 rows, transparent opening",
+      "sha256": "813d816e355770138d9c7fc6a1f09c7ac0138c3d1bf0ef85d8fde136b14b0d83"
+    },
+    {
+      "name": "portal_quadrant_1_0",
+      "path": "temple/portal_quadrant_1_0.png",
+      "size": [
+        48,
+        64
+      ],
+      "role": "Quarter of portal frame; 2 columns \u00d7 2 rows, transparent opening",
+      "sha256": "54541042cb774008e8ffc4d4f48db97019d342f8ee4e81a5a076e52cae04424c"
+    },
+    {
+      "name": "portal_quadrant_1_1",
+      "path": "temple/portal_quadrant_1_1.png",
+      "size": [
+        48,
+        64
+      ],
+      "role": "Quarter of portal frame; 2 columns \u00d7 2 rows, transparent opening",
+      "sha256": "e34657f4bee8723186ef300526647872bcc60a6088a3b2d4ee24230225e871eb"
+    },
+    {
+      "name": "path_blob_000",
+      "path": "roads/path_blob_000.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: isolated",
+      "sha256": "1a3faf696b3afff5e59792a10dddc6e217014eac33b374ea80b08647c29bb829"
+    },
+    {
+      "name": "path_blob_001",
+      "path": "roads/path_blob_001.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: end_n",
+      "sha256": "cc8766429e7377ce909fad499b67e064d6e330866a562ae19d9f3c9245ab4897"
+    },
+    {
+      "name": "path_blob_002",
+      "path": "roads/path_blob_002.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: end_e",
+      "sha256": "3371e5d8c2403112c29048977dc337141676f1e2d14d18731684ea095c068b10"
+    },
+    {
+      "name": "path_blob_003",
+      "path": "roads/path_blob_003.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_ne",
+      "sha256": "2f935a41f4e7462004b96d997f00f517dc4b5572e2ca1dbf2e15ae2b5812ceec"
+    },
+    {
+      "name": "path_blob_004",
+      "path": "roads/path_blob_004.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: end_s",
+      "sha256": "9351c9afc3392b8776e893781c8af5f3be974045ecbbcebe35a6c7e7a0abdafb"
+    },
+    {
+      "name": "path_blob_005",
+      "path": "roads/path_blob_005.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: straight_ns",
+      "sha256": "84983c6aad465e0eacdf6d8c91d54298316047d8ca9de498ff93c3739979d9de"
+    },
+    {
+      "name": "path_blob_006",
+      "path": "roads/path_blob_006.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_es",
+      "sha256": "1829b188a5654229da3a354ebc531196d5a8cfc2f4a4158927d40275a60cf943"
+    },
+    {
+      "name": "path_blob_007",
+      "path": "roads/path_blob_007.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nes",
+      "sha256": "b7ce0e5e21db11b5d15c6f7da93f3fb9c4f9294645e04fd534ef0b68dcee37c0"
+    },
+    {
+      "name": "path_blob_008",
+      "path": "roads/path_blob_008.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: end_w",
+      "sha256": "8023c664395be74be7106111f7f36c011fd802978b7c46fe9d14741cbe104c03"
+    },
+    {
+      "name": "path_blob_009",
+      "path": "roads/path_blob_009.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_wn",
+      "sha256": "c000d38b1fb0334250650dc0e6af8eb1fcc4b46fc17907a8f5d85371267aacbf"
+    },
+    {
+      "name": "path_blob_010",
+      "path": "roads/path_blob_010.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: straight_ew",
+      "sha256": "69526d0c0eaeccb0a4faffb6f69169b4f9ad56390ea3bb64ddfad1677c136436"
+    },
+    {
+      "name": "path_blob_011",
+      "path": "roads/path_blob_011.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_new",
+      "sha256": "05fbb7eafd722c4e3e2903d70c49f17af3d177f85b1d90b91040c51bff07ace0"
+    },
+    {
+      "name": "path_blob_012",
+      "path": "roads/path_blob_012.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_sw",
+      "sha256": "0032a2befa9b73548012d7a4bb8f9c1eaf3639d3181c3f3cdba38f21077f14e5"
+    },
+    {
+      "name": "path_blob_013",
+      "path": "roads/path_blob_013.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nsw",
+      "sha256": "7446cb553374ec8e5440c5cc79cbdd8dc1915d121d21c31c000c8bc289f57a9f"
+    },
+    {
+      "name": "path_blob_014",
+      "path": "roads/path_blob_014.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_esw",
+      "sha256": "2d1e19dfeb4379204533bdb55294ae9893c4a3486dfa8675cca4e84d3f7f023a"
+    },
+    {
+      "name": "path_blob_015",
+      "path": "roads/path_blob_015.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross",
+      "sha256": "661298f4dc8f958209dcfcb0b27e11fec85adf5d72477a1d654fbca7ede20866"
+    },
+    {
+      "name": "path_blob_019",
+      "path": "roads/path_blob_019.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_ne_diag1",
+      "sha256": "a2c887d333222b869f2ad459d62de1689cc42e75d6b09658df9ce277e1217c4d"
+    },
+    {
+      "name": "path_blob_023",
+      "path": "roads/path_blob_023.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nes_diag1",
+      "sha256": "34051c496c359c56f34c85f06646c0eed1e12d2c1bd38e8187fb33527d606652"
+    },
+    {
+      "name": "path_blob_027",
+      "path": "roads/path_blob_027.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_new_diag1",
+      "sha256": "ec4d310be3be32c267cf1b6e556d65f61ba56dad81f5548b5f29a42456b69fef"
+    },
+    {
+      "name": "path_blob_031",
+      "path": "roads/path_blob_031.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag1",
+      "sha256": "e290f6774c0215533a2e1b699e5b35f31c96a4f5634c3c158d55c27235d6fc64"
+    },
+    {
+      "name": "path_blob_038",
+      "path": "roads/path_blob_038.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_es_diag2",
+      "sha256": "7022f23655eaad9a76d3524e03b68e0b08bc82ab6aee821ae11e04ad055a1e0e"
+    },
+    {
+      "name": "path_blob_039",
+      "path": "roads/path_blob_039.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nes_diag2",
+      "sha256": "886ecbd33004fcd1b5631ea348171b2185786c2fbbd613b23b826c33c3063fc6"
+    },
+    {
+      "name": "path_blob_046",
+      "path": "roads/path_blob_046.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_esw_diag2",
+      "sha256": "c964c14220c1c065bc4972624eb77c62315735ec75c2aa407be7bb95baf4fb6c"
+    },
+    {
+      "name": "path_blob_047",
+      "path": "roads/path_blob_047.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag2",
+      "sha256": "11ea293ad3c99a469b423b7ab167391182340599933e8e358ad3a62eae235185"
+    },
+    {
+      "name": "path_blob_055",
+      "path": "roads/path_blob_055.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nes_diag3",
+      "sha256": "1a7cf219ef29f8a4977e4e053a9e01d23c6f7cf286302b94062b6111353cfdef"
+    },
+    {
+      "name": "path_blob_063",
+      "path": "roads/path_blob_063.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag3",
+      "sha256": "8d108c44e85c1f11dc9e7f8cf9fa6bcd6cfca77f794122f3c4b087332c6ac0e0"
+    },
+    {
+      "name": "path_blob_076",
+      "path": "roads/path_blob_076.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_sw_diag4",
+      "sha256": "ef1e100e3109858855d23d1edeb78f48293c4a1e7fd85cf562c26195f66ff3c4"
+    },
+    {
+      "name": "path_blob_077",
+      "path": "roads/path_blob_077.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nsw_diag4",
+      "sha256": "a9f35f79b8b16ee839afe927381738b0671c0546988599fa39dfe5b2da9c6eec"
+    },
+    {
+      "name": "path_blob_078",
+      "path": "roads/path_blob_078.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_esw_diag4",
+      "sha256": "c2302cd8a823a7a3853a4959742e988ec9e79ee6e3f6c97cb408342ce72b57c0"
+    },
+    {
+      "name": "path_blob_079",
+      "path": "roads/path_blob_079.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag4",
+      "sha256": "38808e74ba0577ac7afa302d495e74a28bda50ce098a6a5c2744bafbe5b3144f"
+    },
+    {
+      "name": "path_blob_095",
+      "path": "roads/path_blob_095.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag5",
+      "sha256": "9f57054462817439148d5007286b5f1307fcd69b8b9a40455558c957e7066815"
+    },
+    {
+      "name": "path_blob_110",
+      "path": "roads/path_blob_110.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_esw_diag6",
+      "sha256": "08956bf6af98e00c0fe509b4de1d35bd8103a306995c23a0272410d6c9db5ce8"
+    },
+    {
+      "name": "path_blob_111",
+      "path": "roads/path_blob_111.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag6",
+      "sha256": "21cb5949dfcbe58fd5cdf4fc29dd0d32f884543235b8b8a77f538fb3fd2e68d0"
+    },
+    {
+      "name": "path_blob_127",
+      "path": "roads/path_blob_127.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag7",
+      "sha256": "09a4659a30d832d8c74857ba36fe5f2294b8c6e9b2f7c4bbf91a6a393bbb5a55"
+    },
+    {
+      "name": "path_blob_137",
+      "path": "roads/path_blob_137.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: turn_wn_diag8",
+      "sha256": "111dcbaccdc6641a074d2eee015868f479cd586b5e5cfa93465b7f84e0a1b591"
+    },
+    {
+      "name": "path_blob_139",
+      "path": "roads/path_blob_139.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_new_diag8",
+      "sha256": "d2807d3bd5d41b6374292b5707475e47b0f462a13661b846c4a7eaf6dc89c936"
+    },
+    {
+      "name": "path_blob_141",
+      "path": "roads/path_blob_141.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nsw_diag8",
+      "sha256": "8fdb8bf83f05c4e7ee07b1f5b755af26577182706a0cfde7559b81cb125441ee"
+    },
+    {
+      "name": "path_blob_143",
+      "path": "roads/path_blob_143.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag8",
+      "sha256": "3e06a0c6da71ab6fb5cc512f9cc29e066ded935a06689c069cfaa801c6a6823a"
+    },
+    {
+      "name": "path_blob_155",
+      "path": "roads/path_blob_155.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_new_diag9",
+      "sha256": "4c099181292eaf4701eba271cbd3fdb80a71cfecdb218b41047a3acbd7d0e30d"
+    },
+    {
+      "name": "path_blob_159",
+      "path": "roads/path_blob_159.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag9",
+      "sha256": "934c2e420bd1cde43a0f6bcfae36f381b359f3576e0d9fc610069ad8478a9bdc"
+    },
+    {
+      "name": "path_blob_175",
+      "path": "roads/path_blob_175.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag10",
+      "sha256": "efb0f80fba9049ea8c33360180996f7029d9c361252abc0be767aef0416cac5c"
+    },
+    {
+      "name": "path_blob_191",
+      "path": "roads/path_blob_191.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag11",
+      "sha256": "716b353401e115eacd24b7ca2d8ef2fd79aabbb2ab0764a54158ee569e174ad8"
+    },
+    {
+      "name": "path_blob_205",
+      "path": "roads/path_blob_205.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: t_nsw_diag12",
+      "sha256": "3a2d7fa330ca29a763d38be57feace259a9a9ab8d9f9c75f49d373d8d9af702c"
+    },
+    {
+      "name": "path_blob_207",
+      "path": "roads/path_blob_207.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag12",
+      "sha256": "e78d0775df0091a009524051bb1f071e8f2434685246d3d8c72b5b2cb8b0cf04"
+    },
+    {
+      "name": "path_blob_223",
+      "path": "roads/path_blob_223.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag13",
+      "sha256": "de74d00eeb58354062afc6432b9012fadfe396e79ce81534667f968e83a0f63c"
+    },
+    {
+      "name": "path_blob_239",
+      "path": "roads/path_blob_239.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: cross_diag14",
+      "sha256": "acaf918d2d63c9a671857783fab7ea1332b898978085a608b70d81e9aac5defd"
+    },
+    {
+      "name": "path_blob_255",
+      "path": "roads/path_blob_255.png",
+      "size": [
+        16,
+        16
+      ],
+      "role": "47-mask grass/dirt autotile: full_ground",
+      "sha256": "1a554b0a6413d392de7870604c16c224562e7c7b219098c8be2e642d40039a96"
+    }
+  ],
+  "validation": {
+    "binary_alpha": true,
+    "grid_dimensions": true,
+    "palette_16_only": true,
+    "composites_reconstructed_from_exported_assets": true
+  },
+  "revision": 2,
+  "road_masks": 47,
+  "ui_study": "800x600 exact current RectTransforms and clearly labeled alternative"
+}

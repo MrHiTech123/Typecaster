@@ -1,0 +1,977 @@
+fileFormatVersion: 2
+guid: aa5cbde95e2bdf24b9f3415e275f3397
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3135652282634852448
+    second: consume_drain_strip_0
+  - first:
+      213: -8574091121906042729
+    second: consume_drain_strip_1
+  - first:
+      213: 5653410808188001407
+    second: consume_drain_strip_2
+  - first:
+      213: 9014652055563327491
+    second: consume_drain_strip_3
+  - first:
+      213: 509290373781096426
+    second: consume_drain_strip_4
+  - first:
+      213: 9097445412829008570
+    second: consume_drain_strip_5
+  - first:
+      213: -6322682180847703025
+    second: consume_drain_strip_6
+  - first:
+      213: -2426634331415272140
+    second: consume_drain_strip_7
+  - first:
+      213: 6806436898543653705
+    second: consume_drain_strip_8
+  - first:
+      213: 1819517708104618947
+    second: consume_drain_strip_9
+  - first:
+      213: 6771256877388699298
+    second: consume_drain_strip_10
+  - first:
+      213: 4055316784206709716
+    second: consume_drain_strip_11
+  - first:
+      213: -2275819495922039164
+    second: consume_drain_strip_12
+  - first:
+      213: -7407910795902558051
+    second: consume_drain_strip_13
+  - first:
+      213: 3268626179509228852
+    second: consume_drain_strip_14
+  - first:
+      213: -5987849997117748066
+    second: consume_drain_strip_15
+  - first:
+      213: 6139908925421517915
+    second: consume_drain_strip_16
+  - first:
+      213: -7552352837275489839
+    second: consume_drain_strip_17
+  - first:
+      213: -2711133153507016679
+    second: consume_drain_strip_18
+  - first:
+      213: 1488966349116912958
+    second: consume_drain_strip_19
+  - first:
+      213: 3390521179484618145
+    second: consume_drain_strip_20
+  - first:
+      213: 166452064649653087
+    second: consume_drain_strip_21
+  - first:
+      213: -8844074174563953823
+    second: consume_drain_strip_22
+  - first:
+      213: -3336875944553207229
+    second: consume_drain_strip_23
+  - first:
+      213: 7924641817169911410
+    second: consume_drain_strip_24
+  - first:
+      213: 6222756607775713181
+    second: consume_drain_strip_25
+  - first:
+      213: -4973379361871607970
+    second: consume_drain_strip_26
+  - first:
+      213: 9168894197824879471
+    second: consume_drain_strip_27
+  - first:
+      213: -1738703903138314918
+    second: consume_drain_strip_28
+  - first:
+      213: -7668910828463586957
+    second: consume_drain_strip_29
+  - first:
+      213: 9030241829898047629
+    second: consume_drain_strip_30
+  - first:
+      213: -678889653296169709
+    second: consume_drain_strip_31
+  - first:
+      213: 7490557663363871408
+    second: consume_drain_strip_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: consume_drain_strip_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 21
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068d79d3323148b20800000000000000
+      internalID: 3135652282634852448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798b5f65d85b20980800000000000000
+      internalID: -8574091121906042729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 20
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c566f4d23f47e40800000000000000
+      internalID: 5653410808188001407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 24
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308d899684a7a1d70800000000000000
+      internalID: 9014652055563327491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 22
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae78fb885ec511700800000000000000
+      internalID: 509290373781096426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 24
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab21e23176e904e70800000000000000
+      internalID: 9097445412829008570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_6
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 25
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c61e63e025148a0800000000000000
+      internalID: -6322682180847703025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_7
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 19
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435a934beecd25ed0800000000000000
+      internalID: -2426634331415272140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 24
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9435ec31c42557e50800000000000000
+      internalID: 6806436898543653705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 24
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3db1e17b9304910800000000000000
+      internalID: 1819517708104618947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 19
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a69cab114658fd50800000000000000
+      internalID: 6771256877388699298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 24
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d302561121674830800000000000000
+      internalID: 4055316784206709716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 24
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48688ace93aaa60e0800000000000000
+      internalID: -2275819495922039164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9062724160d13990800000000000000
+      internalID: -7407910795902558051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 22
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435903d313e7c5d20800000000000000
+      internalID: 3268626179509228852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_15
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 22
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c09711722e6eca0800000000000000
+      internalID: -5987849997117748066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_16
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 19
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cfff413a6553550800000000000000
+      internalID: 6139908925421517915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_17
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 20
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9e7cbcb17a03790800000000000000
+      internalID: -7552352837275489839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_18
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 24
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9100e66d2ce106ad0800000000000000
+      internalID: -2711133153507016679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_19
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 19
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35bf91710fd9a410800000000000000
+      internalID: 1488966349116912958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_20
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 17
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad7e9a8c0d8d0f20800000000000000
+      internalID: 3390521179484618145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_21
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 25
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ba299554b5f4200800000000000000
+      internalID: 166452064649653087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_22
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 19
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163d8e96569834580800000000000000
+      internalID: -8844074174563953823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_23
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 24
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a2c59020901b1d0800000000000000
+      internalID: -3336875944553207229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_24
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 20
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e5e940fbbf9fd60800000000000000
+      internalID: 7924641817169911410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 15
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97af2a4a2cab5650800000000000000
+      internalID: 6222756607775713181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 15
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57426a02d10bfab0800000000000000
+      internalID: -4973379361871607970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_27
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 17
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bfd7ca1b47e3f70800000000000000
+      internalID: 9168894197824879471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_28
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 16
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a550bdb1302eed7e0800000000000000
+      internalID: -1738703903138314918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_29
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 15
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371084fab3e829590800000000000000
+      internalID: -7668910828463586957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_30
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 16
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8052fa991dd15d70800000000000000
+      internalID: 9030241829898047629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_31
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 17
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31df79d05791496f0800000000000000
+      internalID: -678889653296169709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: consume_drain_strip_32
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 15
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b23266128ec3f760800000000000000
+      internalID: 7490557663363871408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      consume_drain_strip_0: 3135652282634852448
+      consume_drain_strip_1: -8574091121906042729
+      consume_drain_strip_10: 6771256877388699298
+      consume_drain_strip_11: 4055316784206709716
+      consume_drain_strip_12: -2275819495922039164
+      consume_drain_strip_13: -7407910795902558051
+      consume_drain_strip_14: 3268626179509228852
+      consume_drain_strip_15: -5987849997117748066
+      consume_drain_strip_16: 6139908925421517915
+      consume_drain_strip_17: -7552352837275489839
+      consume_drain_strip_18: -2711133153507016679
+      consume_drain_strip_19: 1488966349116912958
+      consume_drain_strip_2: 5653410808188001407
+      consume_drain_strip_20: 3390521179484618145
+      consume_drain_strip_21: 166452064649653087
+      consume_drain_strip_22: -8844074174563953823
+      consume_drain_strip_23: -3336875944553207229
+      consume_drain_strip_24: 7924641817169911410
+      consume_drain_strip_25: 6222756607775713181
+      consume_drain_strip_26: -4973379361871607970
+      consume_drain_strip_27: 9168894197824879471
+      consume_drain_strip_28: -1738703903138314918
+      consume_drain_strip_29: -7668910828463586957
+      consume_drain_strip_3: 9014652055563327491
+      consume_drain_strip_30: 9030241829898047629
+      consume_drain_strip_31: -678889653296169709
+      consume_drain_strip_32: 7490557663363871408
+      consume_drain_strip_4: 509290373781096426
+      consume_drain_strip_5: 9097445412829008570
+      consume_drain_strip_6: -6322682180847703025
+      consume_drain_strip_7: -2426634331415272140
+      consume_drain_strip_8: 6806436898543653705
+      consume_drain_strip_9: 1819517708104618947
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

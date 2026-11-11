@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 6561f8d8f77386a4e86ef33f8fae201e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6886662727708314969
+    second: meteor_strike_impact_strip_0
+  - first:
+      213: -6304306065246655220
+    second: meteor_strike_impact_strip_1
+  - first:
+      213: -5852810638604937284
+    second: meteor_strike_impact_strip_2
+  - first:
+      213: 6967546677162947473
+    second: meteor_strike_impact_strip_3
+  - first:
+      213: -8064537360856593591
+    second: meteor_strike_impact_strip_4
+  - first:
+      213: -6648191224244785054
+    second: meteor_strike_impact_strip_5
+  - first:
+      213: 6069730484835772394
+    second: meteor_strike_impact_strip_6
+  - first:
+      213: 8014633249715101906
+    second: meteor_strike_impact_strip_7
+  - first:
+      213: -5719269005821784998
+    second: meteor_strike_impact_strip_8
+  - first:
+      213: -1812511532350634824
+    second: meteor_strike_impact_strip_9
+  - first:
+      213: 4438821493382619391
+    second: meteor_strike_impact_strip_10
+  - first:
+      213: 7505470827692542444
+    second: meteor_strike_impact_strip_11
+  - first:
+      213: 7644287366116358943
+    second: meteor_strike_impact_strip_12
+  - first:
+      213: 2606743744954871288
+    second: meteor_strike_impact_strip_13
+  - first:
+      213: 8547477611705036952
+    second: meteor_strike_impact_strip_14
+  - first:
+      213: -2998735797100068236
+    second: meteor_strike_impact_strip_15
+  - first:
+      213: -6693475167041873002
+    second: meteor_strike_impact_strip_16
+  - first:
+      213: -431791464809735043
+    second: meteor_strike_impact_strip_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 11
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2f50b7cb8ad60a0800000000000000
+      internalID: -6886662727708314969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 6
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0de1a9090b9288a0800000000000000
+      internalID: -6304306065246655220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb75354dbb3a6cea0800000000000000
+      internalID: -5852810638604937284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193304889c2b1b060800000000000000
+      internalID: 6967546677162947473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bc6408ff1051090800000000000000
+      internalID: -8064537360856593591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26035002e41ecb3a0800000000000000
+      internalID: -6648191224244785054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_6
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 23
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae7eef697b30c3450800000000000000
+      internalID: 6069730484835772394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 25
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0ad4e2a72b93f60800000000000000
+      internalID: 8014633249715101906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_8
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 23
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c4715242311a0b0800000000000000
+      internalID: -5719269005821784998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_9
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 11
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b401fa4d5aa8d6e0800000000000000
+      internalID: -1812511532350634824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 16
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0a07e51acd99d30800000000000000
+      internalID: 4438821493382619391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_11
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9cbacb3f9c82860800000000000000
+      internalID: 7505470827692542444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 7
+        width: 43
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b3f5abbd6f51a60800000000000000
+      internalID: 7644287366116358943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_13
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fda18aff930d2420800000000000000
+      internalID: 2606743744954871288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_14
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8907843f99dbe9670800000000000000
+      internalID: 8547477611705036952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_15
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 9
+        width: 37
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4724a963ea95266d0800000000000000
+      internalID: -2998735797100068236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_16
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b12939ccffb13a0800000000000000
+      internalID: -6693475167041873002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meteor_strike_impact_strip_17
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 11
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c58f253f7f10af0800000000000000
+      internalID: -431791464809735043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      meteor_strike_impact_strip_0: -6886662727708314969
+      meteor_strike_impact_strip_1: -6304306065246655220
+      meteor_strike_impact_strip_10: 4438821493382619391
+      meteor_strike_impact_strip_11: 7505470827692542444
+      meteor_strike_impact_strip_12: 7644287366116358943
+      meteor_strike_impact_strip_13: 2606743744954871288
+      meteor_strike_impact_strip_14: 8547477611705036952
+      meteor_strike_impact_strip_15: -2998735797100068236
+      meteor_strike_impact_strip_16: -6693475167041873002
+      meteor_strike_impact_strip_17: -431791464809735043
+      meteor_strike_impact_strip_2: -5852810638604937284
+      meteor_strike_impact_strip_3: 6967546677162947473
+      meteor_strike_impact_strip_4: -8064537360856593591
+      meteor_strike_impact_strip_5: -6648191224244785054
+      meteor_strike_impact_strip_6: 6069730484835772394
+      meteor_strike_impact_strip_7: 8014633249715101906
+      meteor_strike_impact_strip_8: -5719269005821784998
+      meteor_strike_impact_strip_9: -1812511532350634824
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

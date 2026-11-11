@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: cc92e43429c4fba4dab9f25459cdc483
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1869757187900375194
+    second: fire_storm_blue_lightning_strip_0
+  - first:
+      213: -8112582363407141889
+    second: fire_storm_blue_lightning_strip_1
+  - first:
+      213: 8642307918933050148
+    second: fire_storm_blue_lightning_strip_2
+  - first:
+      213: 6828382334930514861
+    second: fire_storm_blue_lightning_strip_3
+  - first:
+      213: 4729729635134262924
+    second: fire_storm_blue_lightning_strip_4
+  - first:
+      213: 6380838268289502269
+    second: fire_storm_blue_lightning_strip_5
+  - first:
+      213: 8393054750925743257
+    second: fire_storm_blue_lightning_strip_6
+  - first:
+      213: -9029463745762815848
+    second: fire_storm_blue_lightning_strip_7
+  - first:
+      213: 704364396357739087
+    second: fire_storm_blue_lightning_strip_8
+  - first:
+      213: 3328939124224932211
+    second: fire_storm_blue_lightning_strip_9
+  - first:
+      213: 7553824055130960375
+    second: fire_storm_blue_lightning_strip_10
+  - first:
+      213: -8273575778350262154
+    second: fire_storm_blue_lightning_strip_11
+  - first:
+      213: -1232729765037337475
+    second: fire_storm_blue_lightning_strip_12
+  - first:
+      213: 8199308628496261187
+    second: fire_storm_blue_lightning_strip_13
+  - first:
+      213: 6611935277933292952
+    second: fire_storm_blue_lightning_strip_14
+  - first:
+      213: -276211571621532431
+    second: fire_storm_blue_lightning_strip_15
+  - first:
+      213: 110523015907294304
+    second: fire_storm_blue_lightning_strip_16
+  - first:
+      213: -1878481606174403134
+    second: fire_storm_blue_lightning_strip_17
+  - first:
+      213: 1713861499411324469
+    second: fire_storm_blue_lightning_strip_18
+  - first:
+      213: -6090085581755994493
+    second: fire_storm_blue_lightning_strip_19
+  - first:
+      213: 4314039057534723653
+    second: fire_storm_blue_lightning_strip_20
+  - first:
+      213: -3930548444398611206
+    second: fire_storm_blue_lightning_strip_21
+  - first:
+      213: 2037949089284452592
+    second: fire_storm_blue_lightning_strip_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ff6f67eb94d06e0800000000000000
+      internalID: -1869757187900375194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3b402a2515a6f80800000000000000
+      internalID: -8112582363407141889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 49
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423cc8b6345afe770800000000000000
+      internalID: 8642307918933050148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3f5182e8943ce50800000000000000
+      internalID: 6828382334930514861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ec0d14b0063a140800000000000000
+      internalID: 4729729635134262924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c4d9e099a4d8850800000000000000
+      internalID: 6380838268289502269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 29
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9946551e3de1a7470800000000000000
+      internalID: 8393054750925743257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 29
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8901a893096e0b280800000000000000
+      internalID: -9029463745762815848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 29
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42e555cfa766c900800000000000000
+      internalID: 704364396357739087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_9
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 15
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379b35afe74c23e20800000000000000
+      internalID: 3328939124224932211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_10
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 15
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1b1edc4f294d860800000000000000
+      internalID: 7553824055130960375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_11
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 15
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67818253aaa5e2d80800000000000000
+      internalID: -8273575778350262154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_12
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 6
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7416ea5fc674eee0800000000000000
+      internalID: -1232729765037337475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_13
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 13
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340a05d71cbc9c170800000000000000
+      internalID: 8199308628496261187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_14
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 13
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d661f8a1052cb50800000000000000
+      internalID: 6611935277933292952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_15
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 13
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc65aef903ba2cf0800000000000000
+      internalID: -276211571621532431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_16
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 22
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cb8aee818a88100800000000000000
+      internalID: 110523015907294304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 22
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c59eda8eea4ee5e0800000000000000
+      internalID: -1878481606174403134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_18
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 23
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e51aa04fbd8c710800000000000000
+      internalID: 1713861499411324469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_19
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 30
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ea4b71e6bab7ba0800000000000000
+      internalID: -6090085581755994493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_20
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 30
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546a4838aab8edb30800000000000000
+      internalID: 4314039057534723653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_21
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 6
+        width: 55
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af41827c303e379c0800000000000000
+      internalID: -3930548444398611206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_storm_blue_lightning_strip_22
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 6
+        width: 55
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0712136ef384c10800000000000000
+      internalID: 2037949089284452592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fire_storm_blue_lightning_strip_0: -1869757187900375194
+      fire_storm_blue_lightning_strip_1: -8112582363407141889
+      fire_storm_blue_lightning_strip_10: 7553824055130960375
+      fire_storm_blue_lightning_strip_11: -8273575778350262154
+      fire_storm_blue_lightning_strip_12: -1232729765037337475
+      fire_storm_blue_lightning_strip_13: 8199308628496261187
+      fire_storm_blue_lightning_strip_14: 6611935277933292952
+      fire_storm_blue_lightning_strip_15: -276211571621532431
+      fire_storm_blue_lightning_strip_16: 110523015907294304
+      fire_storm_blue_lightning_strip_17: -1878481606174403134
+      fire_storm_blue_lightning_strip_18: 1713861499411324469
+      fire_storm_blue_lightning_strip_19: -6090085581755994493
+      fire_storm_blue_lightning_strip_2: 8642307918933050148
+      fire_storm_blue_lightning_strip_20: 4314039057534723653
+      fire_storm_blue_lightning_strip_21: -3930548444398611206
+      fire_storm_blue_lightning_strip_22: 2037949089284452592
+      fire_storm_blue_lightning_strip_3: 6828382334930514861
+      fire_storm_blue_lightning_strip_4: 4729729635134262924
+      fire_storm_blue_lightning_strip_5: 6380838268289502269
+      fire_storm_blue_lightning_strip_6: 8393054750925743257
+      fire_storm_blue_lightning_strip_7: -9029463745762815848
+      fire_storm_blue_lightning_strip_8: 704364396357739087
+      fire_storm_blue_lightning_strip_9: 3328939124224932211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
