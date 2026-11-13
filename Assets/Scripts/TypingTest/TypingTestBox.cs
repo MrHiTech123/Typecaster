@@ -184,9 +184,7 @@ public class TypingTestBox : MonoBehaviour
 			return;
 		}
 		
-		char shouldveBeenTyped = whatToType[typedSoFar.Length];
 		
-		bool isCorrect = toType == new String(shouldveBeenTyped, 1);
 		
 		if (!startedTyping)
 		{
@@ -194,7 +192,20 @@ public class TypingTestBox : MonoBehaviour
 			startOfTyping = DateTime.Now;
 		}
 		
-		if (isCorrect)
+		char shouldveBeenTypedWithMistake = whatToType[typedSoFar.Length + mistakeText.Length];
+		bool isCorrectWithMistake = toType == new String(shouldveBeenTypedWithMistake, 1);
+		
+		char shouldveBeenTyped = whatToType[typedSoFar.Length];
+		bool isCorrect = toType == new String(shouldveBeenTyped, 1);
+		
+		
+		if (isCorrectWithMistake)
+		{
+			typedSoFar += StringWithMistakes.AllMistakes(mistakeText);
+			typedSoFar += new StringWithMistakes(toType);
+			mistakeText = "";
+		}
+		else if (isCorrect)
 		{
 			typedSoFar += new StringWithMistakes(toType);
 			mistakeText = "";

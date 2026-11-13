@@ -29,7 +29,7 @@ public class StringWithMistakes
 	
 	public StringWithMistakes(String content) : this(content, new HashSet<int>()) {}
 	
-	public StringWithMistakes AllMistakes(String content)
+	public static StringWithMistakes AllMistakes(String content)
 	{
 		HashSet<int> mistakes = new HashSet<int>();
 		for (int i = 0; i < content.Length; ++i)
