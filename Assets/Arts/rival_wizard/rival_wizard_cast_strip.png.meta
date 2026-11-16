@@ -99,133 +99,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rival_wizard_cast_strip_00
+      name: rival_wizard_cast_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d91409cbbaf52a7a9cf75a7fee1f322
-      internalID: 3523153419708815541
+      spriteID: 9366874af5ef7e140a86c098dbd3ae6f
+      internalID: -2085848681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_cast_strip_01
+      name: rival_wizard_cast_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a4435aa9b5e54f485aaa5fa898ac456
-      internalID: -119208809127786492
+      spriteID: 3a40a7fa699c1624faccc422771770e1
+      internalID: -638610691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_cast_strip_02
+      name: rival_wizard_cast_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cc6088cf451e57b8a397a321605624cf
-      internalID: 3938470301747821626
+      spriteID: d64f7772802585844aaea702e29396ba
+      internalID: 755293371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_cast_strip_03
+      name: rival_wizard_cast_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b5d05493be82551d8f4065c95e1b5991
-      internalID: 225262195883826891
+      spriteID: c21e4df1f00c8fe4c94e30263a7147f8
+      internalID: -1418426324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_cast_strip_04
+      name: rival_wizard_cast_strip_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 128
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 060114766a765ee19fe86839acb0c0e2
-      internalID: 6047013372163400234
+      spriteID: c66b82ad5cba19e4d97c1732a2e83aa5
+      internalID: 1115979570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_cast_strip_05
+      name: rival_wizard_cast_strip_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 160
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 94eb17f6daa8590db4e6d762bc36e4e4
-      internalID: -3922108504458467265
+      spriteID: 774d561cb2fb46148af8995bf147caeb
+      internalID: -744286473
       vertices: []
       indices: 
       edges: []
@@ -234,7 +234,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2fa437ddeb72da744a4bc6d2032cf74a
     internalID: 0
     vertices: []
     indices: 
@@ -242,14 +242,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      rival_wizard_cast_strip_00: 3523153419708815541
-      rival_wizard_cast_strip_01: -119208809127786492
-      rival_wizard_cast_strip_02: 3938470301747821626
-      rival_wizard_cast_strip_03: 225262195883826891
-      rival_wizard_cast_strip_04: 6047013372163400234
-      rival_wizard_cast_strip_05: -3922108504458467265
+      rival_wizard_cast_strip_0: -2085848681
+      rival_wizard_cast_strip_1: -638610691
+      rival_wizard_cast_strip_2: 755293371
+      rival_wizard_cast_strip_3: -1418426324
+      rival_wizard_cast_strip_4: 1115979570
+      rival_wizard_cast_strip_5: -744286473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration

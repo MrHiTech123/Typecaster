@@ -99,89 +99,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thief_hurt_strip_00
+      name: thief_hurt_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6f1b9725c0ff5cb2899462fdb87ef3ad
-      internalID: 4307610605713625345
+      spriteID: a8f5c23def91bc346b45163af1eefcd7
+      internalID: 1602558253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_hurt_strip_01
+      name: thief_hurt_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 658f548598d25a6da9c11a4fea0fe38f
-      internalID: -7956106769673910093
+      spriteID: 7b14a6ff9aa37e44fb2c40737341b9cf
+      internalID: 1507755574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_hurt_strip_02
+      name: thief_hurt_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dde35d2f809d5027976a1c298778f09e
-      internalID: 5011937385477268977
+      spriteID: 60c15d02642cb024ba48738936e94720
+      internalID: 1680505604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_hurt_strip_03
+      name: thief_hurt_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e45c917bd52e56a5b242d38e08a9283c
-      internalID: 5872293249308343198
+      spriteID: 41b562165a6c80c478df9cabf9e6e529
+      internalID: -430255171
       vertices: []
       indices: 
       edges: []
@@ -190,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 692a2a0db8e5508479f1e3e337655844
     internalID: 0
     vertices: []
     indices: 
@@ -198,12 +198,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      thief_hurt_strip_00: 4307610605713625345
-      thief_hurt_strip_01: -7956106769673910093
-      thief_hurt_strip_02: 5011937385477268977
-      thief_hurt_strip_03: 5872293249308343198
+      thief_hurt_strip_0: 1602558253
+      thief_hurt_strip_1: 1507755574
+      thief_hurt_strip_2: 1680505604
+      thief_hurt_strip_3: -430255171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration

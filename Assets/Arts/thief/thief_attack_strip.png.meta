@@ -99,133 +99,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thief_attack_strip_00
+      name: thief_attack_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e656f274e98053e48fe705004886ebf5
-      internalID: -3176022571195536867
+      spriteID: 34f89d28d89b0a346ac4721c7445f8e0
+      internalID: -1471820109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_attack_strip_01
+      name: thief_attack_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a6a9058c0f125746b0b33195f7c655f8
-      internalID: 2865846814701543087
+      spriteID: f7083d75dec0925408711ac5b91ac0ea
+      internalID: -572065835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_attack_strip_02
+      name: thief_attack_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d1d8e352bcbd588b9be67485f2dca28a
-      internalID: 5046925741187247381
+      spriteID: 492bc68156dcd8f40afee2ceaaf62857
+      internalID: 982381507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_attack_strip_03
+      name: thief_attack_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4911ca6420cb502d87f720497e831a7b
-      internalID: -8404549857807111499
+      spriteID: 7683fa9ab72f3bf40a8972091a5c41f8
+      internalID: -446031039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_attack_strip_04
+      name: thief_attack_strip_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 128
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b4faeb57e650539e8450b17e9760df02
-      internalID: 7344924217259210880
+      spriteID: 5efcfd36bc2328d4dbb144abbc9f6df1
+      internalID: 1764605336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_attack_strip_05
+      name: thief_attack_strip_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 160
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cfe2f94ff1e45daabb891d0956116123
-      internalID: -7563675677299423584
+      spriteID: cae443dc5327d2a4ca856c29407a872a
+      internalID: -1114441343
       vertices: []
       indices: 
       edges: []
@@ -234,7 +234,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 95962365c6b51d549854c46ccfcd4baa
     internalID: 0
     vertices: []
     indices: 
@@ -242,14 +242,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      thief_attack_strip_00: -3176022571195536867
-      thief_attack_strip_01: 2865846814701543087
-      thief_attack_strip_02: 5046925741187247381
-      thief_attack_strip_03: -8404549857807111499
-      thief_attack_strip_04: 7344924217259210880
-      thief_attack_strip_05: -7563675677299423584
+      thief_attack_strip_0: -1471820109
+      thief_attack_strip_1: -572065835
+      thief_attack_strip_2: 982381507
+      thief_attack_strip_3: -446031039
+      thief_attack_strip_4: 1764605336
+      thief_attack_strip_5: -1114441343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration

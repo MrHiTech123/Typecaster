@@ -99,89 +99,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rival_wizard_hurt_strip_00
+      name: rival_wizard_hurt_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 584fceacb76657d59300e40bae23743d
-      internalID: 8029888236043307989
+      spriteID: 9d463b00e349a2b4e9d588caabb0ac5e
+      internalID: 416758231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_hurt_strip_01
+      name: rival_wizard_hurt_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8d83c685d46f5e7d8582d9855e85f690
-      internalID: 5147232181362214655
+      spriteID: 7adf4f4ad6aaa9c489600bde23c0f8a9
+      internalID: 905370748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_hurt_strip_02
+      name: rival_wizard_hurt_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5ec32920533658d6bba8f490e6e1966b
-      internalID: -1414407519644143857
+      spriteID: 7afb1d9cfa5113c4fa20be96c58cd458
+      internalID: -1646476237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_hurt_strip_03
+      name: rival_wizard_hurt_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b494836facf856ff93ae0ac995aa2e0e
-      internalID: 8128771400450305601
+      spriteID: 83898ae83ec8a954da121f5518b1454e
+      internalID: 116658731
       vertices: []
       indices: 
       edges: []
@@ -190,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 59d06415ca45ee04ba6252d3e0004f16
     internalID: 0
     vertices: []
     indices: 
@@ -198,12 +198,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      rival_wizard_hurt_strip_00: 8029888236043307989
-      rival_wizard_hurt_strip_01: 5147232181362214655
-      rival_wizard_hurt_strip_02: -1414407519644143857
-      rival_wizard_hurt_strip_03: 8128771400450305601
+      rival_wizard_hurt_strip_0: 416758231
+      rival_wizard_hurt_strip_1: 905370748
+      rival_wizard_hurt_strip_2: -1646476237
+      rival_wizard_hurt_strip_3: 116658731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration

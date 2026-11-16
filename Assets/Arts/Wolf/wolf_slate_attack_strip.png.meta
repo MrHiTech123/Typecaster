@@ -99,133 +99,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wolf_slate_attack_strip_00
+      name: wolf_slate_attack_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1951c99b51d950cf81f158eaaf519db9
-      internalID: 4855053878129605589
+      spriteID: 9cdb0b7f07709804f932c983a33b0e68
+      internalID: -1084468548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_attack_strip_01
+      name: wolf_slate_attack_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0b1d9abf1e355052a813ece83e61ab86
-      internalID: 6786873874951577175
+      spriteID: 6f0fcc3bebdb17e4b978b7306f4231c6
+      internalID: 1880020969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_attack_strip_02
+      name: wolf_slate_attack_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b561725e33955d88bd32567d0de5c481
-      internalID: -5131076973929293519
+      spriteID: 726483c8587f7b2428a25bb4b9dbb57e
+      internalID: -2047033713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_attack_strip_03
+      name: wolf_slate_attack_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d9f27a3275125d078339243693e87841
-      internalID: -6307088901561120301
+      spriteID: 4c6aea6bf16cc0a4da6148eafa45797b
+      internalID: 105247093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_attack_strip_04
+      name: wolf_slate_attack_strip_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 128
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4eec7968dfc953eda6a7532d88a8dcab
-      internalID: 4069943105631237238
+      spriteID: 8d28ba2eac44bc04dad5c4e9897a5ced
+      internalID: -557701149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_attack_strip_05
+      name: wolf_slate_attack_strip_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 160
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7ded939824e15c699b5b6d02a0bb01b2
-      internalID: 8064083585963644797
+      spriteID: 2104b2df139a15140b5e05f68bb5708d
+      internalID: 1492794203
       vertices: []
       indices: 
       edges: []
@@ -234,7 +234,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0d7e6a5652c0eb441a66910db614946e
     internalID: 0
     vertices: []
     indices: 
@@ -242,14 +242,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      wolf_slate_attack_strip_00: 4855053878129605589
-      wolf_slate_attack_strip_01: 6786873874951577175
-      wolf_slate_attack_strip_02: -5131076973929293519
-      wolf_slate_attack_strip_03: -6307088901561120301
-      wolf_slate_attack_strip_04: 4069943105631237238
-      wolf_slate_attack_strip_05: 8064083585963644797
+      wolf_slate_attack_strip_0: -1084468548
+      wolf_slate_attack_strip_1: 1880020969
+      wolf_slate_attack_strip_2: -2047033713
+      wolf_slate_attack_strip_3: 105247093
+      wolf_slate_attack_strip_4: -557701149
+      wolf_slate_attack_strip_5: 1492794203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration

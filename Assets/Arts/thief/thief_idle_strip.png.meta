@@ -99,89 +99,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: thief_idle_strip_00
+      name: thief_idle_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c7cca32781e65c308ea2ce6b6cbda253
-      internalID: -5465565766480332487
+      spriteID: 0ba3c0df88f1db34a92dc18f67f244a2
+      internalID: 959060460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_idle_strip_01
+      name: thief_idle_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f6a40390b54f51df95d06a116dfe95cc
-      internalID: 7817453978567791081
+      spriteID: d2def8d679d2ed245aef2face5fcfac6
+      internalID: -1042609959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_idle_strip_02
+      name: thief_idle_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 66066f49ee7b5a89a64fd02e27c7d60e
-      internalID: -3740145085901176314
+      spriteID: 6f485ce17a75ab64a97ba0cb750e8908
+      internalID: -1232009916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: thief_idle_strip_03
+      name: thief_idle_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7af10d20105456e58af726e2bd9b3501
-      internalID: -4522435519703425711
+      spriteID: cac862dcbd91cf64dafbdca0c2560e2d
+      internalID: -606155214
       vertices: []
       indices: 
       edges: []
@@ -190,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 084caaa60e6680d4c8447d46e611f786
     internalID: 0
     vertices: []
     indices: 
@@ -198,12 +198,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      thief_idle_strip_00: -5465565766480332487
-      thief_idle_strip_01: 7817453978567791081
-      thief_idle_strip_02: -3740145085901176314
-      thief_idle_strip_03: -4522435519703425711
+      thief_idle_strip_0: 959060460
+      thief_idle_strip_1: -1042609959
+      thief_idle_strip_2: -1232009916
+      thief_idle_strip_3: -606155214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration

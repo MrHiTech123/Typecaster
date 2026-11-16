@@ -99,89 +99,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wolf_slate_idle_strip_00
+      name: wolf_slate_idle_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 36e9b54060b6519b91ac5e794be30949
-      internalID: -9084282473572878598
+      spriteID: a3f6bf9cb74dc2b4c9626bb5be97d885
+      internalID: -279846210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_idle_strip_01
+      name: wolf_slate_idle_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7302d3ceeb8580e85ee82d618d572e8
-      internalID: -6455606848507163583
+      spriteID: 331114ac9f5d6124a9d45e03763e0908
+      internalID: 1773149051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_idle_strip_02
+      name: wolf_slate_idle_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ce83238d19a85f1daed50098701cd71a
-      internalID: 5037050314755217174
+      spriteID: cc311b52fe8de4247a654601d6e67d8b
+      internalID: 1706826269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolf_slate_idle_strip_03
+      name: wolf_slate_idle_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d1e4375403c2521b84f8a052205744a8
-      internalID: 5441054365996333504
+      spriteID: b56fa2199416a35498cf15d9267ecbc4
+      internalID: -468006135
       vertices: []
       indices: 
       edges: []
@@ -190,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 18603662008b5e245b1e4fc488057f9f
     internalID: 0
     vertices: []
     indices: 
@@ -198,12 +198,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      wolf_slate_idle_strip_00: -9084282473572878598
-      wolf_slate_idle_strip_01: -6455606848507163583
-      wolf_slate_idle_strip_02: 5037050314755217174
-      wolf_slate_idle_strip_03: 5441054365996333504
+      wolf_slate_idle_strip_0: -279846210
+      wolf_slate_idle_strip_1: 1773149051
+      wolf_slate_idle_strip_2: 1706826269
+      wolf_slate_idle_strip_3: -468006135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration

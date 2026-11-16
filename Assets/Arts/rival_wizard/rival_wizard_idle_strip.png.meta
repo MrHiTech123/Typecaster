@@ -99,89 +99,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rival_wizard_idle_strip_00
+      name: rival_wizard_idle_strip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f7a9de4553b455849c191ece6d770e13
-      internalID: 1167586881119082378
+      spriteID: 8d1c767e5310c7d41aa1cf48eb79cfb2
+      internalID: 256153366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_idle_strip_01
+      name: rival_wizard_idle_strip_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1ed0c2028eb2537da1889618be43af86
-      internalID: -4160098637220070965
+      spriteID: a3dcc6e76d112104f8c64cd4ae9fcf92
+      internalID: 1390075637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_idle_strip_02
+      name: rival_wizard_idle_strip_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 64
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b70e704815755e63a6136aa8fa670102
-      internalID: -1992072970168183032
+      spriteID: e66126a3fb752af488aed4ea19c6e2b5
+      internalID: -916821912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rival_wizard_idle_strip_03
+      name: rival_wizard_idle_strip_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
-        width: 0
-        height: 0
+        width: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 552df180dc89519397328215a62016f9
-      internalID: 2896145042221899361
+      spriteID: b48b961c3aaae3f48a17259dec02d4f3
+      internalID: 2060272778
       vertices: []
       indices: 
       edges: []
@@ -190,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 576e4409e3dbabc48a0677649a9a46a9
     internalID: 0
     vertices: []
     indices: 
@@ -198,12 +198,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      rival_wizard_idle_strip_00: 1167586881119082378
-      rival_wizard_idle_strip_01: -4160098637220070965
-      rival_wizard_idle_strip_02: -1992072970168183032
-      rival_wizard_idle_strip_03: 2896145042221899361
+      rival_wizard_idle_strip_0: 256153366
+      rival_wizard_idle_strip_1: 1390075637
+      rival_wizard_idle_strip_2: -916821912
+      rival_wizard_idle_strip_3: 2060272778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: Typecaster Batch02; additive artwork; no scene integration
