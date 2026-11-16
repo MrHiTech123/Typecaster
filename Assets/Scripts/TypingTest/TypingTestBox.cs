@@ -86,6 +86,7 @@ public class TypingTestBox : MonoBehaviour
 		BoxForWhatToType.text = TypingTestBox.whatToType;
 		BoxForWhatPlayerTyped.text = TypingTestBox.typedSoFar.AsFormattedString;
 		
+		UpdateWhatPlayerTyped();
 	}
 
 	
@@ -141,9 +142,20 @@ public class TypingTestBox : MonoBehaviour
 		EndTypingSession();
 	}
 	
-	void UpdateText()
+	void UpdateWhatPlayerTyped()
 	{
-		BoxForWhatPlayerTyped.text = typedSoFar.AsFormattedString + "<color=\"red\">" + mistakeText + "</color>";
+		String toPutToWhatPlayerTyped = typedSoFar.AsFormattedString;
+		
+		if (mistakeText.Length > 0)
+		{
+			toPutToWhatPlayerTyped += StringLib.TurnRed(mistakeText);
+		}
+		else
+		{
+			toPutToWhatPlayerTyped += "_";
+		}
+		
+		BoxForWhatPlayerTyped.text = toPutToWhatPlayerTyped;
 	}
 	
 	void TypeKey(String key)
@@ -180,7 +192,7 @@ public class TypingTestBox : MonoBehaviour
 		
 		if (toType.Length == 0)
 		{
-			UpdateText();
+			UpdateWhatPlayerTyped();
 			return;
 		}
 		
@@ -218,7 +230,7 @@ public class TypingTestBox : MonoBehaviour
 			mistakeText += toType;
 		}
 		
-		UpdateText();
+		UpdateWhatPlayerTyped();
 		
 		if (Done())
 		{
