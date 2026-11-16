@@ -43,7 +43,7 @@ public class TypingTestBox : MonoBehaviour
 	
 	private static String whatToType;
 	private static StringWithMistakes typedSoFar = new StringWithMistakes();
-	private String mistakeText;
+	private String mistakeText = "";
 	private TimeSpan timeAlloted;
 	private Action onSessionEnded;
 	private Action<TypingTestResult> onCompleted;
@@ -192,6 +192,7 @@ public class TypingTestBox : MonoBehaviour
 			startOfTyping = DateTime.Now;
 		}
 		
+		Debug.Log("What to type: " + whatToType + " len " + typedSoFar + " len " + mistakeText.Length);
 		char shouldveBeenTypedWithMistake = whatToType[typedSoFar.Length + mistakeText.Length];
 		bool isCorrectWithMistake = toType == new String(shouldveBeenTypedWithMistake, 1);
 		

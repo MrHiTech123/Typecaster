@@ -60,6 +60,11 @@ public class StringWithMistakes
 		return new StringWithMistakes(toReturnContent, toReturnMistakes);
 	}
 	
+	public char this[int i]
+	{
+		get => content[i];
+	}
+	
 	public String AsFormattedString
 	{
 		get {

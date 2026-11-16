@@ -9,7 +9,7 @@ public struct TypingTestResult
 	
 	public float MistakeScore {get; private set;}
 	
-	public String ToString()
+	public override String ToString()
 	{
 		return "Time score: " + TimeScore + "; Mistakes: " + MistakeScore;
 	}
