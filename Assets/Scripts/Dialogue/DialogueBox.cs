@@ -5,13 +5,14 @@ using Unity.Mathematics;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEditor;
+using System.Collections.Generic;
 public class Script : MonoBehaviour
 {
 	private static readonly float CHARACTERS_PER_SECOND = 20;
 	[SerializeField] private TMP_Text TextBox;
 	[SerializeField] private DialogueLine[] dialogue;
 	[SerializeField] private SceneAsset NextScene;
-	
+	[SerializeField] private Dictionary<GameCharacter, Sprite> CHARACTER_SPRITES;
 	
 	private String __message;
 	private String Message

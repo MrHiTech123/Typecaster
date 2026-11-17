@@ -1,4 +1,11 @@
 public enum GameCharacter
 {
-	MAIN_CHARACTER
+	DELPINA,
+	SHOPKEEP,
+	TRAINING_DUMMY,
+	THIEF,
+	RIVAL_WIZARD,
+	WOLVES,
+	TYPO
+	
 }

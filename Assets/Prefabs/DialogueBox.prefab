@@ -198,6 +198,21 @@ MonoBehaviour:
   TextBox: {fileID: 4288741646480272370}
   dialogue: []
   NextScene: {fileID: 0}
+  CHARACTER_SPRITES:
+  - key: 0
+    value: {fileID: 4948365428353503208, guid: 1333af8284d2c734b9e83eac63d8b4b7, type: 3}
+  - key: 1
+    value: {fileID: 21300000, guid: a2c481b77d7e57f19a6c95c025ba1e27, type: 3}
+  - key: 2
+    value: {fileID: -668011711497388011, guid: 466bc9b4a5c341d45bde57206c55b7d6, type: 3}
+  - key: 3
+    value: {fileID: 21300000, guid: c36e713c5cd054b3ad7055d392e9854c, type: 3}
+  - key: 4
+    value: {fileID: 21300000, guid: d2e9f91141235ff4bdb09dae4e22a0da, type: 3}
+  - key: 5
+    value: {fileID: -2703731815173072747, guid: 59abf5b28fecbc9478fd49f447c1f0bc, type: 3}
+  - key: 6
+    value: {fileID: -3810680303400966287, guid: 1b74d35755d4a554abea1578cd7629c5, type: 3}
 --- !u!1 &8284183542688986390
 GameObject:
   m_ObjectHideFlags: 0
