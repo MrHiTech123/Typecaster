@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CombatStatistics : MonoBehaviour
@@ -7,10 +8,11 @@ public class CombatStatistics : MonoBehaviour
     public int enemyHP;
     [SerializeField] private RectTransform playerHealthBar;
     [SerializeField] private RectTransform enemyHealthBar;
+    private PlayerActions playerActions;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        playerActions = GetComponent<PlayerActions>();
     }
 
     // Update is called once per frame
@@ -25,9 +27,13 @@ public class CombatStatistics : MonoBehaviour
 		healthBar.sizeDelta = new Vector2(hpAmount / 100.0f * maxBarLen, 30);
 	}
 
-    public void EnemyTakeDamage(int dmg)
+    public void EnemyTakeDamage(int dmg, Boolean isArea = false, Boolean isSkill = false)
     {
         TakeDamage(dmg, ref enemyHP, enemyHealthBar, 265, 100);
+        if(isSkill)
+        {
+            playerActions.SpellCastOver();
+        }
     }
 
     public void PlayerTakeDamage(int dmg)

@@ -805,7 +805,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4290963706
   m_fontColor: {r: 0.98, g: 0.91, b: 0.76, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1369,7 +1369,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1532075596}
         m_TargetAssemblyTypeName: PlayerActions, Assembly-CSharp
         m_MethodName: CastSpell
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
