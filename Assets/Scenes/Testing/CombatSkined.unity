@@ -4020,6 +4020,9 @@ MonoBehaviour:
   itemMenu: {fileID: 256181828}
   GameOverScene: {fileID: 102900000, guid: ab68eb1f239e80a4b8744c77d9c6882c, type: 3}
   NextScene: {fileID: 102900000, guid: fe2b2a6aad8e0694593855a6a5e661aa, type: 3}
+  potionText: {fileID: 1647468798}
+  potionButton: {fileID: 1446027984}
+  potionCount: 99
 --- !u!114 &1532075597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4341,7 +4344,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4290963706
   m_fontColor: {r: 0.98, g: 0.91, b: 0.76, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4359,8 +4362,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

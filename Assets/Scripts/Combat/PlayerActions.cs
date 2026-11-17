@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,10 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private GameObject itemMenu;
 	[SerializeField] private SceneAsset GameOverScene;
 	[SerializeField] private SceneAsset NextScene;
+
+    [SerializeField] private TextMeshProUGUI potionText;
+    [SerializeField] private GameObject potionButton;
+    [SerializeField] private int potionCount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -64,6 +69,15 @@ public class PlayerActions : MonoBehaviour
         Debug.Log("[Player Actions] Open item selection menu!!!");
         playerMainMenu.SetActive(false);
         itemMenu.SetActive(true);
+        if(potionCount <= 0)
+        {
+            potionButton.SetActive(false);
+        }
+        else
+        {
+            potionButton.SetActive(true);
+            potionText.SetText("HP Potion: " + potionCount);
+        }
     }
 
     public void CloseItemMenu()
@@ -93,6 +107,7 @@ public class PlayerActions : MonoBehaviour
         Debug.Log("[Player Actions] Player used a health potion!!!");
         itemMenu.SetActive(false);
         stats.PlayerTakeDamage(-100);
+        potionCount--;
         EnemyAction();
     }
 
