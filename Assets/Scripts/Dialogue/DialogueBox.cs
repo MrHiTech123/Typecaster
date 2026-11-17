@@ -3,11 +3,16 @@ using TMPro;
 using System;
 using Unity.Mathematics;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEditor;
 public class Script : MonoBehaviour
 {
 	private static readonly float CHARACTERS_PER_SECOND = 20;
 	[SerializeField] private TMP_Text TextBox;
 	[SerializeField] private DialogueLine[] dialogue;
+	[SerializeField] private SceneAsset NextScene;
+	
+	
 	private String __message;
 	private String Message
 	{
@@ -35,12 +40,20 @@ public class Script : MonoBehaviour
 			
 			if (DialogueIndex >= dialogue.Length)
 			{
-				Destroy(gameObject);
+				FinishDialogue();
 				return;
 			}
 			
 			SetDialogueLine(dialogue[DialogueIndex]);
 			
+		}
+	}
+	
+	private void FinishDialogue()
+	{
+		Destroy(gameObject);
+		if (NextScene != null) {
+			SceneManager.LoadScene(NextScene.name, LoadSceneMode.Single);
 		}
 	}
 	

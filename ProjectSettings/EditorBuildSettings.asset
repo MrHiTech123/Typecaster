@@ -5,14 +5,32 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testing/CombatTest.unity
     guid: c493edc0b26ecbf41a1d0f08cc75318f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Testing/Win.unity
     guid: fe2b2a6aad8e0694593855a6a5e661aa
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: ab68eb1f239e80a4b8744c77d9c6882c
+  - enabled: 1
+    path: Assets/Scenes/Level0Dialogue.unity
+    guid: ad4e1bf806b57c8479d0d898b72ba5f9
+  - enabled: 1
+    path: Assets/Scenes/Level0.unity
+    guid: 54c6dbe7584a2d549949b8e2357a6cc2
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 7f3e197eaf775d14dac8c1c06528e8a9
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 28ca5430b03e85f40b92add4efb4a41e
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: c36577ed73fc9d54585e7e59ebb11683
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 4b3f6bf15a47ad64eab17bd3114aabe5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
