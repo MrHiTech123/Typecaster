@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -35,7 +36,7 @@ public class PlayerActions : MonoBehaviour
 
     public void Attack() {
         Debug.Log("[Player Actions] Player attack enemy!!!");
-        stats.EnemyTakeDamage(10);
+        stats.EnemyTakeDamage(10, waitTime:1.0f);
         playerMainMenu.SetActive(false);
         EnemyAction();
     }
@@ -92,20 +93,28 @@ public class PlayerActions : MonoBehaviour
 		{
 			SceneManager.LoadScene(NextScene.name, LoadSceneMode.Single);
 		}
-		
-        Debug.Log("[Enemy Actions] Enemy deals 20 damage to player!!!");
-        stats.PlayerTakeDamage(20);
-        playerMainMenu.SetActive(true);
-		if (stats.playerHP <= 0)
-		{
-			SceneManager.LoadScene(GameOverScene.name, LoadSceneMode.Single);
-		}
+        else
+        {
+            Debug.Log("[Enemy Actions] Enemy deals 20 damage to player!!!");
+            stats.PlayerTakeDamage(20, waitTime:1.0f);
+            playerMainMenu.SetActive(true);
+            if (stats.playerHP <= 0)
+            {
+                SceneManager.LoadScene(GameOverScene.name, LoadSceneMode.Single);
+            }
+        }
     }
 
     public void UsePotion()
     {
+        StartCoroutine(UsePotionTimed());
+    }
+
+    public IEnumerator UsePotionTimed()
+    {
         Debug.Log("[Player Actions] Player used a health potion!!!");
         itemMenu.SetActive(false);
+        yield return new WaitForSeconds(1.0f);
         stats.PlayerTakeDamage(-100);
         potionCount--;
         EnemyAction();
