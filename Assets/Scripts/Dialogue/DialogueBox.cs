@@ -13,6 +13,9 @@ public class Script : MonoBehaviour
 	[SerializeField] private DialogueLine[] dialogue;
 	[SerializeField] private SceneAsset NextScene;
 	[SerializeField] private Dictionary<GameCharacter, Sprite> CHARACTER_SPRITES;
+	[SerializeField] private Image CharacterPortrait;
+	
+	private static readonly float PORTRAIT_WIDTH = 3;
 	
 	private String __message;
 	private String Message
@@ -66,9 +69,16 @@ public class Script : MonoBehaviour
         DialogueIndex = 0;
     }
 	
+	void SetPortraitSprite(Sprite sprite)
+	{
+		CharacterPortrait.sprite = sprite;
+		float spriteWidthHeightRatio = (float)sprite.texture.width / sprite.texture.height;
+		CharacterPortrait.transform.localScale = new Vector3(PORTRAIT_WIDTH, PORTRAIT_WIDTH / spriteWidthHeightRatio, 1);
+	}
 	void SetDialogueLine(DialogueLine dialogueLine)
 	{
 		Message = dialogueLine.Text;
+		SetPortraitSprite(CHARACTER_SPRITES[dialogueLine.Speaker]);
 	}
 	
 	void UpdateTimeSinceMessageChanged()
