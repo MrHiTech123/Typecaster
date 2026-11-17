@@ -49,6 +49,12 @@ public class PlayerActions : MonoBehaviour
         }
     }
 
+    public void CloseSpellMenu()
+    {
+        playerMainMenu.SetActive(true);
+        spellMenu.SetActive(false);
+    }
+
     public void Defense() {
         Debug.Log("[Player Actions] Player skips this turn!!!");
         EnemyAction();
@@ -58,6 +64,12 @@ public class PlayerActions : MonoBehaviour
         Debug.Log("[Player Actions] Open item selection menu!!!");
         playerMainMenu.SetActive(false);
         itemMenu.SetActive(true);
+    }
+
+    public void CloseItemMenu()
+    {
+        playerMainMenu.SetActive(true);
+        itemMenu.SetActive(false);
     }
 
     public void EnemyAction()
