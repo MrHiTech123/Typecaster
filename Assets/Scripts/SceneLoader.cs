@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,10 +9,17 @@ public class SceneLoader : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sceneRecorder = FindAnyObjectByType<SceneRecorder>();
-        if(currLevelNum != -1)
+        try
         {
-            sceneRecorder.currentSceneNumber = currLevelNum;
+            sceneRecorder = FindAnyObjectByType<SceneRecorder>();
+            if(currLevelNum != -1)
+            {
+                sceneRecorder.currentSceneNumber = currLevelNum;
+            }
+        }
+        catch(Exception e)
+        {
+            ;
         }
     }
 
