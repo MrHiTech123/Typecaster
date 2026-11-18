@@ -462,7 +462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.size
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[0].Text
@@ -486,23 +486,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[5].Text
-      value: Alright, dummy, you're going DOWN!
+      value: Well, unless you make too many mistakes, then you have to restart the spell.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[6].Text
-      value: On the contrary, Delpina, I believe you will find it is you who are going down.
+      value: But like in general making mistakes is okay. Okay, good talk.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[7].Text
-      value: Huh?
+      value: Alright, dummy, you're going DOWN!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[8].Text
-      value: ...
+      value: On the contrary, Delpina, I believe you will find it is you who are going down.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[9].Text
-      value: I thought I heard you say something...
+      value: Huh?
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[10].Text
@@ -510,6 +510,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[11].Text
+      value: I thought I heard you say something...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[12].Text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[13].Text
       value: Well, I must just be cracking the pressure, then. That's probably not good. Anyway, you're doing down, dummy!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
@@ -534,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[6].Speaker
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[7].Speaker
@@ -552,6 +560,14 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[10].Speaker
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[11].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[12].Speaker
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8354356226486469611, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -561,6 +577,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4727068330964065838, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 721060110603185412, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 612684147c0525840b9b46e9005858c8, type: 3}

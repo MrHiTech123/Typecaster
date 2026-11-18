@@ -458,31 +458,103 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: NextScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 54c6dbe7584a2d549949b8e2357a6cc2, type: 3}
+      value: Win
+      objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.size
-      value: 3
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[0].Text
-      value: This is the first message
+      value: I've got it, I've got it, THE ANGELIC TYPEWRITER! Now I'll be the GREATEST TYPECASTER IN THE WORLD!!!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[1].Text
-      value: This is the second message
+      value: '*Creak* *Wheeze* What? That''s...that''s not what it does'
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[2].Text
-      value: This is the third message
+      value: WHAT???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[3].Text
+      value: Yeah, it just looks pretty. It's pretty much useless though.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[4].Text
+      value: Huh. Well, looking at my skills, I guess I have become a pretty great typecaster already, just from my journey here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[5].Text
+      value: Maybe that was the real source of typecasting ability all along.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[6].Text
+      value: Now, to pawn this thing off to some sucker who will pay loads for it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[7].Text
+      value: And so, Delpina became a great and storied typecaster, and she pawned the Angelic Typewriter off to some poor sucker.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[8].Text
+      value: What are you doing?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[9].Text
+      value: Oh, I thought I'd narrate a little ending.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[10].Text
+      value: "An end\u2014"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[11].Text
+      value: '*Dies*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[12].Text
+      value: WHAT???
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[1].Speaker
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[2].Speaker
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[3].Speaker
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[4].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[7].Speaker
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[8].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[9].Speaker
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[10].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[11].Speaker
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[12].Speaker
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8354356226486469611, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: m_Sprite
@@ -493,6 +565,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4727068330964065838, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 721060110603185412, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 612684147c0525840b9b46e9005858c8, type: 3}
