@@ -5028,8 +5028,8 @@ MonoBehaviour:
   playerMainMenu: {fileID: 111630827}
   spellMenu: {fileID: 1412049201}
   itemMenu: {fileID: 256181828}
-  GameOverScene: 
-  NextScene: 
+  GameOverScene: Game Over
+  NextScene: Level4Dialogue
   spellButton: {fileID: 1358517383}
   contSpellButton: {fileID: 100396581}
   startNewSpellButton: {fileID: 1440702976}
