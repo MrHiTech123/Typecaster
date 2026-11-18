@@ -58,6 +58,8 @@ public class TypingTestBox : MonoBehaviour
 	
 	
 	private static int MistakesMadeSoFar = 0;
+	private static int CurrentPage = 0;
+	private static int TotalPages = 0;
 	private int AllowedMistakes;
 	
 	
