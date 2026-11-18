@@ -15,7 +15,7 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private GameObject playerMainMenu;
     [SerializeField] private GameObject spellMenu;
     [SerializeField] private GameObject itemMenu;
-	[SerializeField] private String GameOverScene;
+	[SerializeField] private String GameOverScene = "Game Over";
 	[SerializeField] private String NextScene;
     [SerializeField] private GameObject spellButton;
     [SerializeField] private GameObject contSpellButton;
