@@ -270,6 +270,7 @@ public class TypingTestBox : MonoBehaviour
 		if (MistakesMadeSoFar >= AllowedMistakes)
 		{
 			ResetForNewSpell();
+			EndTypingSession();
 			return;
 		}
 		

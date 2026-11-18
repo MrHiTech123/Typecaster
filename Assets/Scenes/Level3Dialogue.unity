@@ -458,30 +458,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: NextScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 54c6dbe7584a2d549949b8e2357a6cc2, type: 3}
+      value: Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[0].Text
-      value: This is the first message
+      value: Whew, that was a close one! But I finally made it to the temple.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[1].Text
-      value: This is the second message
+      value: The Angelic Typewriter is right inside! Or should I say, it's TYPEWRITE inside!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[2].Text
-      value: This is the third message
+      value: You there! You seek the Angelical Typewriter as well?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[3].Text
+      value: Uh...yeah? Why?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[4].Text
+      value: In that case, unfortutanianly for you, you are in my way.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[5].Text
+      value: This temple isn't enourmourous enough for the twain of us. Thus, it follows that only one of us will walk away from here alive!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[1].Speaker
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[2].Speaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[3].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[4].Speaker
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[5].Speaker
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8354356226486469611, guid: 612684147c0525840b9b46e9005858c8, type: 3}
@@ -493,6 +517,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4727068330964065838, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 721060110603185412, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 612684147c0525840b9b46e9005858c8, type: 3}

@@ -4364,7 +4364,7 @@ MonoBehaviour:
   spellMenu: {fileID: 1054656623}
   itemMenu: {fileID: 256181828}
   GameOverScene: Game Over
-  NextScene: 
+  NextScene: Level3Dialogue
   spellButton: {fileID: 1358517383}
   contSpellButton: {fileID: 511559363}
   startNewSpellButton: {fileID: 1596877984}
