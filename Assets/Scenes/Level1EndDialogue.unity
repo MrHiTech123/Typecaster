@@ -462,7 +462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.size
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[0].Text
@@ -478,70 +478,74 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[3].Text
-      value: Don't you realize what you're stealing? I have to make each individual small part, and thread and screw and wire them all together, exactly as it is in the plans the Gods bestowed upon us! I deserve to be fairly compensated for my labor!
+      value: Don't you realize what you're stealing? I have to make each individual small part, and thread and screw and wire them all together,
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[4].Text
-      value: "I'm sor\u2014"
+      value: exactly as it is in the plans the Gods bestowed upon us! I deserve to be fairly compensated for my labor!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[5].Text
-      value: Yes yes that's all very interesting. *Inhales* WHY WERE YOU STEALING IT?
+      value: "I'm sor\u2014"
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[6].Text
-      value: Why should I t*cough*ell you? I'm about to die anyw*augh* *blood shoots from his mouth and splatters on the floor*
+      value: Yes yes that's all very interesting. *Inhales* WHY WERE YOU STEALING IT?
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[7].Text
-      value: Say, you d-don't happen to have a healing *coughs up more blood* potion on you, do you?
+      value: Why should I t*cough*ell you? I'm about to die anyw*augh* *blood shoots from his mouth and splatters on the floor*
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[8].Text
-      value: Will you tell me if I heal you?
+      value: Say, you d-don't happen to have a healing *coughs up more blood* potion on you, do you?
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[9].Text
-      value: '*Nods*'
+      value: Will you tell me if I heal you?
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[10].Text
-      value: Hmmm...let's see, where did I put that healing potion? Oh, right, it's right behind my <color=#008800>Item</color> button!
+      value: '*Nods*'
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[11].Text
-      value: "Wait what do you mean your\u2014"
+      value: Hmmm...let's see, where did I put that healing potion? Oh, right, it's right behind my <color=#008800>Item</color> button!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[12].Text
-      value: Here's your potion!
+      value: "Wait what do you mean your\u2014"
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[13].Text
-      value: '*Gulps down the potion and is healed*'
+      value: Here's your potion!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[14].Text
-      value: So, what were you stealing that typewriter for?
+      value: '*Gulps down the potion and is healed*'
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[15].Text
-      value: I only meant to borrow it. I was going to go into the forest to try to claim the Angelic Typewriter, which is in the middle of the Hila forest.
+      value: So, what were you stealing that typewriter for?
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[16].Text
-      value: They say it's protected by a great and powerful guardian. I thought I'd need some magic of my own to beat it.
+      value: I only meant to borrow it. I was going to go into the forest to try to claim the Angelic Typewriter, which is in the middle of the Hila forest.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[17].Text
-      value: So...you wanted this typewriter...to get another typewriter?
+      value: They say it's protected by a great and powerful guardian. I thought I'd need some magic of my own to beat it.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[18].Text
-      value: They say that whoever wields the Angelic Typewriter will become the greatest typecaster in the world. I wanted that more than anything, but alas, it seems it was not meant to be.
+      value: So...you wanted this typewriter...to get another typewriter?
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[19].Text
+      value: They say that whoever wields the Angelic Typewriter will become the greatest typecaster in the world. I wanted that more than anything, but alas, it seems it was not meant to be.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[20].Text
       value: '*Thinking* the greatest typewriter in the world, you say?'
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
@@ -562,15 +566,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[4].Speaker
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[5].Speaker
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[6].Speaker
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[7].Speaker
@@ -578,35 +582,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[8].Speaker
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[9].Speaker
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[10].Speaker
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[11].Speaker
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[12].Speaker
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[13].Speaker
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
-      propertyPath: dialogue.Array.data[14].Speaker
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
-      propertyPath: dialogue.Array.data[15].Speaker
+      propertyPath: dialogue.Array.data[14].Speaker
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[15].Speaker
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[16].Speaker
@@ -614,14 +618,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[17].Speaker
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
-      propertyPath: dialogue.Array.data[18].Speaker
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[18].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[19].Speaker
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[20].Speaker
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8354356226486469611, guid: 612684147c0525840b9b46e9005858c8, type: 3}
@@ -633,6 +641,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4727068330964065838, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 721060110603185412, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 612684147c0525840b9b46e9005858c8, type: 3}

@@ -50,5 +50,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1EndDialogue.unity
     guid: e12278b4774662c4eb55ea5a132e2919
+  - enabled: 1
+    path: Assets/Scenes/Level4EndDialogue.unity
+    guid: 72abcbf86855fc2408f75cb9df3846b2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
