@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level4Dialogue.unity
     guid: 7ccf0114a8fd9ae4f9a015b80d0821b7
   - enabled: 1
-    path: Assets/Scenes/Level0EndingDialogue.unity
+    path: Assets/Scenes/Level0EndDialogue.unity
     guid: 2439d911ec84fdd44922f58b3449e88a
   - enabled: 1
     path: Assets/Scenes/Level1EndDialogue.unity

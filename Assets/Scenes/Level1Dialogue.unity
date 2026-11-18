@@ -458,8 +458,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: NextScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 7f3e197eaf775d14dac8c1c06528e8a9, type: 3}
+      value: Level1
+      objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.size
       value: 5

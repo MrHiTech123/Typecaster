@@ -3929,7 +3929,7 @@ MonoBehaviour:
   spellMenu: {fileID: 1139384835}
   itemMenu: {fileID: 256181828}
   GameOverScene: Game Over
-  NextScene: 
+  NextScene: Level0EndDialogue
   spellButton: {fileID: 1358517383}
   contSpellButton: {fileID: 795750830}
   startNewSpellButton: {fileID: 694948257}
