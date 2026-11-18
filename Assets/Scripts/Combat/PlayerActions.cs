@@ -142,10 +142,30 @@ public class PlayerActions : MonoBehaviour
                 break;
             // Normal Attack -- Thief
             case 2: 
+                Debug.Log("[Enemy Actions] Thief normal attack");
+                yield return new WaitForSeconds(1.0f);
+                stats.PlayerTakeDamage((int)Random.Range(20 * 0.8f, 20 * 1.2f));
+                yield return new WaitForSeconds(0.5f);
                 break;
             // Heavy Attack -- Thief
             case 3:
+                Debug.Log("[Enemy Actions] Thief heavy attack");
+                yield return new WaitForSeconds(1.0f);
+                stats.PlayerTakeDamage((int)Random.Range(70 * 0.8f, 70 * 1.1f));
+                yield return new WaitForSeconds(0.5f);
                 break;
+            // Normal Attack -- Wolf
+            case 4:
+                Debug.Log("[Enemy Actions] Wolf normal attack");
+                yield return new WaitForSeconds(1.0f);
+                for(int i = 0; i < stats.enemyCount; i++)
+                {
+                    stats.PlayerTakeDamage(Random.Range(3, 8));
+                    yield return new WaitForSeconds(0.8f);
+                    
+                }
+                break;
+            
             default:break;
         }
 
@@ -161,6 +181,9 @@ public class PlayerActions : MonoBehaviour
             // draw action for the next turn
             actionIDNextTurn = poolForActionIDs[Random.Range(0, poolForActionIDs.Length)];
             enemyActionImage.sprite = actionSprites[actionIDNextTurn];
+            
+            isDefending = false;
+            defenseIcon.SetActive(false);
         }
     }
 
