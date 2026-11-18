@@ -28,17 +28,13 @@ public class Data
 			{
 				Spell.FIRE_STORM, new List<string>
 				{
-					"This spell gives you more mana.",
-					"Drop enemies to 0 HP to kill them.",
-					"The faster you type, the more damage you deal."
+					"Annahilate all of the creatures that swarm, so that they will be no more. With the might of my firey storm, they shall be relegated to ye olde lore."
 				}
 			},
 			{
 				Spell.CONSUME, new List<string>
 				{
-					"This spell gives you more mana.",
-					"Drop enemies to 0 HP to kill them.",
-					"The faster you type, the more damage you deal."
+					"I hunger for the flesh of the living, of it I crave a flood. I'll eat more than at Thanksgiving, and all of it shall be your blood."
 				}
 			},
 			{
