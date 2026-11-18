@@ -1435,7 +1435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &320740924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1942,7 +1942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &817059285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4363,8 +4363,8 @@ MonoBehaviour:
   playerMainMenu: {fileID: 111630827}
   spellMenu: {fileID: 1054656623}
   itemMenu: {fileID: 256181828}
-  GameOverScene: {fileID: 102900000, guid: ab68eb1f239e80a4b8744c77d9c6882c, type: 3}
-  NextScene: {fileID: 102900000, guid: e12278b4774662c4eb55ea5a132e2919, type: 3}
+  GameOverScene: 
+  NextScene: 
   spellButton: {fileID: 1358517383}
   contSpellButton: {fileID: 511559363}
   startNewSpellButton: {fileID: 1596877984}
