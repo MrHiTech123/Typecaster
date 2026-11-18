@@ -84,6 +84,7 @@ public class PlayerActions : MonoBehaviour
 
     private IEnumerator DefenseTimed()
     {
+        playerMainMenu.SetActive(false);
         isDefending = true;
         defenseIcon.SetActive(true);
         yield return new WaitForSeconds(1.0f);
@@ -126,6 +127,7 @@ public class PlayerActions : MonoBehaviour
 
     private IEnumerator EnemySkills(int skillID)
     {
+        enemyActionImage.gameObject.SetActive(false);
         switch(EnemySkillIDs[skillID])
         {
             // Do nothing
@@ -165,7 +167,49 @@ public class PlayerActions : MonoBehaviour
                     
                 }
                 break;
-            
+            // Normal Attack -- Rival Wizard
+            case 5:
+                Debug.Log("[Enemy Actions] Wizard normal attack");
+                yield return new WaitForSeconds(1.0f);
+                for(int i = 0; i < stats.enemyCount; i++)
+                {
+                    stats.PlayerTakeDamage(Random.Range(5, 10));
+                    yield return new WaitForSeconds(0.8f);
+                    
+                }
+                break;
+            // Heavy Attack -- Rival Wizard
+            case 6:
+                Debug.Log("[Enemy Actions] Wizard heavy attack");
+                yield return new WaitForSeconds(1.0f);
+                for(int i = 0; i < stats.enemyCount; i++)
+                {
+                    stats.PlayerTakeDamage(Random.Range(18, 26));
+                    yield return new WaitForSeconds(0.8f);
+                    
+                }
+                if(stats.enemyCount > 1)
+                {
+                    stats.enemyCount--;
+                    FindAnyObjectByType<EnemyCopiesManager>().UpdateCopies();
+                }
+                break;
+            // Summon copies / recover health -- Rival Wizard
+            case 7:
+                Debug.Log("[Enemy Actions] Wizard special skill");
+                yield return new WaitForSeconds(1.0f);
+                if(stats.enemyCount < 4)
+                {
+                    stats.enemyCount++;
+                    FindAnyObjectByType<EnemyCopiesManager>().UpdateCopies();
+                    yield return new WaitForSeconds(0.8f);
+                }
+                else
+                {
+                    stats.EnemyTakeDamage(Random.Range(-33, -14));
+                    yield return new WaitForSeconds(0.8f);
+                }
+                break;
             default:break;
         }
 
@@ -180,6 +224,7 @@ public class PlayerActions : MonoBehaviour
             playerMainMenu.SetActive(true);
             // draw action for the next turn
             actionIDNextTurn = poolForActionIDs[Random.Range(0, poolForActionIDs.Length)];
+            enemyActionImage.gameObject.SetActive(true);
             enemyActionImage.sprite = actionSprites[actionIDNextTurn];
             
             isDefending = false;
@@ -192,8 +237,6 @@ public class PlayerActions : MonoBehaviour
         if(isDefending)
         {
             Debug.Log("Damage to player is defended!!!");
-            isDefending = false;
-            defenseIcon.SetActive(false);
             return 1 - 0.8f;
         }
         else
