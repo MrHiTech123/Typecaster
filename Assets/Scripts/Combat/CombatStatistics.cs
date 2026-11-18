@@ -7,7 +7,9 @@ public class CombatStatistics : MonoBehaviour
 {
     public int playerHP;
     public int playerMana;
+    public int enemyMaxHP;
     public int enemyHP;
+    public int enemyCount;
     [SerializeField] private RectTransform playerHealthBar;
     [SerializeField] private RectTransform enemyHealthBar;
     [SerializeField] private TextMeshProUGUI playerDamageText;
@@ -30,15 +32,15 @@ public class CombatStatistics : MonoBehaviour
 	public void TakeDamage(int dmg, ref int hpAmount, RectTransform healthBar, int maxBarLen, int maxHP) {
 		hpAmount -= dmg;
 		hpAmount = Mathf.Clamp(hpAmount, 0, maxHP);
-		healthBar.sizeDelta = new Vector2(hpAmount / 100.0f * maxBarLen, 30);
+		healthBar.sizeDelta = new Vector2(1.0f * hpAmount / maxHP * maxBarLen, 30);
 	}
 
-    public void EnemyTakeDamage(int dmg, Boolean isArea = false, Boolean isSkill = false, float waitTime = 0.0f)
+    public void EnemyTakeDamage(int dmg, bool isArea = false, bool isSkill = false, float waitTime = 0.0f, bool endTurn = false)
     {
-        StartCoroutine(EnemyTakeDamageTimed(dmg, isArea, isSkill, waitTime));
+        StartCoroutine(EnemyTakeDamageTimed(dmg, isArea, isSkill, waitTime, endTurn));
     }
 
-    private IEnumerator EnemyTakeDamageTimed(int dmg, Boolean isArea = false, Boolean isSkill = false, float waitTime = 0.0f)
+    private IEnumerator EnemyTakeDamageTimed(int dmg, bool isArea = false, bool isSkill = false, float waitTime = 0.0f, bool endTurn = false)
     {
         yield return new WaitForSeconds(waitTime);
         enemyDamageText.gameObject.SetActive(true);
@@ -49,25 +51,33 @@ public class CombatStatistics : MonoBehaviour
         }
         else
         {
+            if (isArea)
+            {
+                dmg = dmg * enemyCount;
+            }
             enemyDamageText.SetText(dmg.ToString());
             enemyDamageText.color = Color.red;
         }
-        TakeDamage(dmg, ref enemyHP, enemyHealthBar, 265, 100);
+        TakeDamage(dmg, ref enemyHP, enemyHealthBar, 265, enemyMaxHP);
         yield return new WaitForSeconds(0.5f);
         enemyDamageText.gameObject.SetActive(false);
         if(isSkill)
         {
             playerActions.SpellCastOver();
         }
+        if(endTurn)
+        {
+            playerActions.EnemyAction();
+        }
         
     }
 
-    public void PlayerTakeDamage(int dmg, float waitTime = 0.0f)
+    public void PlayerTakeDamage(int dmg, float waitTime = 0.0f, bool endTurn = false)
     {
-        StartCoroutine(PlayerTakeDamageTimed(dmg, waitTime));
+        StartCoroutine(PlayerTakeDamageTimed(dmg, waitTime, endTurn));
     }
 	
-    private IEnumerator PlayerTakeDamageTimed(int dmg, float waitTime = 0.0f)
+    private IEnumerator PlayerTakeDamageTimed(int dmg, float waitTime = 0.0f, bool endTurn = false)
     {
         yield return new WaitForSeconds(waitTime);
         playerDamageText.gameObject.SetActive(true);
@@ -85,5 +95,10 @@ public class CombatStatistics : MonoBehaviour
         TakeDamage(dmg, ref playerHP, playerHealthBar, 650, 100);
         yield return new WaitForSeconds(0.5f);
         playerDamageText.gameObject.SetActive(false);
+
+        if(endTurn)
+        {
+            playerActions.EnemyAction();
+        }
     }
 }

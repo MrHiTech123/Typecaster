@@ -144,7 +144,11 @@ public class TypingTestBox : MonoBehaviour
 		onCompleted.Invoke(result);
 		
 		ResetForNewSpell();
-		EndTypingSession();
+
+		// Do not call enemy action once typing done. 
+		//EndTypingSession();
+		Exists = false;
+		Destroy(gameObject);
 	}
 	
 	void UpdateWhatPlayerTyped()

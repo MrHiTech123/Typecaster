@@ -4244,12 +4244,10 @@ MonoBehaviour:
   enemyActionImage: {fileID: 1242202230}
   actionSprites:
   - {fileID: 1040011941393589210, guid: 02224aab1a7a5d54a93e1c839481523b, type: 3}
-  - {fileID: 5797414072685025518, guid: ddcb611c80de94a41a752b8188b9451e, type: 3}
-  - {fileID: -9102672812768309384, guid: 6a96346f5cd8919469c27cb4180e8ca3, type: 3}
-  - {fileID: 2292128357978606298, guid: 32b223a294066914089806b0ea907be8, type: 3}
-  - {fileID: 2903848411162822477, guid: 4961531616388ac4498252f309179c3b, type: 3}
   actionIDNextTurn: 0
   defenseIcon: {fileID: 2094899064}
+  EnemySkillIDs: 01000000i
+  poolForActionIDs: 00000000i
 --- !u!114 &1532075597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4264,7 +4262,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CombatStatistics
   playerHP: 100
   playerMana: 0
-  enemyHP: 100
+  enemyMaxHP: 20
+  enemyHP: 20
+  enemyCount: 1
   playerHealthBar: {fileID: 412498933}
   enemyHealthBar: {fileID: 960759789}
   playerDamageText: {fileID: 614997890}

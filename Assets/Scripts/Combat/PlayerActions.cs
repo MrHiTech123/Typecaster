@@ -23,6 +23,8 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private Sprite[] actionSprites;
     [SerializeField] private int actionIDNextTurn;
     [SerializeField] private GameObject defenseIcon;
+    [SerializeField] private int[] EnemySkillIDs;
+    [SerializeField] private int[] poolForActionIDs;
     private bool isDefending;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,8 +46,14 @@ public class PlayerActions : MonoBehaviour
 
     public void Attack() {
         Debug.Log("[Player Actions] Player attack enemy!!!");
-        stats.EnemyTakeDamage(10, waitTime:1.0f);
+        StartCoroutine(CastManaBlast());
+    }
+
+    private IEnumerator CastManaBlast()
+    {
         playerMainMenu.SetActive(false);
+        yield return new WaitForSeconds(1.0f);
+        stats.EnemyTakeDamage(10);
         EnemyAction();
     }
 
@@ -105,22 +113,54 @@ public class PlayerActions : MonoBehaviour
 
     public void EnemyAction()
     {
+        // Check if enemy dies
 		if (stats.enemyHP <= 0)
 		{
 			SceneManager.LoadScene(NextScene.name, LoadSceneMode.Single);
 		}
         else
         {
-            Debug.Log("[Enemy Actions] Enemy deals 20 damage to player!!!");
-            stats.PlayerTakeDamage(20, waitTime:1.0f);
+            StartCoroutine(EnemySkills(actionIDNextTurn));
+        }
+    }
+
+    private IEnumerator EnemySkills(int skillID)
+    {
+        switch(EnemySkillIDs[skillID])
+        {
+            // Do nothing
+            case 0: 
+                Debug.Log("[Enemy Actions] Enemy does nothing this turn");
+                yield return new WaitForSeconds(1.0f);
+                break;
+            // Do nothing -- Recover to max HP
+            case 1: 
+                Debug.Log("[Enemy Actions] Enemy does nothing this turn but heals itself");
+                yield return new WaitForSeconds(1.0f);
+                stats.EnemyTakeDamage(-9999);
+                yield return new WaitForSeconds(0.5f);
+                break;
+            // Normal Attack -- Thief
+            case 2: 
+                break;
+            // Heavy Attack -- Thief
+            case 3:
+                break;
+            default:break;
+        }
+
+        // Check if player dies
+        if (stats.playerHP <= 0)
+        {
+            SceneManager.LoadScene(GameOverScene.name, LoadSceneMode.Single);
+        }
+        // 
+        else
+        {
             playerMainMenu.SetActive(true);
             // draw action for the next turn
-            actionIDNextTurn = Random.Range(0, actionSprites.Length);
+            actionIDNextTurn = poolForActionIDs[Random.Range(0, poolForActionIDs.Length)];
             enemyActionImage.sprite = actionSprites[actionIDNextTurn];
-            if (stats.playerHP <= 0)
-            {
-                SceneManager.LoadScene(GameOverScene.name, LoadSceneMode.Single);
-            }
         }
     }
 
@@ -179,6 +219,7 @@ public class PlayerActions : MonoBehaviour
 
     public void SpellCastOver()
     {
+        Debug.Log("[Player Actions] Player spell cast done. ");
         lastSpell = null;
     }
 }
