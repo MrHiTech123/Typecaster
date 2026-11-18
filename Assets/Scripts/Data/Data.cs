@@ -29,7 +29,7 @@ public class Data
 				Spell.FIRE_STORM, new List<string>
 				{
 					"Annahilate all of the creatures that swarm, so that they will be no more.",
-					"With the might of my firey storm, they shall be relegated to ye olde lore."
+					"With the might of my fiery storm, they shall be relegated to ye olde lore."
 				}
 			},
 			{
