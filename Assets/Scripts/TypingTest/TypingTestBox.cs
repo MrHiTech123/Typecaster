@@ -206,6 +206,7 @@ public class TypingTestBox : MonoBehaviour
 			case "space": toType = " "; break;
 			case "period": toType = "."; break;
 			case "comma": toType = ","; break;
+			case "minus": toType = "-"; break;
 			default:
 				if (key.Length == 1)
 				{

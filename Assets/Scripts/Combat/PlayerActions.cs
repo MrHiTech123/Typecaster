@@ -48,14 +48,18 @@ public class PlayerActions : MonoBehaviour
 
     public void Attack() {
         Debug.Log("[Player Actions] Player attack enemy!!!");
-        // Audio Clip 1: Mana Blast
-        audioManager.PlayAudio(1);
+        
+        // Audio Clip 0: Button Click Sound
+        audioManager.PlayAudio(0);
         StartCoroutine(CastManaBlast());
     }
 
     private IEnumerator CastManaBlast()
     {
         playerMainMenu.SetActive(false);
+        yield return new WaitForSeconds(0.3f);
+        // Audio Clip 1: Mana Blast
+        audioManager.PlayAudio(1);
         yield return new WaitForSeconds(2.0f);
         stats.EnemyTakeDamage(10);
         EnemyAction();
@@ -96,9 +100,13 @@ public class PlayerActions : MonoBehaviour
     private IEnumerator DefenseTimed()
     {
         playerMainMenu.SetActive(false);
+        
+        yield return new WaitForSeconds(0.3f);
+        audioManager.PlayAudio(7);
+        yield return new WaitForSeconds(0.3f);
         isDefending = true;
         defenseIcon.SetActive(true);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
         EnemyAction();
     }
 
@@ -153,30 +161,58 @@ public class PlayerActions : MonoBehaviour
             // Do nothing -- Recover to max HP
             case 1: 
                 Debug.Log("[Enemy Actions] Enemy does nothing this turn but heals itself");
-                yield return new WaitForSeconds(1.0f);
+                audioManager.PlayAudio(6);
+                yield return new WaitForSeconds(1.3f);
                 stats.EnemyTakeDamage(-9999);
                 yield return new WaitForSeconds(0.8f);
                 break;
             // Normal Attack -- Thief
             case 2: 
                 Debug.Log("[Enemy Actions] Thief normal attack");
-                yield return new WaitForSeconds(1.0f);
+                if(isDefending)
+                {
+                    audioManager.PlayAudio(11);
+                    yield return new WaitForSeconds(0.2f);
+                }
+                else
+                {
+                    audioManager.PlayAudio(9);
+                    yield return new WaitForSeconds(0.8f);
+                }
                 stats.PlayerTakeDamage((int)Random.Range(20 * 0.8f, 20 * 1.2f));
                 yield return new WaitForSeconds(0.8f);
                 break;
             // Heavy Attack -- Thief
             case 3:
                 Debug.Log("[Enemy Actions] Thief heavy attack");
-                yield return new WaitForSeconds(1.0f);
+                if(isDefending)
+                {
+                    audioManager.PlayAudio(11);
+                    yield return new WaitForSeconds(0.2f);
+                }
+                else
+                {
+                    audioManager.PlayAudio(10);
+                    yield return new WaitForSeconds(1.0f);
+                }
                 stats.PlayerTakeDamage((int)Random.Range(70 * 0.8f, 70 * 1.1f));
                 yield return new WaitForSeconds(0.8f);
                 break;
             // Normal Attack -- Wolf
             case 4:
                 Debug.Log("[Enemy Actions] Wolf normal attack");
-                yield return new WaitForSeconds(1.0f);
                 for(int i = 0; i < stats.enemyCount; i++)
                 {
+                    if(isDefending)
+                    {
+                        audioManager.PlayAudio(11);
+                        yield return new WaitForSeconds(0.2f);
+                    }
+                    else
+                    {
+                        audioManager.PlayAudio(10);
+                        yield return new WaitForSeconds(0.3f);
+                    }
                     stats.PlayerTakeDamage(Random.Range(3, 8));
                     yield return new WaitForSeconds(0.8f);
                     
@@ -185,9 +221,18 @@ public class PlayerActions : MonoBehaviour
             // Normal Attack -- Rival Wizard
             case 5:
                 Debug.Log("[Enemy Actions] Wizard normal attack");
-                yield return new WaitForSeconds(1.0f);
                 for(int i = 0; i < stats.enemyCount; i++)
                 {
+                    if(isDefending)
+                    {
+                        audioManager.PlayAudio(11);
+                        yield return new WaitForSeconds(0.2f);
+                    }
+                    else
+                    {
+                        audioManager.PlayAudio(2);
+                        yield return new WaitForSeconds(0.5f);
+                    }
                     stats.PlayerTakeDamage(Random.Range(5, 10));
                     yield return new WaitForSeconds(0.8f);
                     
@@ -196,9 +241,19 @@ public class PlayerActions : MonoBehaviour
             // Heavy Attack -- Rival Wizard
             case 6:
                 Debug.Log("[Enemy Actions] Wizard heavy attack");
-                yield return new WaitForSeconds(1.0f);
                 for(int i = 0; i < stats.enemyCount; i++)
                 {
+                    
+                    if(isDefending)
+                    {
+                        audioManager.PlayAudio(11);
+                        yield return new WaitForSeconds(0.2f);
+                    }
+                    else
+                    {
+                        audioManager.PlayAudio(5);
+                        yield return new WaitForSeconds(1.0f);
+                    }
                     stats.PlayerTakeDamage(Random.Range(18, 26));
                     yield return new WaitForSeconds(0.8f);
                     
@@ -212,15 +267,18 @@ public class PlayerActions : MonoBehaviour
             // Summon copies / recover health -- Rival Wizard
             case 7:
                 Debug.Log("[Enemy Actions] Wizard special skill");
-                yield return new WaitForSeconds(1.0f);
                 if(stats.enemyCount < 4)
                 {
+                    audioManager.PlayAudio(8);
+                    yield return new WaitForSeconds(2.5f);
                     stats.enemyCount++;
                     FindAnyObjectByType<EnemyCopiesManager>().UpdateCopies();
                     yield return new WaitForSeconds(0.8f);
                 }
                 else
                 {
+                    audioManager.PlayAudio(6);
+                    yield return new WaitForSeconds(1.3f);
                     stats.EnemyTakeDamage(Random.Range(-33, -14));
                     yield return new WaitForSeconds(0.8f);
                 }
@@ -228,14 +286,24 @@ public class PlayerActions : MonoBehaviour
             // Normal attack -- Typo
             case 8:
                 Debug.Log("[Enemy Actions] Typo normal attack");
-                yield return new WaitForSeconds(1.0f);
+                if(isDefending)
+                {
+                    audioManager.PlayAudio(11);
+                    yield return new WaitForSeconds(0.2f);
+                }
+                else
+                {
+                    audioManager.PlayAudio(12);
+                    yield return new WaitForSeconds(0.3f);
+                }
                 stats.PlayerTakeDamage((int)Random.Range(20 * 0.8f, 20 * 1.2f));
                 yield return new WaitForSeconds(0.8f);
                 break;
             // Full healing -- Typo
             case 9:
                 Debug.Log("[Enemy Actions] Typo full heal");
-                yield return new WaitForSeconds(1.0f);
+                audioManager.PlayAudio(6);
+                yield return new WaitForSeconds(1.3f);
                 stats.EnemyTakeDamage(-9999);
                 yield return new WaitForSeconds(0.8f);
                 break;
@@ -283,8 +351,10 @@ public class PlayerActions : MonoBehaviour
     private IEnumerator UsePotionTimed()
     {
         Debug.Log("[Player Actions] Player used a health potion!!!");
+        
+        audioManager.PlayAudio(6);
         itemMenu.SetActive(false);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(1.3f);
         stats.PlayerTakeDamage(-100);
         potionCount--;
         EnemyAction();
