@@ -55,4 +55,29 @@ public class StringLib
 		}
 		return toReturn;
 	}
+	
+	public static String EnumNameToCapitalize(String enumName)
+	{
+		String toReturn = "";
+		
+		bool capitalizeNext = true;
+		foreach (char c in enumName)
+		{
+			if (c == '_')
+			{
+				toReturn += " ";
+				capitalizeNext = true;
+			}
+			else if (capitalizeNext)
+			{
+				toReturn += c.ToString().ToUpper();
+				capitalizeNext = false;
+			}
+			else
+			{
+				toReturn += c.ToString().ToLower();
+			}
+		}
+		return toReturn;
+	}
 }

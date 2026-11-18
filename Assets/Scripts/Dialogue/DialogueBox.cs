@@ -5,10 +5,12 @@ using Unity.Mathematics;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 public class Script : MonoBehaviour
 {
 	private static readonly float CHARACTERS_PER_SECOND = 20;
 	[SerializeField] private TMP_Text TextBox;
+	[SerializeField] private TMP_Text CharacterNameTextBox;
 	[SerializeField] private DialogueLine[] dialogue;
 	[SerializeField] private String NextScene;
 	[SerializeField] private Dictionary<GameCharacter, Sprite> CHARACTER_SPRITES;
@@ -77,6 +79,7 @@ public class Script : MonoBehaviour
 	void SetDialogueLine(DialogueLine dialogueLine)
 	{
 		Message = dialogueLine.Text;
+		CharacterNameTextBox.text = StringLib.EnumNameToCapitalize(Enum.GetName(typeof(GameCharacter), dialogueLine.Speaker));
 		SetPortraitSprite(CHARACTER_SPRITES[dialogueLine.Speaker]);
 	}
 	
