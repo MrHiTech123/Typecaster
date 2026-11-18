@@ -24,7 +24,10 @@ public class TypingTestBox : MonoBehaviour
 		textBox.Initialize(whatToType, timeAlloted, AllowedMistakes, onTimeRanOut, onSpellCompleted);
 	}
 	
-	
+	public static void Create(Spell spell, Action onTimeRanOut, Action<TypingTestResult> onSpellCompleted)
+	{
+		Create(Data.Poetry.GetPoem(spell), spell.timeToCast, spell.AllowedMistakes, onTimeRanOut, onSpellCompleted);
+	}
 	/*
 		**********************
 		END STATIC METHODS
@@ -230,6 +233,12 @@ public class TypingTestBox : MonoBehaviour
 			Debug.Log("MISTAKE: " + toType + " should've been " + shouldveBeenTyped + " mistakes: " + MistakesMadeSoFar + " typed so far: " + typedSoFar);
 			++MistakesMadeSoFar;
 			mistakeText += toType;
+		}
+		
+		if (MistakesMadeSoFar >= AllowedMistakes)
+		{
+			ResetForNewSpell();
+			return;
 		}
 		
 		UpdateWhatPlayerTyped();
