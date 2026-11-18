@@ -44,8 +44,8 @@ public class Data
 				{
 					"A strike by a meteor that dwarfs the K-T Extinction event by comparison,",
 					"this meteor strike instantaneously obliterates anything you attack with it.",
-					"Also, the K-T extinction event happened in this world even though it’s not Earth.", 
-					"Don’t worry about it."
+					"Also, the K-T extinction event happened in this world even though it's not Earth.", 
+					"Don't worry about it."
 				}
 			}
 		};
