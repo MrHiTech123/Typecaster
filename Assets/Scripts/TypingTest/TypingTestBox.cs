@@ -18,15 +18,14 @@ public class TypingTestBox : MonoBehaviour
 	// @param timeAlloted = the amount of time that the player can spend typing the text and get a score > 0.0
 	// @param onCompleted = a delegate function of the form (TypingTestResult result) => {doThing(result);}.
 	// 		This function will be called when the player finishes typing the text, and the result will be passed as an argument.
-	public static void Create(String whatToType, TimeSpan timeAlloted, int AllowedMistakes, Action onTimeRanOut, Action<TypingTestResult> onSpellCompleted)
-	{
-		TypingTestBox textBox = Instantiate(GameManager.INSTANCE.TYPING_TEXT_BOX_PREFAB).GetComponent<TypingTestBox>();
-		textBox.Initialize(whatToType, timeAlloted, AllowedMistakes, onTimeRanOut, onSpellCompleted);
-	}
 	
 	public static void Create(Spell spell, Action onTimeRanOut, Action<TypingTestResult> onSpellCompleted)
 	{
-		Create(Data.Poetry.GetPoem(spell), spell.timeToCast, spell.AllowedMistakes, onTimeRanOut, onSpellCompleted);
+		if (Exists) return;
+		
+		TypingTestBox textBox = Instantiate(GameManager.INSTANCE.TYPING_TEXT_BOX_PREFAB).GetComponent<TypingTestBox>();
+		
+		textBox.Initialize(spell, onTimeRanOut, onSpellCompleted);
 	}
 	/*
 		**********************
@@ -44,7 +43,13 @@ public class TypingTestBox : MonoBehaviour
 	public TMP_Text BoxForWhatToType;
 	public TMP_Text BoxForWhatPlayerTyped;
 	
-	private static String whatToType;
+	private static Spell CurrentSpell;
+	private static String whatToType {
+		get
+		{
+			return Data.Poetry.GetPoem(CurrentSpell, CurrentPage);
+		}
+	}
 	private static StringWithMistakes typedSoFar = new StringWithMistakes();
 	private String mistakeText = "";
 	private TimeSpan timeAlloted;
@@ -62,33 +67,39 @@ public class TypingTestBox : MonoBehaviour
 	
 	private static int MistakesMadeSoFar = 0;
 	private static int CurrentPage = 0;
-	private static int TotalPages = 0;
 	private int AllowedMistakes;
 	
 	
 	public static void ResetForNewSpell()
 	{
 		typedSoFar = new StringWithMistakes();
+		CurrentPage = 0;
 		MistakesMadeSoFar = 0;
 	}
-	public void Initialize(String whatToType, TimeSpan timeAlloted, int AllowedMistakes,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
+	
+	public void InitializePage(Spell spell, int pageNumber)
+	{
+		BoxForWhatToType.text = Data.Poetry.GetPoem(spell, pageNumber);
+		BoxForWhatPlayerTyped.text = TypingTestBox.typedSoFar.AsFormattedString;
+	}
+	public void Initialize(Spell spell,  Action onSessionEnded, Action<TypingTestResult> onCompleted)
 	{
 		initialized = true;
 		Exists = true;
 		
-		if (TypingTestBox.whatToType != whatToType)
+		if (TypingTestBox.CurrentSpell != spell)
 		{
-			TypingTestBox.whatToType = whatToType;
+			TypingTestBox.CurrentSpell = spell;
 			ResetForNewSpell();
 		}
 		
-		this.timeAlloted = timeAlloted;
+		this.timeAlloted = spell.timeToCast;
 		this.onSessionEnded = onSessionEnded;
 		this.onCompleted = onCompleted;
-		this.AllowedMistakes = AllowedMistakes;
+		this.AllowedMistakes = spell.AllowedMistakes;
 		
+		InitializePage(spell, CurrentPage);
 		
-		BoxForWhatToType.text = TypingTestBox.whatToType;
 		BoxForWhatPlayerTyped.text = TypingTestBox.typedSoFar.AsFormattedString;
 		
 		UpdateWhatPlayerTyped();
@@ -98,7 +109,7 @@ public class TypingTestBox : MonoBehaviour
 	void Start()
 	{
 		if (WasManuallyPutInLevel) {
-			Initialize(whatToType, TimeSpan.FromSeconds(10), 10,  () => Debug.Log("Out of time!"), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.MistakeScore));
+			// Initialize(whatToType, TimeSpan.FromSeconds(10), 10,  () => Debug.Log("Out of time!"), (TypingTestResult result) => Debug.Log( "Time Score: " + result.TimeScore + ", Mistakes: " + result.MistakeScore));
 		}
 	}
 	
@@ -149,6 +160,20 @@ public class TypingTestBox : MonoBehaviour
 		//EndTypingSession();
 		Exists = false;
 		Destroy(gameObject);
+	}
+	
+	void NextPage()
+	{
+		++CurrentPage;
+		if (CurrentPage >= Data.Poetry.PoemLines(CurrentSpell))
+		{
+			Finish();
+			return;
+		}
+		
+		InitializePage(CurrentSpell, CurrentPage);
+		typedSoFar = new StringWithMistakes();
+		UpdateWhatPlayerTyped();
 	}
 	
 	void UpdateWhatPlayerTyped()
@@ -249,7 +274,7 @@ public class TypingTestBox : MonoBehaviour
 		
 		if (Done())
 		{
-			Finish();
+			NextPage();
 		}
 		
 		

@@ -22,7 +22,8 @@ public class Data
 				{
 					// "This spell gives you more mana.",
 					// "Drop enemies to 0 HP to kill them.",
-					"You have earned my ire, and thus I shall blast you with fire."
+					"You have earned my ire, and thus I shall blast you with fire.",
+					"Second line test."
 				}
 			},
 			{
@@ -45,11 +46,17 @@ public class Data
 			}
 		};
 		
-		
-		
+		public static int PoemLines(Spell spell)
+		{
+			return POEMS[spell].Count;
+		}
+		public static String GetPoem(Spell spell, int line)
+		{
+			return POEMS[spell][line];
+		}
 		public static String GetPoem(Spell spell)
 		{
-			return DataStructureLib.Choice(POEMS[spell]);
+			return GetPoem(spell, 0);
 		}
 	}
 	

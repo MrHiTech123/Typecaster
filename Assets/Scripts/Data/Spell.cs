@@ -22,7 +22,7 @@ public class Spell
 	
 	public void Cast(CombatStatistics combatStatistics, PlayerActions actions)
 	{
-		TypingTestBox.Create(Data.Poetry.GetPoem(this), timeToCast, AllowedMistakes, () => actions.EnemyAction(), result => onCast.Invoke(combatStatistics, result));
+		TypingTestBox.Create(this, () => actions.EnemyAction(), result => onCast.Invoke(combatStatistics, result));
 	}	
 	public Spell(int manaCost, TimeSpan timeToCast, int AllowedMistakes, Action<CombatStatistics, TypingTestResult> onCast)
 	{
