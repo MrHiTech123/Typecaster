@@ -16,6 +16,9 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private GameObject itemMenu;
 	[SerializeField] private SceneAsset GameOverScene;
 	[SerializeField] private SceneAsset NextScene;
+    [SerializeField] private GameObject spellButton;
+    [SerializeField] private GameObject contSpellButton;
+    [SerializeField] private GameObject startNewSpellButton;
 
     [SerializeField] private TextMeshProUGUI potionText;
     [SerializeField] private GameObject potionButton;
@@ -30,11 +33,15 @@ public class PlayerActions : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        TypingTestBox.ResetForNewSpell();
         stats = GetComponent<CombatStatistics>();
         audioManager = FindAnyObjectByType<AudioManagement>();
         playerMainMenu.SetActive(true);
         spellMenu.SetActive(false);
         itemMenu.SetActive(false);
+        spellButton.SetActive(true);
+        contSpellButton.SetActive(false);
+        startNewSpellButton.SetActive(false);
         lastSpell = null;
         enemyActionImage.sprite = actionSprites[actionIDNextTurn];
         defenseIcon.SetActive(false);
@@ -76,10 +83,27 @@ public class PlayerActions : MonoBehaviour
         }
         else
         {
-            Debug.Log("[Player Actions] Player continues the last spell!!!");
-            playerMainMenu.SetActive(false);
-            lastSpell.Cast(stats, this);
+            spellButton.SetActive(false);
+            contSpellButton.SetActive(true);
+            startNewSpellButton.SetActive(true);
         }
+    }
+
+    public void ContinueLastSpell()
+    {
+        // Audio Clip 0: Button Click Sound
+        audioManager.PlayAudio(0);
+        Debug.Log("[Player Actions] Player continues the last spell!!!");
+        playerMainMenu.SetActive(false);
+        lastSpell.Cast(stats, this);
+        
+    }
+
+    public void StartANewSpell()
+    {
+        TypingTestBox.ResetForNewSpell();
+        lastSpell = null;
+        OpenSpellMenu();
     }
 
     public void CloseSpellMenu()
@@ -386,5 +410,8 @@ public class PlayerActions : MonoBehaviour
     {
         Debug.Log("[Player Actions] Player spell cast done. ");
         lastSpell = null;
+        spellButton.SetActive(true);
+        contSpellButton.SetActive(false);
+        startNewSpellButton.SetActive(false);
     }
 }
