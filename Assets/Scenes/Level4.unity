@@ -4259,9 +4259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CombatStatistics
   playerHP: 100
   playerMana: 0
-  enemyMaxHP: 0
+  enemyMaxHP: 5000
   enemyHP: 5000
-  enemyCount: 5000
+  enemyCount: 1
   playerHealthBar: {fileID: 412498933}
   enemyHealthBar: {fileID: 960759789}
   playerDamageText: {fileID: 451106539}
@@ -4329,12 +4329,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f2558075b24659f8afd68a7ec0de501d, type: 3}
   - {fileID: 21300000, guid: 8e2f5b6c9e0c5452bff1ddae52f38dd8, type: 3}
   enemyHit:
-  - {fileID: 1187293708483647829, guid: bcd4530f4080f9949ba314bb65cb9807, type: 3}
-  - {fileID: -2934242775037053925, guid: b224d63ffdcacf9498efd9672283283a, type: 3}
-  - {fileID: -4688237301009505485, guid: 3ab4f4648a1532f4ba70dbb750213d5d, type: 3}
-  - {fileID: -337442907391747176, guid: dff6113d19879f441ae4c24997ca4553, type: 3}
-  - {fileID: 8185093850126914421, guid: 0c66b49835c1abe48805d33031d6a427, type: 3}
-  - {fileID: -3737464515994621178, guid: 10b22005320360d4baf7c8ae6f262be9, type: 3}
+  - {fileID: -3810680303400966287, guid: 1b74d35755d4a554abea1578cd7629c5, type: 3}
+  - {fileID: 3912956833932595037, guid: cde87324e01ff9d45ae7382fe39d6cfa, type: 3}
+  - {fileID: 3912956833932595037, guid: cde87324e01ff9d45ae7382fe39d6cfa, type: 3}
+  - {fileID: -3810680303400966287, guid: 1b74d35755d4a554abea1578cd7629c5, type: 3}
   fps: 8
 --- !u!114 &1532075599
 MonoBehaviour:
