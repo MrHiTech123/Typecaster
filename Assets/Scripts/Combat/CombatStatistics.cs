@@ -38,7 +38,7 @@ public class CombatStatistics : MonoBehaviour
         StartCoroutine(EnemyTakeDamageTimed(dmg, isArea, isSkill, waitTime));
     }
 
-    public IEnumerator EnemyTakeDamageTimed(int dmg, Boolean isArea = false, Boolean isSkill = false, float waitTime = 0.0f)
+    private IEnumerator EnemyTakeDamageTimed(int dmg, Boolean isArea = false, Boolean isSkill = false, float waitTime = 0.0f)
     {
         yield return new WaitForSeconds(waitTime);
         enemyDamageText.gameObject.SetActive(true);
@@ -67,7 +67,7 @@ public class CombatStatistics : MonoBehaviour
         StartCoroutine(PlayerTakeDamageTimed(dmg, waitTime));
     }
 	
-    public IEnumerator PlayerTakeDamageTimed(int dmg, float waitTime = 0.0f)
+    private IEnumerator PlayerTakeDamageTimed(int dmg, float waitTime = 0.0f)
     {
         yield return new WaitForSeconds(waitTime);
         playerDamageText.gameObject.SetActive(true);
@@ -78,6 +78,7 @@ public class CombatStatistics : MonoBehaviour
         }
         else
         {
+            dmg = Mathf.CeilToInt(dmg * playerActions.CalculateDefense());
             playerDamageText.SetText(dmg.ToString());
             playerDamageText.color = Color.red;
         }

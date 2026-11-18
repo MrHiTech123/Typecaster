@@ -3,6 +3,7 @@ using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerActions : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private TextMeshProUGUI potionText;
     [SerializeField] private GameObject potionButton;
     [SerializeField] private int potionCount;
+    [SerializeField] private Image enemyActionImage;
+    [SerializeField] private Sprite[] actionSprites;
+    [SerializeField] private int actionIDNextTurn;
+    [SerializeField] private GameObject defenseIcon;
+    private bool isDefending;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +32,8 @@ public class PlayerActions : MonoBehaviour
         spellMenu.SetActive(false);
         itemMenu.SetActive(false);
         lastSpell = null;
+        enemyActionImage.sprite = actionSprites[actionIDNextTurn];
+        defenseIcon.SetActive(false);
     }
 
     // Update is called once per frame
@@ -62,7 +70,15 @@ public class PlayerActions : MonoBehaviour
     }
 
     public void Defense() {
-        Debug.Log("[Player Actions] Player skips this turn!!!");
+        Debug.Log("[Player Actions] Player defenses this turn!!!");
+        StartCoroutine(DefenseTimed());
+    }
+
+    private IEnumerator DefenseTimed()
+    {
+        isDefending = true;
+        defenseIcon.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
         EnemyAction();
     }
 
@@ -98,10 +114,29 @@ public class PlayerActions : MonoBehaviour
             Debug.Log("[Enemy Actions] Enemy deals 20 damage to player!!!");
             stats.PlayerTakeDamage(20, waitTime:1.0f);
             playerMainMenu.SetActive(true);
+            // draw action for the next turn
+            actionIDNextTurn = Random.Range(0, actionSprites.Length);
+            enemyActionImage.sprite = actionSprites[actionIDNextTurn];
             if (stats.playerHP <= 0)
             {
                 SceneManager.LoadScene(GameOverScene.name, LoadSceneMode.Single);
             }
+        }
+    }
+
+    public float CalculateDefense()
+    {
+        if(isDefending)
+        {
+            Debug.Log("Damage to player is defended!!!");
+            isDefending = false;
+            defenseIcon.SetActive(false);
+            return 1 - 0.8f;
+        }
+        else
+        {
+            Debug.Log("Damage is not defended!!!");
+            return 1.0f;
         }
     }
 
@@ -110,7 +145,7 @@ public class PlayerActions : MonoBehaviour
         StartCoroutine(UsePotionTimed());
     }
 
-    public IEnumerator UsePotionTimed()
+    private IEnumerator UsePotionTimed()
     {
         Debug.Log("[Player Actions] Player used a health potion!!!");
         itemMenu.SetActive(false);
