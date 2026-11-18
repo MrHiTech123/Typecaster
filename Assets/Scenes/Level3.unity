@@ -4520,7 +4520,7 @@ MonoBehaviour:
   spellMenu: {fileID: 1412049201}
   itemMenu: {fileID: 256181828}
   GameOverScene: {fileID: 102900000, guid: ab68eb1f239e80a4b8744c77d9c6882c, type: 3}
-  NextScene: {fileID: 102900000, guid: fe2b2a6aad8e0694593855a6a5e661aa, type: 3}
+  NextScene: {fileID: 102900000, guid: 7ccf0114a8fd9ae4f9a015b80d0821b7, type: 3}
   potionText: {fileID: 1647468798}
   potionButton: {fileID: 1446027984}
   potionCount: 5
