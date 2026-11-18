@@ -10,6 +10,7 @@ public class PlayerActions : MonoBehaviour
 	
     private CombatStatistics stats;
     private Spell lastSpell;
+    private AudioManagement audioManager;
     [SerializeField] private GameObject playerMainMenu;
     [SerializeField] private GameObject spellMenu;
     [SerializeField] private GameObject itemMenu;
@@ -30,6 +31,7 @@ public class PlayerActions : MonoBehaviour
     void Start()
     {
         stats = GetComponent<CombatStatistics>();
+        audioManager = FindAnyObjectByType<AudioManagement>();
         playerMainMenu.SetActive(true);
         spellMenu.SetActive(false);
         itemMenu.SetActive(false);
@@ -46,18 +48,22 @@ public class PlayerActions : MonoBehaviour
 
     public void Attack() {
         Debug.Log("[Player Actions] Player attack enemy!!!");
+        // Audio Clip 1: Mana Blast
+        audioManager.PlayAudio(1);
         StartCoroutine(CastManaBlast());
     }
 
     private IEnumerator CastManaBlast()
     {
         playerMainMenu.SetActive(false);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
         stats.EnemyTakeDamage(10);
         EnemyAction();
     }
 
     public void OpenSpellMenu() {
+        // Audio Clip 0: Button Click Sound
+        audioManager.PlayAudio(0);
         if(lastSpell == null)
         {
             Debug.Log("[Player Actions] Open spell selection menu!!!");
@@ -67,17 +73,22 @@ public class PlayerActions : MonoBehaviour
         else
         {
             Debug.Log("[Player Actions] Player continues the last spell!!!");
+            playerMainMenu.SetActive(false);
             lastSpell.Cast(stats, this);
         }
     }
 
     public void CloseSpellMenu()
     {
+        // Audio Clip 0: Button Click Sound
+        audioManager.PlayAudio(0);
         playerMainMenu.SetActive(true);
         spellMenu.SetActive(false);
     }
 
     public void Defense() {
+        // Audio Clip 0: Button Click Sound
+        audioManager.PlayAudio(0);
         Debug.Log("[Player Actions] Player defenses this turn!!!");
         StartCoroutine(DefenseTimed());
     }
@@ -93,6 +104,8 @@ public class PlayerActions : MonoBehaviour
 
     public void OpenItemMenu() {
         Debug.Log("[Player Actions] Open item selection menu!!!");
+        // Audio Clip 0: Button Click Sound
+        audioManager.PlayAudio(0);
         playerMainMenu.SetActive(false);
         itemMenu.SetActive(true);
         if(potionCount <= 0)
@@ -108,6 +121,8 @@ public class PlayerActions : MonoBehaviour
 
     public void CloseItemMenu()
     {
+        // Audio Clip 0: Button Click Sound
+        audioManager.PlayAudio(0);
         playerMainMenu.SetActive(true);
         itemMenu.SetActive(false);
     }

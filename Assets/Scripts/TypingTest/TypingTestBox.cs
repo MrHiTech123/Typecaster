@@ -197,6 +197,7 @@ public class TypingTestBox : MonoBehaviour
 		// Debug.Log("Typing key " + key + " typed this frame: " + typedThisFrame.Count);
 		
 		String toType = "";
+		GameObject.FindAnyObjectByType<AudioManagement>().PlayAudio(0);
 		
 		
 		switch (key)
