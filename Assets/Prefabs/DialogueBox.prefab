@@ -85,7 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6024051259368690632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Script
   TextBox: {fileID: 4288741646480272370}
   dialogue: []
-  NextScene: {fileID: 0}
+  NextScene: 
   CHARACTER_SPRITES:
   - key: 0
     value: {fileID: 4948365428353503208, guid: 1333af8284d2c734b9e83eac63d8b4b7, type: 3}
