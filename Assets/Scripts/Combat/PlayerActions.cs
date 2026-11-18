@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEditor;
@@ -14,11 +15,16 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private GameObject playerMainMenu;
     [SerializeField] private GameObject spellMenu;
     [SerializeField] private GameObject itemMenu;
+<<<<<<< HEAD
 	[SerializeField] private SceneAsset GameOverScene;
 	[SerializeField] private SceneAsset NextScene;
     [SerializeField] private GameObject spellButton;
     [SerializeField] private GameObject contSpellButton;
     [SerializeField] private GameObject startNewSpellButton;
+=======
+	[SerializeField] private String GameOverScene;
+	[SerializeField] private String NextScene;
+>>>>>>> f589a41 (Everything is string)
 
     [SerializeField] private TextMeshProUGUI potionText;
     [SerializeField] private GameObject potionButton;
@@ -164,7 +170,7 @@ public class PlayerActions : MonoBehaviour
         // Check if enemy dies
 		if (stats.enemyHP <= 0)
 		{
-			SceneManager.LoadScene(NextScene.name, LoadSceneMode.Single);
+			SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
 		}
         else
         {
@@ -203,7 +209,7 @@ public class PlayerActions : MonoBehaviour
                     audioManager.PlayAudio(9);
                     yield return new WaitForSeconds(0.8f);
                 }
-                stats.PlayerTakeDamage((int)Random.Range(20 * 0.8f, 20 * 1.2f));
+                stats.PlayerTakeDamage((int)UnityEngine.Random.Range(20 * 0.8f, 20 * 1.2f));
                 yield return new WaitForSeconds(0.8f);
                 break;
             // Heavy Attack -- Thief
@@ -219,7 +225,7 @@ public class PlayerActions : MonoBehaviour
                     audioManager.PlayAudio(10);
                     yield return new WaitForSeconds(1.0f);
                 }
-                stats.PlayerTakeDamage((int)Random.Range(70 * 0.8f, 70 * 1.1f));
+                stats.PlayerTakeDamage((int)UnityEngine.Random.Range(70 * 0.8f, 70 * 1.1f));
                 yield return new WaitForSeconds(0.8f);
                 break;
             // Normal Attack -- Wolf
@@ -237,7 +243,7 @@ public class PlayerActions : MonoBehaviour
                         audioManager.PlayAudio(10);
                         yield return new WaitForSeconds(0.3f);
                     }
-                    stats.PlayerTakeDamage(Random.Range(3, 8));
+                    stats.PlayerTakeDamage(UnityEngine.Random.Range(3, 8));
                     yield return new WaitForSeconds(0.8f);
                     
                 }
@@ -257,7 +263,7 @@ public class PlayerActions : MonoBehaviour
                         audioManager.PlayAudio(2);
                         yield return new WaitForSeconds(0.5f);
                     }
-                    stats.PlayerTakeDamage(Random.Range(5, 10));
+                    stats.PlayerTakeDamage(UnityEngine.Random.Range(5, 10));
                     yield return new WaitForSeconds(0.8f);
                     
                 }
@@ -278,7 +284,7 @@ public class PlayerActions : MonoBehaviour
                         audioManager.PlayAudio(5);
                         yield return new WaitForSeconds(1.0f);
                     }
-                    stats.PlayerTakeDamage(Random.Range(18, 26));
+                    stats.PlayerTakeDamage(UnityEngine.Random.Range(18, 26));
                     yield return new WaitForSeconds(0.8f);
                     
                 }
@@ -303,7 +309,7 @@ public class PlayerActions : MonoBehaviour
                 {
                     audioManager.PlayAudio(6);
                     yield return new WaitForSeconds(1.3f);
-                    stats.EnemyTakeDamage(Random.Range(-33, -14));
+                    stats.EnemyTakeDamage(UnityEngine.Random.Range(-33, -14));
                     yield return new WaitForSeconds(0.8f);
                 }
                 break;
@@ -320,7 +326,7 @@ public class PlayerActions : MonoBehaviour
                     audioManager.PlayAudio(12);
                     yield return new WaitForSeconds(0.3f);
                 }
-                stats.PlayerTakeDamage((int)Random.Range(20 * 0.8f, 20 * 1.2f));
+                stats.PlayerTakeDamage((int)UnityEngine.Random.Range(20 * 0.8f, 20 * 1.2f));
                 yield return new WaitForSeconds(0.8f);
                 break;
             // Full healing -- Typo
@@ -337,14 +343,14 @@ public class PlayerActions : MonoBehaviour
         // Check if player dies
         if (stats.playerHP <= 0)
         {
-            SceneManager.LoadScene(GameOverScene.name, LoadSceneMode.Single);
+            SceneManager.LoadScene(GameOverScene, LoadSceneMode.Single);
         }
         // 
         else
         {
             playerMainMenu.SetActive(true);
             // draw action for the next turn
-            actionIDNextTurn = poolForActionIDs[Random.Range(0, poolForActionIDs.Length)];
+            actionIDNextTurn = poolForActionIDs[UnityEngine.Random.Range(0, poolForActionIDs.Length)];
             enemyActionImage.gameObject.SetActive(true);
             enemyActionImage.sprite = actionSprites[actionIDNextTurn];
             
