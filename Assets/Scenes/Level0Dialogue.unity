@@ -462,27 +462,87 @@ PrefabInstance:
       objectReference: {fileID: 102900000, guid: 54c6dbe7584a2d549949b8e2357a6cc2, type: 3}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.size
-      value: 3
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[0].Text
-      value: This is the first message
+      value: Okay, Delpina, you've got this.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[1].Text
-      value: This is the second message
+      value: Just type the spell out on the typewriter.
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[2].Text
-      value: This is the third message
+      value: Oh gods, my whole family is counting on me, and I don't get it right...well, we need a typecaster in the family! Okay, calm down, mantras.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[3].Text
+      value: You might make some mistakes, and that's okay, even if they do make the spell less effective.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[4].Text
+      value: Alright, dummy, you're going DOWN!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[5].Text
+      value: On the contrary, Delpina, I believe you will find it is you who are going down.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[6].Text
+      value: Huh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[7].Text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[8].Text
+      value: I thought I heard you say something...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[9].Text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[10].Text
+      value: Whelp, must've just been the pressure. Whew! Anyway, you're doing down, dummy!
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[1].Speaker
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[2].Speaker
-      value: 4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[3].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[4].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[5].Speaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[6].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[7].Speaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[8].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[9].Speaker
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8354356226486469611, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: m_Sprite
