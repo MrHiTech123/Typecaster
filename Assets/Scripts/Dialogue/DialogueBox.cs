@@ -88,12 +88,15 @@ public class Script : MonoBehaviour
 	{
 		double totalSeconds = totalTimeSinceMessageChanged.TotalSeconds;
 		int charsToShow = (int)(CHARACTERS_PER_SECOND * totalSeconds);
-		charsToShow = Math.Min(Message.Length, charsToShow);
-		TextBox.text = Message.Substring(0, charsToShow);
+		int messageLengthWithoutTags = StringLib.LengthWithoutTags(Message);
+		
+		charsToShow = Math.Min(charsToShow, messageLengthWithoutTags);
+		
+		TextBox.text = StringLib.SubstringWithoutTags(Message, 0, charsToShow);
 		
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			if (charsToShow == Message.Length)
+			if (charsToShow == messageLengthWithoutTags)
 			{
 				++DialogueIndex;
 			}
