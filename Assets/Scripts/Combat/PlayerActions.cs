@@ -15,16 +15,11 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private GameObject playerMainMenu;
     [SerializeField] private GameObject spellMenu;
     [SerializeField] private GameObject itemMenu;
-<<<<<<< HEAD
-	[SerializeField] private SceneAsset GameOverScene;
-	[SerializeField] private SceneAsset NextScene;
+	[SerializeField] private String GameOverScene;
+	[SerializeField] private String NextScene;
     [SerializeField] private GameObject spellButton;
     [SerializeField] private GameObject contSpellButton;
     [SerializeField] private GameObject startNewSpellButton;
-=======
-	[SerializeField] private String GameOverScene;
-	[SerializeField] private String NextScene;
->>>>>>> f589a41 (Everything is string)
 
     [SerializeField] private TextMeshProUGUI potionText;
     [SerializeField] private GameObject potionButton;
