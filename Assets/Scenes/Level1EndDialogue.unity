@@ -458,11 +458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: NextScene
-      value: 
+      value: Level2Dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.size
-      value: 16
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[0].Text
@@ -526,7 +526,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[15].Text
-      value: 'I only meant to borrow it. I was going to go into the forest to try to claim the Angelic Typewriter, which is '
+      value: I only meant to borrow it. I was going to go into the forest to try to claim the Angelic Typewriter, which is in the middle of the Hila forest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[16].Text
+      value: They say it's protected by a great and powerful guardian. I thought I'd need some magic of my own to beat it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[17].Text
+      value: So...you wanted this typewriter...to get another typewriter?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[18].Text
+      value: They say that whoever wields the Angelic Typewriter will become the greatest typecaster in the world. I wanted that more than anything, but alas, it seems it was not meant to be.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[19].Text
+      value: '*Thinking* the greatest typewriter in the world, you say?'
       objectReference: {fileID: 0}
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[0].Speaker
@@ -591,6 +607,22 @@ PrefabInstance:
     - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: dialogue.Array.data[15].Speaker
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[16].Speaker
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[17].Speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[18].Speaker
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7676950372244899881, guid: 612684147c0525840b9b46e9005858c8, type: 3}
+      propertyPath: dialogue.Array.data[19].Speaker
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8354356226486469611, guid: 612684147c0525840b9b46e9005858c8, type: 3}
       propertyPath: m_Sprite
