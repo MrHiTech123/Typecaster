@@ -140,21 +140,21 @@ public class PlayerActions : MonoBehaviour
                 Debug.Log("[Enemy Actions] Enemy does nothing this turn but heals itself");
                 yield return new WaitForSeconds(1.0f);
                 stats.EnemyTakeDamage(-9999);
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.8f);
                 break;
             // Normal Attack -- Thief
             case 2: 
                 Debug.Log("[Enemy Actions] Thief normal attack");
                 yield return new WaitForSeconds(1.0f);
                 stats.PlayerTakeDamage((int)Random.Range(20 * 0.8f, 20 * 1.2f));
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.8f);
                 break;
             // Heavy Attack -- Thief
             case 3:
                 Debug.Log("[Enemy Actions] Thief heavy attack");
                 yield return new WaitForSeconds(1.0f);
                 stats.PlayerTakeDamage((int)Random.Range(70 * 0.8f, 70 * 1.1f));
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.8f);
                 break;
             // Normal Attack -- Wolf
             case 4:
@@ -209,6 +209,20 @@ public class PlayerActions : MonoBehaviour
                     stats.EnemyTakeDamage(Random.Range(-33, -14));
                     yield return new WaitForSeconds(0.8f);
                 }
+                break;
+            // Normal attack -- Typo
+            case 8:
+                Debug.Log("[Enemy Actions] Typo normal attack");
+                yield return new WaitForSeconds(1.0f);
+                stats.PlayerTakeDamage((int)Random.Range(20 * 0.8f, 20 * 1.2f));
+                yield return new WaitForSeconds(0.8f);
+                break;
+            // Full healing -- Typo
+            case 9:
+                Debug.Log("[Enemy Actions] Typo full heal");
+                yield return new WaitForSeconds(1.0f);
+                stats.EnemyTakeDamage(-9999);
+                yield return new WaitForSeconds(0.8f);
                 break;
             default:break;
         }

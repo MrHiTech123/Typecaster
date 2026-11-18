@@ -4242,6 +4242,9 @@ MonoBehaviour:
   - {fileID: 5797414072685025518, guid: ddcb611c80de94a41a752b8188b9451e, type: 3}
   - {fileID: 2903848411162822477, guid: 4961531616388ac4498252f309179c3b, type: 3}
   actionIDNextTurn: 0
+  defenseIcon: {fileID: 1676385854}
+  EnemySkillIDs: 000000000800000009000000i
+  poolForActionIDs: 000000000000000001000000010000000100000002000000i
 --- !u!114 &1532075597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4256,7 +4259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CombatStatistics
   playerHP: 100
   playerMana: 0
-  enemyHP: 100
+  enemyMaxHP: 0
+  enemyHP: 5000
+  enemyCount: 5000
   playerHealthBar: {fileID: 412498933}
   enemyHealthBar: {fileID: 960759789}
   playerDamageText: {fileID: 451106539}
